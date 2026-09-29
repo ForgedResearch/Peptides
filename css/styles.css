@@ -85,7 +85,7 @@
       background:
         linear-gradient(90deg, rgba(5,7,11,.72) 0%, rgba(5,7,11,.28) 46%, rgba(5,7,11,.08) 100%),
         linear-gradient(180deg, rgba(5,7,11,.18) 0%, rgba(5,7,11,.55) 100%),
-        url("../assets/hero-mountains.jpg") center 40% / cover no-repeat,
+        url("hero-mountains.jpg") center 40% / cover no-repeat,
         #07090e;
     }
     .hero:after {
@@ -95,7 +95,7 @@
       pointer-events: none;
     }
     .hero .wrap { position: relative; z-index: 1; }
-    .hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 40px; align-items: center; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 640px); gap: 40px; align-items: center; }
     .kicker { color: #93c5fd; font-weight: 700; letter-spacing: .16em; font-size: 12px; text-transform: uppercase; }
     h1 { font-size: clamp(36px, 5vw, 62px); line-height: 1.05; letter-spacing: -.03em; margin: 12px 0 16px; }
     .lede { color: var(--muted); font-size: 18px; max-width: 540px; }
