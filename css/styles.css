@@ -62,11 +62,10 @@ header {
   min-height: 560px;
   background-color: #07090e;
   background-image:
-    linear-gradient(90deg, rgba(5,7,11,.78) 0%, rgba(5,7,11,.35) 46%, rgba(5,7,11,.12) 100%),
-    linear-gradient(180deg, rgba(5,7,11,.12) 0%, rgba(5,7,11,.55) 100%),
-    url("../assets/hero-mountains.jpg");
+    linear-gradient(90deg, rgba(5,7,11,.55) 0%, rgba(5,7,11,.15) 50%, rgba(5,7,11,0) 100%),
+    url("https://mako-burn-e.github.io/Forged-Research/assets/hero-mountains.jpg");
   background-repeat: no-repeat;
-  background-position: center 42%;
+  background-position: center bottom;
   background-size: cover;
 }
 .hero::after {
