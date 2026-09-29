@@ -1,8 +1,8 @@
 const products = [
-  { id: 'reta', name: 'Retatrutide', cat: 'metabolic', desc: 'GLP-1 / GIP / Glucagon receptor agonist', price: 199, size: '10 mg', rating: '4.8 (32)', img: 'assets/vial-reta.png' },
-  { id: 'bpc', name: 'BPC-157 / TB-500', cat: 'recovery', desc: 'Tissue & recovery research blend', price: 99, size: '5 mg / 5 mg', rating: '4.7 (21)', img: 'assets/vial-bpc.png' },
-  { id: 'kpv', name: 'KPV', cat: 'immune', desc: 'Immune & inflammation research', price: 69, size: '5 mg', rating: '4.6 (18)', img: 'assets/vial-kpv.png' },
-  { id: 'tesa', name: 'Tesamorelin', cat: 'metabolic', desc: 'GHRH analog', price: 99, size: '5 mg', rating: '4.7 (26)', img: 'assets/vial-tesa.png' }
+  { id: 'reta', name: 'Retatrutide', cat: 'metabolic', desc: 'GLP-1 / GIP / Glucagon receptor agonist', price: 199, size: '10 mg', rating: '4.8 (32)', img: 'vial-reta.png' },
+  { id: 'bpc', name: 'BPC-157 / TB-500', cat: 'recovery', desc: 'Tissue & recovery research blend', price: 99, size: '5 mg / 5 mg', rating: '4.7 (21)', img: 'vial-bpc.png' },
+  { id: 'kpv', name: 'KPV', cat: 'immune', desc: 'Immune & inflammation research', price: 69, size: '5 mg', rating: '4.6 (18)', img: 'vial-kpv.png' },
+  { id: 'tesa', name: 'Tesamorelin', cat: 'metabolic', desc: 'GHRH analog', price: 99, size: '5 mg', rating: '4.7 (26)', img: 'vial-tesa.png' }
 ];
 
 const grid = document.getElementById('productGrid');
