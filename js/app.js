@@ -1,31 +1,67 @@
 const products = [
-  { id: 'reta', name: 'Retatrutide', cat: 'metabolic', desc: 'GLP-1 / GIP / Glucagon receptor agonist', price: 199, size: '10 mg', rating: '4.8 (32)', img: 'vial-reta.png' },
-  { id: 'bpc', name: 'BPC-157 / TB-500', cat: 'recovery', desc: 'Tissue & recovery research blend', price: 99, size: '5 mg / 5 mg', rating: '4.7 (21)', img: 'vial-bpc.png' },
-  { id: 'kpv', name: 'KPV', cat: 'immune', desc: 'Immune & inflammation research', price: 69, size: '5 mg', rating: '4.6 (18)', img: 'vial-kpv.png' },
-  { id: 'tesa', name: 'Tesamorelin', cat: 'metabolic', desc: 'GHRH analog', price: 99, size: '5 mg', rating: '4.7 (26)', img: 'vial-tesa.png' }
+  { id: 'reta', name: 'Retatrutide', cat: 'metabolic', desc: 'GLP-1 / GIP / Glucagon receptor agonist', price: 199, size: '10 mg', rating: '4.8 (32)', img: 'assets/vial-reta.png' },
+  { id: 'bpc-blend', name: 'BPC-157 / TB-500', cat: 'recovery', desc: 'Tissue & recovery research blend', price: 99, size: '5 mg / 5 mg', rating: '4.7 (21)', img: 'assets/vial-bpc.png' },
+  { id: 'kpv', name: 'KPV', cat: 'immune', desc: 'Immune & inflammation research', price: 69, size: '5 mg', rating: '4.6 (18)', img: 'assets/vial-kpv.png' },
+  {
+    id: 'bpc',
+    name: 'BPC-157',
+    cat: 'recovery',
+    desc: 'Tissue repair research peptide',
+    rating: '4.8 (29)',
+    img: 'assets/vial-bpc.png',
+    sizes: [
+      { label: '10 mg', price: 99 },
+      { label: '20 mg', price: 179 }
+    ]
+  }
 ];
 
 const grid = document.getElementById('productGrid');
 let cart = [];
 let filter = 'all';
 
+function selectedSize(p) {
+  if (!p.sizes) return { label: p.size, price: p.price };
+  const sel = document.getElementById('size-' + p.id);
+  const idx = sel ? Number(sel.value) : 0;
+  return p.sizes[idx] || p.sizes[0];
+}
+
 function renderProducts() {
-  grid.innerHTML = products.filter(p => filter === 'all' || p.cat === filter).map(p => `
-    <article class="product">
-      <img class="vial-img" src="${p.img}" alt="${p.name}" />
-      <span class="tag">RESEARCH USE ONLY</span>
-      <strong>${p.name}</strong>
-      <div class="muted">${p.desc}</div>
-      <div class="stars">★★★★★ ${p.rating}</div>
-      <div class="row">
-        <div>
-          <div class="muted">${p.size}</div>
-          <strong>$${p.price}</strong>
-        </div>
-        <button class="btn" type="button" onclick="addToCart('${p.id}')">Add</button>
+  grid.innerHTML = products.filter(p => filter === 'all' || p.cat === filter).map(p => {
+    const sizeBlock = p.sizes ? `
+      <select class="size-select" id="size-${p.id}" onchange="updatePrice('${p.id}')">
+        ${p.sizes.map((s, i) => `<option value="${i}">${s.label} — $${s.price}</option>`).join('')}
+      </select>
+      <strong id="price-${p.id}">$${p.sizes[0].price}</strong>
+    ` : `
+      <div>
+        <div class="muted">${p.size}</div>
+        <strong>$${p.price}</strong>
       </div>
-    </article>
-  `).join('');
+    `;
+    return `
+      <article class="product">
+        <img class="vial-img" src="${p.img}" alt="${p.name}" />
+        <span class="tag">RESEARCH USE ONLY</span>
+        <strong>${p.name}</strong>
+        <div class="muted">${p.desc}</div>
+        <div class="stars">★★★★★ ${p.rating}</div>
+        <div class="row">
+          ${sizeBlock}
+          <button class="btn" type="button" onclick="addToCart('${p.id}')">Add</button>
+        </div>
+      </article>
+    `;
+  }).join('');
+}
+
+function updatePrice(id) {
+  const p = products.find(x => x.id === id);
+  if (!p || !p.sizes) return;
+  const s = selectedSize(p);
+  const el = document.getElementById('price-' + id);
+  if (el) el.textContent = '$' + s.price;
 }
 
 document.querySelectorAll('.chip').forEach(chip => {
@@ -39,9 +75,17 @@ document.querySelectorAll('.chip').forEach(chip => {
 
 function addToCart(id) {
   const item = products.find(p => p.id === id);
-  const existing = cart.find(c => c.id === id);
+  const size = selectedSize(item);
+  const cartId = item.sizes ? id + '-' + size.label.replace(/\s+/g, '') : id;
+  const existing = cart.find(c => c.id === cartId);
   if (existing) existing.qty += 1;
-  else cart.push({ ...item, qty: 1 });
+  else cart.push({
+    id: cartId,
+    name: item.name,
+    size: size.label,
+    price: size.price,
+    qty: 1
+  });
   syncCart();
   openCart();
 }
