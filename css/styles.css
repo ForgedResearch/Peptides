@@ -60,13 +60,32 @@ header {
   overflow: hidden;
   padding: 88px 0 72px;
   min-height: 560px;
-  background-color: #07090e;
+  background-color: #05070b;
   background-image:
-    linear-gradient(90deg, rgba(5,7,11,.55) 0%, rgba(5,7,11,.15) 50%, rgba(5,7,11,0) 100%),
-    url("https://mako-burn-e.github.io/Forged-Research/assets/hero-mountains.jpg");
+    linear-gradient(90deg, rgba(5,7,11,.88) 0%, rgba(5,7,11,.62) 34%, rgba(5,7,11,.22) 58%, rgba(5,7,11,.10) 100%),
+    linear-gradient(180deg, rgba(5,7,11,.20) 0%, rgba(5,7,11,0) 40%, rgba(5,7,11,.45) 100%),
+    url("../assets/hero-mountains.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center center;
   background-size: cover;
+}
+.hero h1 {
+  color: #fff;
+  text-shadow: 0 2px 18px rgba(0,0,0,.55);
+}
+.hero .lede {
+  color: #e8eef6;
+  text-shadow: 0 2px 12px rgba(0,0,0,.65);
+}
+.hero .kicker {
+  color: #b9d4ff;
+  text-shadow: 0 1px 8px rgba(0,0,0,.55);
+}
+.hero .trust { color: #d5deea; text-shadow: 0 1px 8px rgba(0,0,0,.6); }
+.hero .btn.ghost {
+  background: rgba(7,9,14,.55);
+  border-color: rgba(255,255,255,.35);
+  color: #fff;
 }
 .hero::after {
   content: "";
