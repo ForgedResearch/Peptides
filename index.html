@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forged Research — Premium Research Peptides</title>
+  <meta name="description" content="Third-party tested research peptides. For laboratory research use only." />
+  <link rel="icon" href="assets/logo-mark.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <img class="logo" src="assets/logo-mark.png" alt="Forged Research" />
+        FORGED RESEARCH
+      </a>
+      <nav class="nav-links">
+        <a href="#shop">Shop</a>
+        <a href="#testing">Testing</a>
+        <a href="#research">Research</a>
+        <a href="#disclaimer">Disclaimer</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" title="Search" type="button">⌕</button>
+        <button class="icon-btn" id="cartBtn" title="Cart" type="button">
+          🛒 <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker">Purity. Transparency. Performance.</div>
+        <h1>Premium research peptides.</h1>
+        <p class="lede">Third-party tested compounds with certificates of analysis on every lot. Built for qualified laboratory research — not for human or veterinary use.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#shop">Shop compounds</a>
+          <a class="btn ghost" href="#testing">View testing standards</a>
+        </div>
+        <div class="trust">
+          <span>🛡 Third-party tested</span>
+          <span>📄 Certificate of Analysis</span>
+          <span>📦 Discreet shipping</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="shop">
+    <div class="wrap">
+      <h2>Research catalog</h2>
+      <p class="sub">Select a compound. All listings are for laboratory research only.</p>
+      <div class="filters">
+        <button class="chip active" data-filter="all" type="button">All</button>
+        <button class="chip" data-filter="metabolic" type="button">Metabolic</button>
+        <button class="chip" data-filter="recovery" type="button">Recovery</button>
+        <button class="chip" data-filter="immune" type="button">Gut / Immune</button>
+      </div>
+      <div class="grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="testing">
+    <div class="wrap info-grid">
+      <div class="panel">
+        <h2>Quality & testing</h2>
+        <p class="sub">Every batch is independently tested for identity, purity, and endotoxins. COAs are available per lot.</p>
+        <table class="specs">
+          <tr><td>Purity (HPLC)</td><td>≥ 99%</td></tr>
+          <tr><td>Endotoxins</td><td>&lt; 0.1 EU/mg</td></tr>
+          <tr><td>Appearance</td><td>White lyophilized powder</td></tr>
+          <tr><td>Storage</td><td>Refrigerate 2–8°C</td></tr>
+          <tr><td>Reconstitution</td><td>Sterile bacteriostatic water (research use only)</td></tr>
+        </table>
+      </div>
+      <div class="panel" id="research">
+        <h2>Research framing</h2>
+        <p class="muted">Compounds on this site are investigational materials intended for in-vitro and preclinical research models. They are not drugs, not dietary supplements, and are not FDA approved.</p>
+        <div class="warn-box">
+          <strong>RESEARCH USE ONLY.</strong> Not for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease.
+        </div>
+        <button class="btn ghost" type="button">View sample Certificate of Analysis (PDF)</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="disclaimer">
+    <div class="wrap foot">
+      <div>
+        <strong style="color:#fff">FORGED RESEARCH</strong><br />
+        Laboratory research materials. Not a pharmacy.
+      </div>
+      <div style="max-width:640px">
+        All products sold on this site are for research purposes only. By purchasing you acknowledge you are buying these products for qualified research purposes and will not use them in humans or animals. You are responsible for compliance with all applicable laws.
+      </div>
+    </div>
+  </footer>
+
+  <div class="drawer-bg" id="drawerBg"></div>
+  <aside class="drawer" id="drawer">
+    <div class="drawer-h">
+      <strong>Your cart</strong>
+      <button class="icon-btn" id="closeCart" type="button">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="drawer-foot">
+      <div class="row" style="margin-bottom:12px">
+        <span class="muted">Subtotal</span>
+        <strong id="subtotal">$0</strong>
+      </div>
+      <button class="btn full" id="checkoutBtn" type="button">Proceed to checkout</button>
+    </div>
+  </aside>
+
+  <div class="modal-bg" id="modal">
+    <div class="modal">
+      <h2 style="margin-bottom:8px">Important information</h2>
+      <div class="warn-box">RESEARCH USE ONLY — not for human or veterinary use.</div>
+      <p class="muted">These products are not intended to diagnose, treat, cure, or prevent any disease and have not been approved by the FDA.</p>
+      <label class="check">
+        <input type="checkbox" id="agree" />
+        <span>I have read this information and confirm I am purchasing these products for research use only.</span>
+      </label>
+      <button class="btn full warn" id="agreeBtn" type="button">I agree & continue</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
