@@ -31,7 +31,7 @@ function renderProducts() {
   grid.innerHTML = products.filter(p => filter === 'all' || p.cat === filter).map(p => {
     const sizeBlock = p.sizes ? `
       <select class="size-select" id="size-${p.id}" onchange="updatePrice('${p.id}')">
-        ${p.sizes.map((s, i) => `<option value="${i}">${s.label} — $${s.price}</option>`).join('')}
+        ${p.sizes.map((s, i) => '<option value="' + i + '">' + s.label + ' — $' + s.price + '</option>').join('')}
       </select>
       <strong id="price-${p.id}">$${p.sizes[0].price}</strong>
     ` : `
@@ -79,13 +79,7 @@ function addToCart(id) {
   const cartId = item.sizes ? id + '-' + size.label.replace(/\s+/g, '') : id;
   const existing = cart.find(c => c.id === cartId);
   if (existing) existing.qty += 1;
-  else cart.push({
-    id: cartId,
-    name: item.name,
-    size: size.label,
-    price: size.price,
-    qty: 1
-  });
+  else cart.push({ id: cartId, name: item.name, size: size.label, price: size.price, qty: 1 });
   syncCart();
   openCart();
 }
