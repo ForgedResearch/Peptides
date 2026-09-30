@@ -571,3 +571,13 @@ footer {
   overflow: hidden;
   min-height: 2.6em;
 }
+
+.policy h1 { margin-bottom: 8px; }
+.policy h2 { font-size: 18px; margin: 22px 0 8px; }
+.policy p, .policy li { color: var(--muted); line-height: 1.6; }
+.policy a { color: #93c5fd; text-decoration: underline; }
+.policy-links { display: flex; flex-wrap: wrap; gap: 14px; }
+.policy-links a { color: #93c5fd; }
+.gate { display: grid; }
+.gate-list { padding-left: 18px; color: var(--muted); display: grid; gap: 10px; font-size: 14px; }
+.gate-list strong { color: #fff; }
