@@ -1,4 +1,2455 @@
 {
-  "updated": null,
-  "products": []
+  "updated": "2026-09-30T23:58:22.755Z",
+  "products": [
+    {
+      "name": "Semaglutide",
+      "featured": true,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "GLP-1 receptor agonist research analog.",
+      "long_desc": "Semaglutide is a synthetic acylated GLP-1 receptor agonist, available as a lyophilized powder for laboratory research. Research-use only. Not a prescription drug.",
+      "sort_order": 10,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "SM5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "semaglutide-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "SM10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 50,
+          "in_stock": true,
+          "slug": "semaglutide-10mg",
+          "image_url": ""
+        },
+        {
+          "sku": "SM15",
+          "vial_label": "15mg",
+          "vial_mg": 15,
+          "base_price": 60,
+          "in_stock": true,
+          "slug": "semaglutide-15mg",
+          "image_url": ""
+        },
+        {
+          "sku": "SM20",
+          "vial_label": "20mg",
+          "vial_mg": 20,
+          "base_price": 75,
+          "in_stock": true,
+          "slug": "semaglutide-20mg",
+          "image_url": ""
+        },
+        {
+          "sku": "SM30",
+          "vial_label": "30mg",
+          "vial_mg": 30,
+          "base_price": 90,
+          "in_stock": true,
+          "slug": "semaglutide-30mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "SM5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 40,
+        "in_stock": true,
+        "slug": "semaglutide-5mg",
+        "image_url": ""
+      },
+      "slug": "semaglutide-5mg"
+    },
+    {
+      "name": "Tirzepatide",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Dual GIP/GLP-1 receptor agonist research analog.",
+      "long_desc": "Tirzepatide is a synthetic 39-amino acid acylated peptide classified as a dual GLP-1 and GIP receptor agonist, available as a lyophilized powder for laboratory research.",
+      "sort_order": 60,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "TR10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 50,
+          "in_stock": true,
+          "slug": "tirzepatide-10mg",
+          "image_url": ""
+        },
+        {
+          "sku": "TR15",
+          "vial_label": "15mg",
+          "vial_mg": 15,
+          "base_price": 65,
+          "in_stock": true,
+          "slug": "tirzepatide-15mg",
+          "image_url": ""
+        },
+        {
+          "sku": "TR20",
+          "vial_label": "20mg",
+          "vial_mg": 20,
+          "base_price": 80,
+          "in_stock": true,
+          "slug": "tirzepatide-20mg",
+          "image_url": ""
+        },
+        {
+          "sku": "TR30",
+          "vial_label": "30mg",
+          "vial_mg": 30,
+          "base_price": 90,
+          "in_stock": true,
+          "slug": "tirzepatide-30mg",
+          "image_url": ""
+        },
+        {
+          "sku": "TR40",
+          "vial_label": "40mg",
+          "vial_mg": 40,
+          "base_price": 115,
+          "in_stock": true,
+          "slug": "tirzepatide-40mg",
+          "image_url": ""
+        },
+        {
+          "sku": "TR50",
+          "vial_label": "50mg",
+          "vial_mg": 50,
+          "base_price": 140,
+          "in_stock": true,
+          "slug": "tirzepatide-50mg",
+          "image_url": ""
+        },
+        {
+          "sku": "TR60",
+          "vial_label": "60mg",
+          "vial_mg": 60,
+          "base_price": 160,
+          "in_stock": true,
+          "slug": "tirzepatide-60mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "TR10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 50,
+        "in_stock": true,
+        "slug": "tirzepatide-10mg",
+        "image_url": ""
+      },
+      "slug": "tirzepatide-10mg"
+    },
+    {
+      "name": "Retatrutide",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Triple GLP-1/GIP/glucagon receptor agonist research analog.",
+      "long_desc": "Retatrutide (listed by some labs as GLP-3R) is a synthetic 39-amino acid acylated peptide classified as a triple receptor agonist of GLP-1, GIP, and glucagon receptors, available as a lyophilized powder for laboratory research.",
+      "sort_order": 130,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "RT5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 48,
+          "in_stock": true,
+          "slug": "retatrutide-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "RT10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 80,
+          "in_stock": true,
+          "slug": "retatrutide-10mg",
+          "image_url": ""
+        },
+        {
+          "sku": "RT15",
+          "vial_label": "15mg",
+          "vial_mg": 15,
+          "base_price": 110,
+          "in_stock": true,
+          "slug": "retatrutide-15mg",
+          "image_url": ""
+        },
+        {
+          "sku": "RT20",
+          "vial_label": "20mg",
+          "vial_mg": 20,
+          "base_price": 140,
+          "in_stock": true,
+          "slug": "retatrutide-20mg",
+          "image_url": ""
+        },
+        {
+          "sku": "RT30",
+          "vial_label": "30mg",
+          "vial_mg": 30,
+          "base_price": 195,
+          "in_stock": true,
+          "slug": "retatrutide-30mg",
+          "image_url": ""
+        },
+        {
+          "sku": "RT40",
+          "vial_label": "40mg",
+          "vial_mg": 40,
+          "base_price": 245,
+          "in_stock": true,
+          "slug": "retatrutide-40mg",
+          "image_url": ""
+        },
+        {
+          "sku": "RT50",
+          "vial_label": "50mg",
+          "vial_mg": 50,
+          "base_price": 290,
+          "in_stock": true,
+          "slug": "retatrutide-50mg",
+          "image_url": ""
+        },
+        {
+          "sku": "RT60",
+          "vial_label": "60mg",
+          "vial_mg": 60,
+          "base_price": 340,
+          "in_stock": true,
+          "slug": "retatrutide-60mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "RT5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 48,
+        "in_stock": true,
+        "slug": "retatrutide-5mg",
+        "image_url": ""
+      },
+      "slug": "retatrutide-5mg"
+    },
+    {
+      "name": "Melanotan 1",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "Synthetic alpha-MSH analog.",
+      "long_desc": "Melanotan 1 is a synthetic analog of alpha-melanocyte stimulating hormone, available as a lyophilized powder for laboratory research.",
+      "sort_order": 210,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "MT1",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 45,
+          "in_stock": true,
+          "slug": "mt-1-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "ML10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 45,
+          "in_stock": true,
+          "slug": "mt-2-melanotan-2-acetate-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "MT1",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 45,
+        "in_stock": true,
+        "slug": "mt-1-5mg",
+        "image_url": ""
+      },
+      "slug": "mt-1-5mg"
+    },
+    {
+      "name": "PT-141",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "Synthetic melanocortin receptor agonist.",
+      "long_desc": "PT-141 (bremelanotide analog) is a synthetic melanocortin peptide, available as a lyophilized powder for laboratory research.",
+      "sort_order": 230,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "P41",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 50,
+          "in_stock": true,
+          "slug": "pt-141-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "P41",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 50,
+        "in_stock": true,
+        "slug": "pt-141-10mg",
+        "image_url": ""
+      },
+      "slug": "pt-141-10mg"
+    },
+    {
+      "name": "Selank",
+      "featured": false,
+      "category_primary": "Gut / Immune",
+      "categories": [
+        "Gut / Immune"
+      ],
+      "short_desc": "Synthetic tuftsin analog studied in CNS signaling models.",
+      "long_desc": "Selank is a synthetic peptide analog investigated in neurotransmitter and cognitive-signaling research, available as a lyophilized powder for laboratory research.",
+      "sort_order": 240,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "SK5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "selank-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "SK10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 55,
+          "in_stock": true,
+          "slug": "selank-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "SK5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 40,
+        "in_stock": true,
+        "slug": "selank-5mg",
+        "image_url": ""
+      },
+      "slug": "selank-5mg"
+    },
+    {
+      "name": "Oxytocin Acetate",
+      "featured": false,
+      "category_primary": "Gut / Immune",
+      "categories": [
+        "Gut / Immune"
+      ],
+      "short_desc": "Cyclic nonapeptide with a cysteine disulfide bridge.",
+      "long_desc": "Oxytocin is a cyclic nonapeptide with a disulfide bridge between cysteine residues, available as a lyophilized powder for laboratory research.",
+      "sort_order": 260,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "OT2",
+          "vial_label": "2mg",
+          "vial_mg": 2,
+          "base_price": 30,
+          "in_stock": true,
+          "slug": "oxytocin-acetate-2mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "OT2",
+        "vial_label": "2mg",
+        "vial_mg": 2,
+        "base_price": 30,
+        "in_stock": true,
+        "slug": "oxytocin-acetate-2mg",
+        "image_url": ""
+      },
+      "slug": "oxytocin-acetate-2mg"
+    },
+    {
+      "name": "Epithalon",
+      "featured": false,
+      "category_primary": "Gut / Immune",
+      "categories": [
+        "Gut / Immune"
+      ],
+      "short_desc": "Synthetic tetrapeptide Ala-Glu-Asp-Gly.",
+      "long_desc": "Epitalon (Epithalon) is a synthetic tetrapeptide with the sequence Ala-Glu-Asp-Gly, available as a lyophilized powder for laboratory research.",
+      "sort_order": 270,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "ET10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 60,
+          "in_stock": true,
+          "slug": "epithalon-10mg",
+          "image_url": ""
+        },
+        {
+          "sku": "ET50",
+          "vial_label": "40mg",
+          "vial_mg": 40,
+          "base_price": 150,
+          "in_stock": true,
+          "slug": "epithalon-40mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "ET10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 60,
+        "in_stock": true,
+        "slug": "epithalon-10mg",
+        "image_url": ""
+      },
+      "slug": "epithalon-10mg"
+    },
+    {
+      "name": "BPC-157",
+      "featured": true,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery",
+        "Gut / Immune"
+      ],
+      "short_desc": "Synthetic 15-amino acid fragment from gastric juice protein.",
+      "long_desc": "BPC-157 is a synthetic 15-amino acid peptide fragment derived from human gastric juice protein, available as a lyophilized powder for laboratory research.",
+      "sort_order": 290,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "BC5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "bpc-157-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "BC10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 65,
+          "in_stock": true,
+          "slug": "bpc-157-10mg",
+          "image_url": ""
+        },
+        {
+          "sku": "BC20",
+          "vial_label": "20mg",
+          "vial_mg": 20,
+          "base_price": 80,
+          "in_stock": true,
+          "slug": "bpc-157-20mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "BC5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 40,
+        "in_stock": true,
+        "slug": "bpc-157-5mg",
+        "image_url": ""
+      },
+      "slug": "bpc-157-5mg"
+    },
+    {
+      "name": "TB-500",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "Thymosin Beta-4 fragment used in tissue-repair research.",
+      "long_desc": "TB-500 is the common research-market name for Thymosin Beta-4 (Tb4), a 43-amino-acid peptide, available as a lyophilized powder for laboratory research.",
+      "sort_order": 320,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "BT5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 80,
+          "in_stock": true,
+          "slug": "tb-500-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "BT10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 130,
+          "in_stock": true,
+          "slug": "tb-500-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "BT5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 80,
+        "in_stock": true,
+        "slug": "tb-500-5mg",
+        "image_url": ""
+      },
+      "slug": "tb-500-5mg"
+    },
+    {
+      "name": "BPC-157 5mg + TB-500 5mg",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery",
+        "Gut / Immune"
+      ],
+      "short_desc": "Lyophilized BPC-157 and TB-500 blend.",
+      "long_desc": "BPC-157/TB-500 Blend is a lyophilized formulation containing two synthetic peptides for laboratory research.",
+      "sort_order": 340,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "BB10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 80,
+          "in_stock": true,
+          "slug": "bpc-157-5mg-tb-500-5mg-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "BB10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 80,
+        "in_stock": true,
+        "slug": "bpc-157-5mg-tb-500-5mg-10mg",
+        "image_url": ""
+      },
+      "slug": "bpc-157-5mg-tb-500-5mg-10mg"
+    },
+    {
+      "name": "BPC-157 10mg + TB-500 10mg",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery",
+        "Gut / Immune"
+      ],
+      "short_desc": "Lyophilized BPC-157 and TB-500 blend.",
+      "long_desc": "BPC-157/TB-500 Blend is a lyophilized formulation containing two synthetic peptides for laboratory research.",
+      "sort_order": 350,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "BB20",
+          "vial_label": "20mg",
+          "vial_mg": 20,
+          "base_price": 150,
+          "in_stock": true,
+          "slug": "bpc-157-10mg-tb-500-10mg-20mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "BB20",
+        "vial_label": "20mg",
+        "vial_mg": 20,
+        "base_price": 150,
+        "in_stock": true,
+        "slug": "bpc-157-10mg-tb-500-10mg-20mg",
+        "image_url": ""
+      },
+      "slug": "bpc-157-10mg-tb-500-10mg-20mg"
+    },
+    {
+      "name": "Semax",
+      "featured": false,
+      "category_primary": "Gut / Immune",
+      "categories": [
+        "Gut / Immune"
+      ],
+      "short_desc": "Synthetic ACTH(4-10) analog studied in neuro research.",
+      "long_desc": "Semax is a synthetic peptide analog derived from ACTH(4-10), available as a lyophilized powder for laboratory research.",
+      "sort_order": 360,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "XA5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "semax-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "XA10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 50,
+          "in_stock": true,
+          "slug": "semax-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "XA5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 40,
+        "in_stock": true,
+        "slug": "semax-5mg",
+        "image_url": ""
+      },
+      "slug": "semax-5mg"
+    },
+    {
+      "name": "SS-31",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "Mitochondrial Szeto-Schiller tetrapeptide (elamipretide analog).",
+      "long_desc": "SS-31 (Elamipretide) is a synthetic tetrapeptide of the Szeto-Schiller family, available as a lyophilized powder for laboratory research.",
+      "sort_order": 380,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "2S10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 70,
+          "in_stock": true,
+          "slug": "ss-31-10mg",
+          "image_url": ""
+        },
+        {
+          "sku": "2S50",
+          "vial_label": "50mg",
+          "vial_mg": 50,
+          "base_price": 265,
+          "in_stock": true,
+          "slug": "ss-31-50mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "2S10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 70,
+        "in_stock": true,
+        "slug": "ss-31-10mg",
+        "image_url": ""
+      },
+      "slug": "ss-31-10mg"
+    },
+    {
+      "name": "CJC-1295 (no DAC)",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Synthetic 29-amino acid GHRH analog (Mod GRF 1-29).",
+      "long_desc": "CJC-1295 (no DAC), also known as Mod GRF 1-29, is a synthetic 29-amino acid GHRH analog, available as a lyophilized powder for laboratory research.",
+      "sort_order": 400,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "CND5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 65,
+          "in_stock": true,
+          "slug": "cjc-1295-no-dac-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "CND10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 110,
+          "in_stock": true,
+          "slug": "cjc-1295-no-dac-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "CND5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 65,
+        "in_stock": true,
+        "slug": "cjc-1295-no-dac-5mg",
+        "image_url": ""
+      },
+      "slug": "cjc-1295-no-dac-5mg"
+    },
+    {
+      "name": "CJC-1295 (no DAC) 5mg + Ipamorelin 5mg",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "GHRH analog plus GHRP blend.",
+      "long_desc": "CJC-1295 without DAC combined with Ipamorelin is a lyophilized two-peptide blend for laboratory research on GH-axis signaling.",
+      "sort_order": 420,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "CP10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 80,
+          "in_stock": true,
+          "slug": "cjc-1295-no-dac-5mg-ipamorelin-5mg-10mg",
+          "image_url": ""
+        },
+        {
+          "sku": "CP20",
+          "vial_label": "20mg",
+          "vial_mg": 20,
+          "base_price": 140,
+          "in_stock": true,
+          "slug": "cjc-1295-no-dac-5mg-ipamorelin-5mg-20mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "CP10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 80,
+        "in_stock": true,
+        "slug": "cjc-1295-no-dac-5mg-ipamorelin-5mg-10mg",
+        "image_url": ""
+      },
+      "slug": "cjc-1295-no-dac-5mg-ipamorelin-5mg-10mg"
+    },
+    {
+      "name": "CJC-1295 (with DAC)",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "GHRH analog conjugated with a Drug Affinity Complex.",
+      "long_desc": "CJC-1295 with DAC is a synthetic peptide analog of GHRH conjugated with a Drug Affinity Complex, available as a lyophilized powder for laboratory research.",
+      "sort_order": 440,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "CD5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 135,
+          "in_stock": true,
+          "slug": "cjc-1295-with-dac-5mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "CD5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 135,
+        "in_stock": true,
+        "slug": "cjc-1295-with-dac-5mg",
+        "image_url": ""
+      },
+      "slug": "cjc-1295-with-dac-5mg"
+    },
+    {
+      "name": "Sermorelin Acetate",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Synthetic GHRH(1-29) analog.",
+      "long_desc": "Sermorelin Acetate is a synthetic GHRH fragment, available as a lyophilized powder for laboratory research.",
+      "sort_order": 450,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "SMO5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 60,
+          "in_stock": true,
+          "slug": "sermorelin-acetate-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "SMO10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 95,
+          "in_stock": true,
+          "slug": "sermorelin-acetate-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "SMO5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 60,
+        "in_stock": true,
+        "slug": "sermorelin-acetate-5mg",
+        "image_url": ""
+      },
+      "slug": "sermorelin-acetate-5mg"
+    },
+    {
+      "name": "HCG",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Human chorionic gonadotropin research material.",
+      "long_desc": "HCG is supplied as a lyophilized research material for laboratory use only.",
+      "sort_order": 470,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "G5K",
+          "vial_label": "5000iu",
+          "vial_mg": 5000,
+          "base_price": 75,
+          "in_stock": true,
+          "slug": "hcg-5000iu",
+          "image_url": ""
+        },
+        {
+          "sku": "G10K",
+          "vial_label": "10000iu",
+          "vial_mg": 10000,
+          "base_price": 145,
+          "in_stock": true,
+          "slug": "hcg-10000iu",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "G5K",
+        "vial_label": "5000iu",
+        "vial_mg": 5000,
+        "base_price": 75,
+        "in_stock": true,
+        "slug": "hcg-5000iu",
+        "image_url": ""
+      },
+      "slug": "hcg-5000iu"
+    },
+    {
+      "name": "AOD-9604",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Synthetic hGH(177-191) fragment with N-terminal tyrosine.",
+      "long_desc": "AOD-9604 is a synthetic 16-amino acid peptide fragment corresponding to hGH(177-191) with added N-terminal tyrosine, available as a lyophilized powder for laboratory research.",
+      "sort_order": 490,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "5AD",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 90,
+          "in_stock": true,
+          "slug": "aod-9604-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "10AD",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 160,
+          "in_stock": true,
+          "slug": "aod-9604-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "5AD",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 90,
+        "in_stock": true,
+        "slug": "aod-9604-5mg",
+        "image_url": ""
+      },
+      "slug": "aod-9604-5mg"
+    },
+    {
+      "name": "Tesamorelin",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "GHRH(1-44) with N-terminal trans-3-hexenoic acid.",
+      "long_desc": "Tesamorelin is a synthetic 44-amino acid peptide consisting of GHRH(1-44) with N-terminal trans-3-hexenoic acid modification, available as a lyophilized powder for laboratory research.",
+      "sort_order": 510,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "TSM10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 140,
+          "in_stock": true,
+          "slug": "tesamorelin-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "TSM10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 140,
+        "in_stock": true,
+        "slug": "tesamorelin-10mg",
+        "image_url": ""
+      },
+      "slug": "tesamorelin-10mg"
+    },
+    {
+      "name": "GHK-Cu",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "Glycine-histidine-lysine copper(II) tripeptide complex.",
+      "long_desc": "GHK-Cu is a tripeptide-copper complex consisting of glycine-histidine-lysine bound to a copper(II) ion, available as a lyophilized powder for laboratory research.",
+      "sort_order": 520,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "CU50",
+          "vial_label": "50mg",
+          "vial_mg": 50,
+          "base_price": 30,
+          "in_stock": true,
+          "slug": "ghk-cu-50mg",
+          "image_url": ""
+        },
+        {
+          "sku": "CU100",
+          "vial_label": "100mg",
+          "vial_mg": 100,
+          "base_price": 45,
+          "in_stock": true,
+          "slug": "ghk-cu-100mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "CU50",
+        "vial_label": "50mg",
+        "vial_mg": 50,
+        "base_price": 30,
+        "in_stock": true,
+        "slug": "ghk-cu-50mg",
+        "image_url": ""
+      },
+      "slug": "ghk-cu-50mg"
+    },
+    {
+      "name": "Kisspeptin-10",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "C-terminal decapeptide of kisspeptin.",
+      "long_desc": "Kisspeptin-10 is a synthetic decapeptide corresponding to the C-terminal 10 amino acids of full-length kisspeptin, available as a lyophilized powder for laboratory research.",
+      "sort_order": 540,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "KS5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 50,
+          "in_stock": true,
+          "slug": "kisspeptin-10-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "KS10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 80,
+          "in_stock": true,
+          "slug": "kisspeptin-10-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "KS5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 50,
+        "in_stock": true,
+        "slug": "kisspeptin-10-5mg",
+        "image_url": ""
+      },
+      "slug": "kisspeptin-10-5mg"
+    },
+    {
+      "name": "MOTS-c",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "16-amino acid mitochondrial-derived peptide.",
+      "long_desc": "MOTS-c is a 16-amino acid mitochondrial-derived peptide (MDP) encoded within the mitochondrial 12S rRNA gene, available as a lyophilized powder for laboratory research.",
+      "sort_order": 560,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "MS10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 55,
+          "in_stock": true,
+          "slug": "mots-c-10mg",
+          "image_url": ""
+        },
+        {
+          "sku": "MS20",
+          "vial_label": "20mg",
+          "vial_mg": 20,
+          "base_price": 90,
+          "in_stock": true,
+          "slug": "mots-c-20mg",
+          "image_url": ""
+        },
+        {
+          "sku": "MS40",
+          "vial_label": "40mg",
+          "vial_mg": 40,
+          "base_price": 150,
+          "in_stock": true,
+          "slug": "mots-c-40mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "MS10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 55,
+        "in_stock": true,
+        "slug": "mots-c-10mg",
+        "image_url": ""
+      },
+      "slug": "mots-c-10mg"
+    },
+    {
+      "name": "LL-37",
+      "featured": false,
+      "category_primary": "Gut / Immune",
+      "categories": [
+        "Gut / Immune"
+      ],
+      "short_desc": "C-terminal fragment of human cathelicidin hCAP18.",
+      "long_desc": "LL-37 is a 37-amino acid peptide corresponding to the C-terminal portion of human cathelicidin (hCAP18), available as a lyophilized powder for laboratory research.",
+      "sort_order": 590,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "375",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 75,
+          "in_stock": true,
+          "slug": "ll-37-5mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "375",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 75,
+        "in_stock": true,
+        "slug": "ll-37-5mg",
+        "image_url": ""
+      },
+      "slug": "ll-37-5mg"
+    },
+    {
+      "name": "5-Amino-1MQ",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Small-molecule NNMT inhibitor.",
+      "long_desc": "5-Amino-1MQ is a small-molecule compound and NNMT inhibitor available in lyophilized form for laboratory research.",
+      "sort_order": 600,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "5AM",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "5-amino-1mq-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "50AM",
+          "vial_label": "50mg",
+          "vial_mg": 50,
+          "base_price": 100,
+          "in_stock": true,
+          "slug": "5-amino-1mq-50mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "5AM",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 40,
+        "in_stock": true,
+        "slug": "5-amino-1mq-5mg",
+        "image_url": ""
+      },
+      "slug": "5-amino-1mq-5mg"
+    },
+    {
+      "name": "Pinealon",
+      "featured": false,
+      "category_primary": "Gut / Immune",
+      "categories": [
+        "Gut / Immune"
+      ],
+      "short_desc": "Synthetic Glu-Asp-Arg tripeptide (Khavinson class).",
+      "long_desc": "Pinealon is a synthetic tripeptide (Glu-Asp-Arg / EDR) in the Khavinson peptide class, available as a lyophilized powder for laboratory research.",
+      "sort_order": 620,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "PI5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "pinealon-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "PI10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 60,
+          "in_stock": true,
+          "slug": "pinealon-10mg",
+          "image_url": ""
+        },
+        {
+          "sku": "PI20",
+          "vial_label": "20mg",
+          "vial_mg": 20,
+          "base_price": 80,
+          "in_stock": true,
+          "slug": "pinealon-20mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "PI5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 40,
+        "in_stock": true,
+        "slug": "pinealon-5mg",
+        "image_url": ""
+      },
+      "slug": "pinealon-5mg"
+    },
+    {
+      "name": "PNC-27",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "Synthetic p53-derived research peptide.",
+      "long_desc": "PNC-27 is a synthetic peptide studied in laboratory models, available as a lyophilized powder for research use only.",
+      "sort_order": 650,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "PN5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 80,
+          "in_stock": true,
+          "slug": "pnc-27-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "PN10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 125,
+          "in_stock": true,
+          "slug": "pnc-27-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "PN5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 80,
+        "in_stock": true,
+        "slug": "pnc-27-5mg",
+        "image_url": ""
+      },
+      "slug": "pnc-27-5mg"
+    },
+    {
+      "name": "Cagrilintide 2.5mg + Semaglutide 2.5mg",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Cagrilintide plus semaglutide blend.",
+      "long_desc": "Cagrilintide + Semaglutide Blend combines two synthetic acylated peptides for laboratory research.",
+      "sort_order": 670,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "CS5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 90,
+          "in_stock": true,
+          "slug": "cagrilintide-2-5mg-semaglutide-2-5mg-5mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "CS5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 90,
+        "in_stock": true,
+        "slug": "cagrilintide-2-5mg-semaglutide-2-5mg-5mg",
+        "image_url": ""
+      },
+      "slug": "cagrilintide-2-5mg-semaglutide-2-5mg-5mg"
+    },
+    {
+      "name": "Cagrilintide 5mg + Semaglutide 5mg",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Cagrilintide plus semaglutide blend.",
+      "long_desc": "Cagrilintide + Semaglutide Blend combines two synthetic acylated peptides for laboratory research.",
+      "sort_order": 680,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "CS10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 135,
+          "in_stock": true,
+          "slug": "cagrilintide-5mg-semaglutide-5mg-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "CS10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 135,
+        "in_stock": true,
+        "slug": "cagrilintide-5mg-semaglutide-5mg-10mg",
+        "image_url": ""
+      },
+      "slug": "cagrilintide-5mg-semaglutide-5mg-10mg"
+    },
+    {
+      "name": "Cagrilintide",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Dual amylin and calcitonin receptor agonist (DACRA).",
+      "long_desc": "Cagrilintide is a synthetic 39-amino acid acylated peptide analog classified as a dual amylin and calcitonin receptor agonist (DACRA), available as a lyophilized powder for laboratory research.",
+      "sort_order": 690,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "CGL5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 110,
+          "in_stock": true,
+          "slug": "cagrilintide-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "CGL10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 160,
+          "in_stock": true,
+          "slug": "cagrilintide-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "CGL5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 110,
+        "in_stock": true,
+        "slug": "cagrilintide-5mg",
+        "image_url": ""
+      },
+      "slug": "cagrilintide-5mg"
+    },
+    {
+      "name": "Glutathione",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Tripeptide antioxidant cofactor (GSH).",
+      "long_desc": "Glutathione is a tripeptide (gamma-L-glutamyl-L-cysteinyl-glycine) with a characteristic gamma peptide linkage, available as a lyophilized powder for laboratory research.",
+      "sort_order": 710,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "GT600",
+          "vial_label": "600mg",
+          "vial_mg": 600,
+          "base_price": 50,
+          "in_stock": true,
+          "slug": "glutathione-600mg",
+          "image_url": ""
+        },
+        {
+          "sku": "GT1500",
+          "vial_label": "1500mg",
+          "vial_mg": 1500,
+          "base_price": 70,
+          "in_stock": true,
+          "slug": "glutathione-1500mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "GT600",
+        "vial_label": "600mg",
+        "vial_mg": 600,
+        "base_price": 50,
+        "in_stock": true,
+        "slug": "glutathione-600mg",
+        "image_url": ""
+      },
+      "slug": "glutathione-600mg"
+    },
+    {
+      "name": "HMG",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Human menopausal gonadotropin research material.",
+      "long_desc": "HMG is supplied as a lyophilized research material for laboratory use only.",
+      "sort_order": 730,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "G75",
+          "vial_label": "75iu",
+          "vial_mg": 75,
+          "base_price": 60,
+          "in_stock": true,
+          "slug": "hmg-75iu",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "G75",
+        "vial_label": "75iu",
+        "vial_mg": 75,
+        "base_price": 60,
+        "in_stock": true,
+        "slug": "hmg-75iu",
+        "image_url": ""
+      },
+      "slug": "hmg-75iu"
+    },
+    {
+      "name": "GHRP-6 Acetate",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Synthetic hexapeptide ghrelin receptor agonist.",
+      "long_desc": "GHRP-6 is a synthetic hexapeptide classified as a growth hormone secretagogue and ghrelin receptor agonist, available as a lyophilized powder for laboratory research.",
+      "sort_order": 740,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "G610",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 75,
+          "in_stock": true,
+          "slug": "ghrp-6-acetate-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "G610",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 75,
+        "in_stock": true,
+        "slug": "ghrp-6-acetate-10mg",
+        "image_url": ""
+      },
+      "slug": "ghrp-6-acetate-10mg"
+    },
+    {
+      "name": "BPC-157 10mg + GHK-Cu 50mg + TB-500 10mg + KPV 10mg",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery",
+        "Gut / Immune"
+      ],
+      "short_desc": "Four-peptide KLOW-style blend.",
+      "long_desc": "Lyophilized blend of BPC-157, GHK-Cu, TB-500, and KPV for laboratory research.",
+      "sort_order": 750,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "KLOW80",
+          "vial_label": "80mg",
+          "vial_mg": 80,
+          "base_price": 170,
+          "in_stock": true,
+          "slug": "bpc-157-10mg-ghk-cu-50mg-tb-500-10mg-kpv-10mg-80mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "KLOW80",
+        "vial_label": "80mg",
+        "vial_mg": 80,
+        "base_price": 170,
+        "in_stock": true,
+        "slug": "bpc-157-10mg-ghk-cu-50mg-tb-500-10mg-kpv-10mg-80mg",
+        "image_url": ""
+      },
+      "slug": "bpc-157-10mg-ghk-cu-50mg-tb-500-10mg-kpv-10mg-80mg"
+    },
+    {
+      "name": "BPC-157 10mg + GHK-Cu 50mg + KPV 10mg",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery",
+        "Gut / Immune"
+      ],
+      "short_desc": "BPC-157, GHK-Cu, and KPV blend.",
+      "long_desc": "Lyophilized blend of BPC-157, GHK-Cu, and KPV for laboratory research.",
+      "sort_order": 760,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "GKP70",
+          "vial_label": "70mg",
+          "vial_mg": 70,
+          "base_price": 110,
+          "in_stock": true,
+          "slug": "bpc-157-10mg-ghk-cu-50mg-kpv-10mg-70mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "GKP70",
+        "vial_label": "70mg",
+        "vial_mg": 70,
+        "base_price": 110,
+        "in_stock": true,
+        "slug": "bpc-157-10mg-ghk-cu-50mg-kpv-10mg-70mg",
+        "image_url": ""
+      },
+      "slug": "bpc-157-10mg-ghk-cu-50mg-kpv-10mg-70mg"
+    },
+    {
+      "name": "BPC-157 10mg + GHK-Cu 50mg + TB-500 10mg",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery",
+        "Gut / Immune"
+      ],
+      "short_desc": "GLOW-style three-peptide blend.",
+      "long_desc": "Glow is a lyophilized formulation containing BPC-157 (10mg), GHK-Cu (50mg), and TB-500 (10mg) for laboratory research.",
+      "sort_order": 770,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "BBG70",
+          "vial_label": "70mg",
+          "vial_mg": 70,
+          "base_price": 150,
+          "in_stock": true,
+          "slug": "bpc-157-10mg-ghk-cu-50mg-tb-500-10mg-70mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "BBG70",
+        "vial_label": "70mg",
+        "vial_mg": 70,
+        "base_price": 150,
+        "in_stock": true,
+        "slug": "bpc-157-10mg-ghk-cu-50mg-tb-500-10mg-70mg",
+        "image_url": ""
+      },
+      "slug": "bpc-157-10mg-ghk-cu-50mg-tb-500-10mg-70mg"
+    },
+    {
+      "name": "Thymosin Alpha-1",
+      "featured": false,
+      "category_primary": "Gut / Immune",
+      "categories": [
+        "Gut / Immune"
+      ],
+      "short_desc": "28-amino acid synthetic thymic peptide.",
+      "long_desc": "Thymosin Alpha-1 is a 28-amino acid synthetic peptide corresponding to the natural thymic peptide sequence, available as a lyophilized powder for laboratory research.",
+      "sort_order": 780,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "TA5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 75,
+          "in_stock": true,
+          "slug": "thymosin-alpha-1-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "TA10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 135,
+          "in_stock": true,
+          "slug": "thymosin-alpha-1-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "TA5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 75,
+        "in_stock": true,
+        "slug": "thymosin-alpha-1-5mg",
+        "image_url": ""
+      },
+      "slug": "thymosin-alpha-1-5mg"
+    },
+    {
+      "name": "NAD+",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Nicotinamide adenine dinucleotide coenzyme.",
+      "long_desc": "NAD+ (Nicotinamide Adenine Dinucleotide) is a dinucleotide coenzyme, available as a lyophilized powder for laboratory research.",
+      "sort_order": 800,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "NJ100",
+          "vial_label": "100mg",
+          "vial_mg": 100,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "nad-100mg",
+          "image_url": ""
+        },
+        {
+          "sku": "NJ500",
+          "vial_label": "500mg",
+          "vial_mg": 500,
+          "base_price": 60,
+          "in_stock": true,
+          "slug": "nad-500mg",
+          "image_url": ""
+        },
+        {
+          "sku": "NJ1000",
+          "vial_label": "1000mg",
+          "vial_mg": 1000,
+          "base_price": 130,
+          "in_stock": true,
+          "slug": "nad-1000mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "NJ100",
+        "vial_label": "100mg",
+        "vial_mg": 100,
+        "base_price": 40,
+        "in_stock": true,
+        "slug": "nad-100mg",
+        "image_url": ""
+      },
+      "slug": "nad-100mg"
+    },
+    {
+      "name": "KPV",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery",
+        "Gut / Immune"
+      ],
+      "short_desc": "Lys-Pro-Val C-terminal fragment of a-MSH.",
+      "long_desc": "KPV is a synthetic tripeptide (Lys-Pro-Val) corresponding to the C-terminal fragment of a-MSH, available as a lyophilized powder for laboratory research.",
+      "sort_order": 830,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "KPV5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "kpv-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "KPV10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 55,
+          "in_stock": true,
+          "slug": "kpv-10mg",
+          "image_url": ""
+        },
+        {
+          "sku": "KPV30",
+          "vial_label": "30mg",
+          "vial_mg": 30,
+          "base_price": 90,
+          "in_stock": true,
+          "slug": "kpv-30mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "KPV5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 40,
+        "in_stock": true,
+        "slug": "kpv-5mg",
+        "image_url": ""
+      },
+      "slug": "kpv-5mg"
+    },
+    {
+      "name": "ARA-290",
+      "featured": false,
+      "category_primary": "Gut / Immune",
+      "categories": [
+        "Gut / Immune"
+      ],
+      "short_desc": "11-amino acid EPO helix-B peptide.",
+      "long_desc": "ARA-290 is a synthetic 11-amino acid peptide derived from the helix B surface region of erythropoietin (EPO), available as a lyophilized powder for laboratory research.",
+      "sort_order": 860,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "RA10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 60,
+          "in_stock": true,
+          "slug": "ara-290-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "RA10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 60,
+        "in_stock": true,
+        "slug": "ara-290-10mg",
+        "image_url": ""
+      },
+      "slug": "ara-290-10mg"
+    },
+    {
+      "name": "SNAP-8",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "Synthetic octapeptide used in cosmetic-chemistry research.",
+      "long_desc": "SNAP-8 is a synthetic octapeptide supplied as a lyophilized powder for laboratory research.",
+      "sort_order": 870,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "NP810",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "snap-8-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "NP810",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 40,
+        "in_stock": true,
+        "slug": "snap-8-10mg",
+        "image_url": ""
+      },
+      "slug": "snap-8-10mg"
+    },
+    {
+      "name": "Survodutide",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Dual glucagon/GLP-1 receptor agonist research analog.",
+      "long_desc": "Survodutide is a dual glucagon and GLP-1 receptor agonist analog, available as a lyophilized powder for laboratory research.",
+      "sort_order": 880,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "SUR10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 235,
+          "in_stock": true,
+          "slug": "survodutide-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "SUR10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 235,
+        "in_stock": true,
+        "slug": "survodutide-10mg",
+        "image_url": ""
+      },
+      "slug": "survodutide-10mg"
+    },
+    {
+      "name": "IGF-1 LR3",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Long Arg3 IGF-1 analog (83 amino acids).",
+      "long_desc": "IGF-1 LR3 is an 83-amino acid synthetic analog of human IGF-1 with N-terminal extension and Arg3 substitution, available as a lyophilized powder for laboratory research.",
+      "sort_order": 890,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "IG01",
+          "vial_label": "0.1mg",
+          "vial_mg": 0.1,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "igf-1-lr3-0-1mg",
+          "image_url": ""
+        },
+        {
+          "sku": "IG1",
+          "vial_label": "1mg",
+          "vial_mg": 1,
+          "base_price": 170,
+          "in_stock": true,
+          "slug": "igf-1-lr3-1mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "IG01",
+        "vial_label": "0.1mg",
+        "vial_mg": 0.1,
+        "base_price": 40,
+        "in_stock": true,
+        "slug": "igf-1-lr3-0-1mg",
+        "image_url": ""
+      },
+      "slug": "igf-1-lr3-0-1mg"
+    },
+    {
+      "name": "VIP",
+      "featured": false,
+      "category_primary": "Gut / Immune",
+      "categories": [
+        "Gut / Immune"
+      ],
+      "short_desc": "Vasoactive intestinal peptide (aviptadil sequence).",
+      "long_desc": "Aviptadil is a synthetic 28-amino acid peptide identical to human vasoactive intestinal peptide (VIP), available as a lyophilized powder for laboratory research.",
+      "sort_order": 910,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "VIP5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 70,
+          "in_stock": true,
+          "slug": "vip-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "VIP10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 130,
+          "in_stock": true,
+          "slug": "vip-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "VIP5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 70,
+        "in_stock": true,
+        "slug": "vip-5mg",
+        "image_url": ""
+      },
+      "slug": "vip-5mg"
+    },
+    {
+      "name": "Ipamorelin",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Selective ghrelin-receptor GHRP analog.",
+      "long_desc": "Ipamorelin is a synthetic pentapeptide growth hormone secretagogue, available as a lyophilized powder for laboratory research.",
+      "sort_order": 930,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "IP5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "ipamorelin-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "IP10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 65,
+          "in_stock": true,
+          "slug": "ipamorelin-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "IP5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 40,
+        "in_stock": true,
+        "slug": "ipamorelin-5mg",
+        "image_url": ""
+      },
+      "slug": "ipamorelin-5mg"
+    },
+    {
+      "name": "Vitamin B12",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "Vitamin B12 laboratory solution.",
+      "long_desc": "Vitamin B12 solution supplied for laboratory preparation use.",
+      "sort_order": 950,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "B12",
+          "vial_label": "10ml",
+          "vial_mg": 10,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "vitamin-b12-10ml",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "B12",
+        "vial_label": "10ml",
+        "vial_mg": 10,
+        "base_price": 40,
+        "in_stock": true,
+        "slug": "vitamin-b12-10ml",
+        "image_url": ""
+      },
+      "slug": "vitamin-b12-10ml"
+    },
+    {
+      "name": "Thymalin",
+      "featured": false,
+      "category_primary": "Gut / Immune",
+      "categories": [
+        "Gut / Immune"
+      ],
+      "short_desc": "Thymic bioregulator peptide.",
+      "long_desc": "Thymalin is a thymic peptide bioregulator supplied as a lyophilized powder for laboratory research.",
+      "sort_order": 960,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "TY10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 60,
+          "in_stock": true,
+          "slug": "thymalin-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "TY10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 60,
+        "in_stock": true,
+        "slug": "thymalin-10mg",
+        "image_url": ""
+      },
+      "slug": "thymalin-10mg"
+    },
+    {
+      "name": "DSIP",
+      "featured": false,
+      "category_primary": "Gut / Immune",
+      "categories": [
+        "Gut / Immune"
+      ],
+      "short_desc": "Delta sleep-inducing nonapeptide.",
+      "long_desc": "DSIP (Delta Sleep-Inducing Peptide) is a synthetic nonapeptide with the sequence Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu, available as a lyophilized powder for laboratory research.",
+      "sort_order": 970,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "DS5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "dsip-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "DS10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 60,
+          "in_stock": true,
+          "slug": "dsip-10mg",
+          "image_url": ""
+        },
+        {
+          "sku": "DS15",
+          "vial_label": "15mg",
+          "vial_mg": 15,
+          "base_price": 80,
+          "in_stock": true,
+          "slug": "dsip-15mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "DS5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 40,
+        "in_stock": true,
+        "slug": "dsip-5mg",
+        "image_url": ""
+      },
+      "slug": "dsip-5mg"
+    },
+    {
+      "name": "Bacteriostatic water",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "Sterile water with 0.9% benzyl alcohol.",
+      "long_desc": "Bacteriostatic Water is sterile water containing 0.9% benzyl alcohol as preservative, intended as a diluent for laboratory applications.",
+      "sort_order": 1030,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "WA3",
+          "vial_label": "3ml",
+          "vial_mg": 3,
+          "base_price": 10,
+          "in_stock": true,
+          "slug": "bacteriostatic-water-3ml",
+          "image_url": ""
+        },
+        {
+          "sku": "WA10",
+          "vial_label": "10ml",
+          "vial_mg": 10,
+          "base_price": 15,
+          "in_stock": true,
+          "slug": "bacteriostatic-water-10ml",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "WA3",
+        "vial_label": "3ml",
+        "vial_mg": 3,
+        "base_price": 10,
+        "in_stock": true,
+        "slug": "bacteriostatic-water-3ml",
+        "image_url": ""
+      },
+      "slug": "bacteriostatic-water-3ml"
+    },
+    {
+      "name": "Benzyl alcohol 0.9% water",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "Sterile water with 0.9% benzyl alcohol.",
+      "long_desc": "Bacteriostatic Water is sterile water containing 0.9% benzyl alcohol as preservative, intended as a diluent for laboratory applications.",
+      "sort_order": 1050,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "BA3",
+          "vial_label": "3ml",
+          "vial_mg": 3,
+          "base_price": 10,
+          "in_stock": true,
+          "slug": "benzyl-alcohol-0-9-water-3ml",
+          "image_url": ""
+        },
+        {
+          "sku": "BA10",
+          "vial_label": "10ml",
+          "vial_mg": 10,
+          "base_price": 15,
+          "in_stock": true,
+          "slug": "benzyl-alcohol-0-9-water-10ml",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "BA3",
+        "vial_label": "3ml",
+        "vial_mg": 3,
+        "base_price": 10,
+        "in_stock": true,
+        "slug": "benzyl-alcohol-0-9-water-3ml",
+        "image_url": ""
+      },
+      "slug": "benzyl-alcohol-0-9-water-3ml"
+    },
+    {
+      "name": "Acetic acid water 0.6%",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "0.6% acetic acid laboratory diluent.",
+      "long_desc": "Acetic Acid 0.6% is a high-purity diluent commonly used for precise preparation and stabilization of various lab materials.",
+      "sort_order": 1070,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "AA3",
+          "vial_label": "3ml",
+          "vial_mg": 3,
+          "base_price": 10,
+          "in_stock": true,
+          "slug": "acetic-acid-water-0-6-3ml",
+          "image_url": ""
+        },
+        {
+          "sku": "AA10",
+          "vial_label": "10ml",
+          "vial_mg": 10,
+          "base_price": 15,
+          "in_stock": true,
+          "slug": "acetic-acid-water-0-6-10ml",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "AA3",
+        "vial_label": "3ml",
+        "vial_mg": 3,
+        "base_price": 10,
+        "in_stock": true,
+        "slug": "acetic-acid-water-0-6-3ml",
+        "image_url": ""
+      },
+      "slug": "acetic-acid-water-0-6-3ml"
+    },
+    {
+      "name": "Adipotide",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Chimeric targeting/proapoptotic research peptide.",
+      "long_desc": "Adipotide is a synthetic chimeric peptide consisting of a targeting sequence linked to a proapoptotic motif, available as a lyophilized powder for laboratory research.",
+      "sort_order": 1090,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "AP5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 125,
+          "in_stock": true,
+          "slug": "adipotide-5mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "AP5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 125,
+        "in_stock": true,
+        "slug": "adipotide-5mg",
+        "image_url": ""
+      },
+      "slug": "adipotide-5mg"
+    },
+    {
+      "name": "Mazdutide",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Dual GLP-1/glucagon receptor agonist research analog.",
+      "long_desc": "Mazdutide is a dual GLP-1 and glucagon receptor agonist analog, available as a lyophilized powder for laboratory research.",
+      "sort_order": 1100,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "MZ10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 160,
+          "in_stock": true,
+          "slug": "mazdutide-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "MZ10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 160,
+        "in_stock": true,
+        "slug": "mazdutide-10mg",
+        "image_url": ""
+      },
+      "slug": "mazdutide-10mg"
+    },
+    {
+      "name": "FOXO4-DRI",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "D-retro-inverso FOXO4 research peptide.",
+      "long_desc": "FOXO4-DRI is a synthetic D-retro-inverso peptide based on the FOXO4 transcription factor sequence, available as a lyophilized powder for laboratory research.",
+      "sort_order": 1120,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "F410",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 295,
+          "in_stock": true,
+          "slug": "foxo4-dri-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "F410",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 295,
+        "in_stock": true,
+        "slug": "foxo4-dri-10mg",
+        "image_url": ""
+      },
+      "slug": "foxo4-dri-10mg"
+    },
+    {
+      "name": "PE-22-28",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "Synthetic nootropic research peptide.",
+      "long_desc": "PE-22-28 is a synthetic peptide supplied as a lyophilized powder for laboratory research.",
+      "sort_order": 1130,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "PE10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 70,
+          "in_stock": true,
+          "slug": "pe-22-28-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "PE10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 70,
+        "in_stock": true,
+        "slug": "pe-22-28-10mg",
+        "image_url": ""
+      },
+      "slug": "pe-22-28-10mg"
+    },
+    {
+      "name": "GHK-Cu 100mg + KPV 10mg",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery",
+        "Gut / Immune"
+      ],
+      "short_desc": "GHK-Cu and KPV blend.",
+      "long_desc": "Lyophilized blend of GHK-Cu and KPV for laboratory research.",
+      "sort_order": 1140,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "GK110",
+          "vial_label": "110mg",
+          "vial_mg": 110,
+          "base_price": 105,
+          "in_stock": true,
+          "slug": "ghk-cu-100mg-kpv-10mg-110mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "GK110",
+        "vial_label": "110mg",
+        "vial_mg": 110,
+        "base_price": 105,
+        "in_stock": true,
+        "slug": "ghk-cu-100mg-kpv-10mg-110mg",
+        "image_url": ""
+      },
+      "slug": "ghk-cu-100mg-kpv-10mg-110mg"
+    },
+    {
+      "name": "Testagen",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "Short bioregulator peptide.",
+      "long_desc": "Testagen is a short synthetic bioregulator peptide, available as a lyophilized powder for laboratory research.",
+      "sort_order": 1160,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "TE10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 70,
+          "in_stock": true,
+          "slug": "testagen-10mg",
+          "image_url": ""
+        },
+        {
+          "sku": "TE20",
+          "vial_label": "20mg",
+          "vial_mg": 20,
+          "base_price": 90,
+          "in_stock": true,
+          "slug": "testagen-20mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "TE10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 70,
+        "in_stock": true,
+        "slug": "testagen-10mg",
+        "image_url": ""
+      },
+      "slug": "testagen-10mg"
+    },
+    {
+      "name": "Eloralintide",
+      "featured": false,
+      "category_primary": "Metabolic",
+      "categories": [
+        "Metabolic"
+      ],
+      "short_desc": "Selective amylin receptor agonist analog.",
+      "long_desc": "Eloralintide is a synthetic 37-amino acid acylated analog of human amylin, classified as a selective amylin receptor agonist, available as a lyophilized powder for laboratory research.",
+      "sort_order": 1180,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "ELO5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 180,
+          "in_stock": true,
+          "slug": "eloralintide-5mg",
+          "image_url": ""
+        },
+        {
+          "sku": "ELO10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 300,
+          "in_stock": true,
+          "slug": "eloralintide-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "ELO5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 180,
+        "in_stock": true,
+        "slug": "eloralintide-5mg",
+        "image_url": ""
+      },
+      "slug": "eloralintide-5mg"
+    }
+  ]
 }
