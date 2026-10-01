@@ -592,3 +592,37 @@ footer {
 .policy-links a { color: #93c5fd; }
 .gate-list { padding-left: 18px; color: var(--muted); display: grid; gap: 10px; font-size: 14px; }
 .gate-list strong { color: #fff; }
+.modal-bg.gate {
+  align-items: stretch;
+  padding: 12px;
+}
+.modal-bg.gate .modal {
+  width: min(520px, 100%);
+  max-height: calc(100dvh - 24px);
+  overflow: auto;
+  padding: 16px 16px 12px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-bg.gate h2 {
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 8px 0 10px;
+}
+.modal-bg.gate .gate-list {
+  gap: 8px;
+  font-size: 13px;
+}
+.modal-bg.gate .btn {
+  flex-shrink: 0;
+}
+
+@media (max-width: 560px) {
+  .modal-bg.gate .modal {
+    max-height: 100dvh;
+    border-radius: 14px;
+  }
+  .modal-bg.gate h2 {
+    font-size: 16px;
+  }
+}
