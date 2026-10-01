@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T22:12:45.227Z",
+  "updated": "2026-10-01T22:28:06.201Z",
   "products": [
     {
       "name": "GLP-1S-MAGLUTIDE",
@@ -254,7 +254,7 @@
       "short_desc": "Synthetic alpha-MSH analog.",
       "long_desc": "Melanotan 1 is a synthetic analog of alpha-melanocyte stimulating hormone, available as a lyophilized powder for laboratory research.",
       "sort_order": 210,
-      "image_url": "",
+      "image_url": "assets/vial-mt-2-melanotan-2-acetate-10mg.png",
       "sizes": [
         {
           "sku": "MT1",
@@ -263,7 +263,7 @@
           "base_price": 45,
           "in_stock": true,
           "slug": "mt-1-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-mt-2-melanotan-2-acetate-10mg.png"
         }
       ],
       "default_size": {
@@ -273,7 +273,7 @@
         "base_price": 45,
         "in_stock": true,
         "slug": "mt-1-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-mt-2-melanotan-2-acetate-10mg.png"
       },
       "slug": "mt-1-5mg"
     },
@@ -287,7 +287,7 @@
       "short_desc": "Synthetic cyclic heptapeptide analog of a-MSH.",
       "long_desc": "Melanotan 2 is a synthetic cyclic heptapeptide analog of a-MSH, available as a lyophilized powder for laboratory research.",
       "sort_order": 220,
-      "image_url": "",
+      "image_url": "assets/vial-nad-plus-1000mg.png",
       "sizes": [
         {
           "sku": "ML10",
@@ -296,7 +296,7 @@
           "base_price": 45,
           "in_stock": true,
           "slug": "mt-2-acetate-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-nad-plus-1000mg.png"
         }
       ],
       "default_size": {
@@ -306,7 +306,7 @@
         "base_price": 45,
         "in_stock": true,
         "slug": "mt-2-acetate-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-nad-plus-1000mg.png"
       },
       "slug": "mt-2-acetate-10mg"
     },
@@ -320,7 +320,7 @@
       "short_desc": "Synthetic melanocortin receptor agonist.",
       "long_desc": "PT-141 (bremelanotide analog) is a synthetic melanocortin peptide, available as a lyophilized powder for laboratory research.",
       "sort_order": 230,
-      "image_url": "",
+      "image_url": "assets/vial-pt-141-10mg.png",
       "sizes": [
         {
           "sku": "P41",
@@ -329,7 +329,7 @@
           "base_price": 50,
           "in_stock": true,
           "slug": "pt-141-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-pt-141-10mg.png"
         }
       ],
       "default_size": {
@@ -339,7 +339,7 @@
         "base_price": 50,
         "in_stock": true,
         "slug": "pt-141-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-pt-141-10mg.png"
       },
       "slug": "pt-141-10mg"
     },
@@ -353,7 +353,7 @@
       "short_desc": "Synthetic tuftsin analog studied in CNS signaling models.",
       "long_desc": "Selank is a synthetic peptide analog investigated in neurotransmitter and cognitive-signaling research, available as a lyophilized powder for laboratory research.",
       "sort_order": 240,
-      "image_url": "",
+      "image_url": "assets/vial-selank-5mg.png",
       "sizes": [
         {
           "sku": "SK5",
@@ -362,7 +362,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "selank-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-selank-5mg.png"
         },
         {
           "sku": "SK10",
@@ -371,7 +371,7 @@
           "base_price": 55,
           "in_stock": true,
           "slug": "selank-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-selank-10mg.png"
         }
       ],
       "default_size": {
@@ -381,7 +381,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "selank-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-selank-5mg.png"
       },
       "slug": "selank-5mg"
     },
@@ -395,7 +395,7 @@
       "short_desc": "Cyclic nonapeptide with a cysteine disulfide bridge.",
       "long_desc": "Oxytocin is a cyclic nonapeptide with a disulfide bridge between cysteine residues, available as a lyophilized powder for laboratory research.",
       "sort_order": 260,
-      "image_url": "",
+      "image_url": "assets/vial-oxytocin-acetate-2mg.png",
       "sizes": [
         {
           "sku": "OT2",
@@ -404,7 +404,7 @@
           "base_price": 30,
           "in_stock": true,
           "slug": "oxytocin-acetate-2mg",
-          "image_url": ""
+          "image_url": "assets/vial-oxytocin-acetate-2mg.png"
         }
       ],
       "default_size": {
@@ -414,7 +414,7 @@
         "base_price": 30,
         "in_stock": true,
         "slug": "oxytocin-acetate-2mg",
-        "image_url": ""
+        "image_url": "assets/vial-oxytocin-acetate-2mg.png"
       },
       "slug": "oxytocin-acetate-2mg"
     },
@@ -522,7 +522,7 @@
       "short_desc": "Thymosin Beta-4 fragment used in tissue-repair research.",
       "long_desc": "TB-500 is the common research-market name for Thymosin Beta-4 (Tb4), a 43-amino-acid peptide, available as a lyophilized powder for laboratory research.",
       "sort_order": 320,
-      "image_url": "",
+      "image_url": "assets/vial-tb500-5mg.png",
       "sizes": [
         {
           "sku": "BT5",
@@ -531,7 +531,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "tb-500-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-tb500-5mg.png"
         },
         {
           "sku": "BT10",
@@ -540,7 +540,7 @@
           "base_price": 130,
           "in_stock": true,
           "slug": "tb-500-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-tb500-10mg.png"
         }
       ],
       "default_size": {
@@ -550,7 +550,7 @@
         "base_price": 80,
         "in_stock": true,
         "slug": "tb-500-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-tb500-5mg.png"
       },
       "slug": "tb-500-5mg"
     },
@@ -607,7 +607,7 @@
       "short_desc": "Synthetic ACTH(4-10) analog studied in neuro research.",
       "long_desc": "Semax is a synthetic peptide analog derived from ACTH(4-10), available as a lyophilized powder for laboratory research.",
       "sort_order": 360,
-      "image_url": "",
+      "image_url": "assets/vial-semax-5mg.png",
       "sizes": [
         {
           "sku": "XA5",
@@ -616,7 +616,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "semax-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-semax-5mg.png"
         },
         {
           "sku": "XA10",
@@ -625,7 +625,7 @@
           "base_price": 50,
           "in_stock": true,
           "slug": "semax-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-semax-10mg.png"
         }
       ],
       "default_size": {
@@ -635,7 +635,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "semax-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-semax-5mg.png"
       },
       "slug": "semax-5mg"
     },
@@ -649,7 +649,7 @@
       "short_desc": "Mitochondrial Szeto-Schiller tetrapeptide (elamipretide analog).",
       "long_desc": "SS-31 (Elamipretide) is a synthetic tetrapeptide of the Szeto-Schiller family, available as a lyophilized powder for laboratory research.",
       "sort_order": 380,
-      "image_url": "",
+      "image_url": "assets/vial-ss-31-10mg.png",
       "sizes": [
         {
           "sku": "2S10",
@@ -658,7 +658,7 @@
           "base_price": 70,
           "in_stock": true,
           "slug": "ss-31-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-ss-31-10mg.png"
         },
         {
           "sku": "2S50",
@@ -667,7 +667,7 @@
           "base_price": 265,
           "in_stock": true,
           "slug": "ss-31-50mg",
-          "image_url": ""
+          "image_url": "assets/vial-ss-31-50mg.png"
         }
       ],
       "default_size": {
@@ -677,7 +677,7 @@
         "base_price": 70,
         "in_stock": true,
         "slug": "ss-31-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-ss-31-10mg.png"
       },
       "slug": "ss-31-10mg"
     },
@@ -808,7 +808,7 @@
       "short_desc": "Synthetic GHRH(1-29) analog.",
       "long_desc": "Sermorelin Acetate is a synthetic GHRH fragment, available as a lyophilized powder for laboratory research.",
       "sort_order": 450,
-      "image_url": "",
+      "image_url": "assets/vial-sermorelin-acetate-5mg.png",
       "sizes": [
         {
           "sku": "SMO5",
@@ -817,7 +817,7 @@
           "base_price": 60,
           "in_stock": true,
           "slug": "sermorelin-acetate-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-sermorelin-acetate-5mg.png"
         },
         {
           "sku": "SMO10",
@@ -826,7 +826,7 @@
           "base_price": 95,
           "in_stock": true,
           "slug": "sermorelin-acetate-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-sermorelin-acetate-10mg.png"
         }
       ],
       "default_size": {
@@ -836,7 +836,7 @@
         "base_price": 60,
         "in_stock": true,
         "slug": "sermorelin-acetate-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-sermorelin-acetate-5mg.png"
       },
       "slug": "sermorelin-acetate-5mg"
     },
@@ -934,7 +934,7 @@
       "short_desc": "GHRH(1-44) with N-terminal trans-3-hexenoic acid.",
       "long_desc": "Tesamorelin is a synthetic 44-amino acid peptide consisting of GHRH(1-44) with N-terminal trans-3-hexenoic acid modification, available as a lyophilized powder for laboratory research.",
       "sort_order": 510,
-      "image_url": "",
+      "image_url": "assets/vial-tesamorelin-10mg.png",
       "sizes": [
         {
           "sku": "TSM10",
@@ -943,7 +943,7 @@
           "base_price": 140,
           "in_stock": true,
           "slug": "tesamorelin-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-tesamorelin-10mg.png"
         }
       ],
       "default_size": {
@@ -953,7 +953,7 @@
         "base_price": 140,
         "in_stock": true,
         "slug": "tesamorelin-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-tesamorelin-10mg.png"
       },
       "slug": "tesamorelin-10mg"
     },
@@ -1051,7 +1051,7 @@
       "short_desc": "16-amino acid mitochondrial-derived peptide.",
       "long_desc": "MOTS-c is a 16-amino acid mitochondrial-derived peptide (MDP) encoded within the mitochondrial 12S rRNA gene, available as a lyophilized powder for laboratory research.",
       "sort_order": 560,
-      "image_url": "",
+      "image_url": "assets/vial-mots-c-10mg.png",
       "sizes": [
         {
           "sku": "MS10",
@@ -1060,7 +1060,7 @@
           "base_price": 55,
           "in_stock": true,
           "slug": "mots-c-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-mots-c-10mg.png"
         },
         {
           "sku": "MS20",
@@ -1069,7 +1069,7 @@
           "base_price": 90,
           "in_stock": true,
           "slug": "mots-c-20mg",
-          "image_url": ""
+          "image_url": "assets/vial-mots-c-20mg.png"
         },
         {
           "sku": "MS40",
@@ -1078,7 +1078,7 @@
           "base_price": 150,
           "in_stock": true,
           "slug": "mots-c-40mg",
-          "image_url": ""
+          "image_url": "assets/vial-mots-c-40mg.png"
         }
       ],
       "default_size": {
@@ -1088,7 +1088,7 @@
         "base_price": 55,
         "in_stock": true,
         "slug": "mots-c-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-mots-c-10mg.png"
       },
       "slug": "mots-c-10mg"
     },
@@ -1102,7 +1102,7 @@
       "short_desc": "C-terminal fragment of human cathelicidin hCAP18.",
       "long_desc": "LL-37 is a 37-amino acid peptide corresponding to the C-terminal portion of human cathelicidin (hCAP18), available as a lyophilized powder for laboratory research.",
       "sort_order": 590,
-      "image_url": "",
+      "image_url": "assets/vial-mazdutide-10ml.png",
       "sizes": [
         {
           "sku": "375",
@@ -1111,7 +1111,7 @@
           "base_price": 75,
           "in_stock": true,
           "slug": "ll-37-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-mazdutide-10ml.png"
         }
       ],
       "default_size": {
@@ -1121,7 +1121,7 @@
         "base_price": 75,
         "in_stock": true,
         "slug": "ll-37-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-mazdutide-10ml.png"
       },
       "slug": "ll-37-5mg"
     },
@@ -1177,7 +1177,7 @@
       "short_desc": "Synthetic Glu-Asp-Arg tripeptide (Khavinson class).",
       "long_desc": "Pinealon is a synthetic tripeptide (Glu-Asp-Arg / EDR) in the Khavinson peptide class, available as a lyophilized powder for laboratory research.",
       "sort_order": 620,
-      "image_url": "",
+      "image_url": "assets/vial-pinealon-5mg.png",
       "sizes": [
         {
           "sku": "PI5",
@@ -1186,7 +1186,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "pinealon-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-pinealon-5mg.png"
         },
         {
           "sku": "PI10",
@@ -1195,7 +1195,7 @@
           "base_price": 60,
           "in_stock": true,
           "slug": "pinealon-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-pinealon-10mg.png"
         },
         {
           "sku": "PI20",
@@ -1204,7 +1204,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "pinealon-20mg",
-          "image_url": ""
+          "image_url": "assets/vial-pinealon-20mg.png"
         }
       ],
       "default_size": {
@@ -1214,7 +1214,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "pinealon-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-pinealon-5mg.png"
       },
       "slug": "pinealon-5mg"
     },
@@ -1228,7 +1228,7 @@
       "short_desc": "Synthetic p53-derived research peptide.",
       "long_desc": "PNC-27 is a synthetic peptide studied in laboratory models, available as a lyophilized powder for research use only.",
       "sort_order": 650,
-      "image_url": "",
+      "image_url": "assets/vial-pnc27-5mg.png",
       "sizes": [
         {
           "sku": "PN5",
@@ -1237,7 +1237,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "pnc-27-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-pnc27-5mg.png"
         },
         {
           "sku": "PN10",
@@ -1246,7 +1246,7 @@
           "base_price": 125,
           "in_stock": true,
           "slug": "pnc-27-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-pnc28-10mg.png"
         }
       ],
       "default_size": {
@@ -1256,7 +1256,7 @@
         "base_price": 80,
         "in_stock": true,
         "slug": "pnc-27-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-pnc27-5mg.png"
       },
       "slug": "pnc-27-5mg"
     },
@@ -1530,7 +1530,7 @@
       "short_desc": "28-amino acid synthetic thymic peptide.",
       "long_desc": "Thymosin Alpha-1 is a 28-amino acid synthetic peptide corresponding to the natural thymic peptide sequence, available as a lyophilized powder for laboratory research.",
       "sort_order": 780,
-      "image_url": "",
+      "image_url": "assets/vial-thymosin-alpha-1-5mg.png",
       "sizes": [
         {
           "sku": "TA5",
@@ -1539,7 +1539,7 @@
           "base_price": 75,
           "in_stock": true,
           "slug": "thymosin-alpha-1-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-thymosin-alpha-1-5mg.png"
         },
         {
           "sku": "TA10",
@@ -1548,7 +1548,7 @@
           "base_price": 135,
           "in_stock": true,
           "slug": "thymosin-alpha-1-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-thymosin-alpha-2-10mg.png"
         }
       ],
       "default_size": {
@@ -1558,7 +1558,7 @@
         "base_price": 75,
         "in_stock": true,
         "slug": "thymosin-alpha-1-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-thymosin-alpha-1-5mg.png"
       },
       "slug": "thymosin-alpha-1-5mg"
     },
@@ -1572,7 +1572,7 @@
       "short_desc": "Nicotinamide adenine dinucleotide coenzyme.",
       "long_desc": "NAD+ (Nicotinamide Adenine Dinucleotide) is a dinucleotide coenzyme, available as a lyophilized powder for laboratory research.",
       "sort_order": 800,
-      "image_url": "",
+      "image_url": "assets/vial-nad-plus-100mg.png",
       "sizes": [
         {
           "sku": "NJ100",
@@ -1581,7 +1581,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "nad-100mg",
-          "image_url": ""
+          "image_url": "assets/vial-nad-plus-100mg.png"
         },
         {
           "sku": "NJ500",
@@ -1590,7 +1590,7 @@
           "base_price": 60,
           "in_stock": true,
           "slug": "nad-500mg",
-          "image_url": ""
+          "image_url": "assets/vial-nad-plus-500mg.png"
         },
         {
           "sku": "NJ1000",
@@ -1599,7 +1599,7 @@
           "base_price": 130,
           "in_stock": true,
           "slug": "nad-1000mg",
-          "image_url": ""
+          "image_url": "assets/vial-nad-plus-1000mg.png"
         }
       ],
       "default_size": {
@@ -1609,7 +1609,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "nad-100mg",
-        "image_url": ""
+        "image_url": "assets/vial-nad-plus-100mg.png"
       },
       "slug": "nad-100mg"
     },
@@ -1624,7 +1624,7 @@
       "short_desc": "Lys-Pro-Val C-terminal fragment of a-MSH.",
       "long_desc": "KPV is a synthetic tripeptide (Lys-Pro-Val) corresponding to the C-terminal fragment of a-MSH, available as a lyophilized powder for laboratory research.",
       "sort_order": 830,
-      "image_url": "",
+      "image_url": "assets/vial-kpv-5mg.png",
       "sizes": [
         {
           "sku": "KPV5",
@@ -1633,7 +1633,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "kpv-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-kpv-5mg.png"
         },
         {
           "sku": "KPV10",
@@ -1642,7 +1642,7 @@
           "base_price": 55,
           "in_stock": true,
           "slug": "kpv-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-kpv-10mg.png"
         },
         {
           "sku": "KPV30",
@@ -1651,7 +1651,7 @@
           "base_price": 90,
           "in_stock": true,
           "slug": "kpv-30mg",
-          "image_url": ""
+          "image_url": "assets/vial-kpv-30mg.png"
         }
       ],
       "default_size": {
@@ -1661,7 +1661,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "kpv-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-kpv-5mg.png"
       },
       "slug": "kpv-5mg"
     },
@@ -1708,7 +1708,7 @@
       "short_desc": "Synthetic octapeptide used in cosmetic-chemistry research.",
       "long_desc": "SNAP-8 is a synthetic octapeptide supplied as a lyophilized powder for laboratory research.",
       "sort_order": 870,
-      "image_url": "",
+      "image_url": "assets/vial-snap-8-10mg.png",
       "sizes": [
         {
           "sku": "NP810",
@@ -1717,7 +1717,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "snap-8-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-snap-8-10mg.png"
         }
       ],
       "default_size": {
@@ -1727,7 +1727,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "snap-8-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-snap-8-10mg.png"
       },
       "slug": "snap-8-10mg"
     },
@@ -1741,7 +1741,7 @@
       "short_desc": "Dual glucagon/GLP-1 receptor agonist research analog.",
       "long_desc": "Survodutide is a dual glucagon and GLP-1 receptor agonist analog, available as a lyophilized powder for laboratory research.",
       "sort_order": 880,
-      "image_url": "",
+      "image_url": "assets/vial-survodutide-10mg.png",
       "sizes": [
         {
           "sku": "SUR10",
@@ -1750,7 +1750,7 @@
           "base_price": 235,
           "in_stock": true,
           "slug": "survodutide-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-survodutide-10mg.png"
         }
       ],
       "default_size": {
@@ -1760,7 +1760,7 @@
         "base_price": 235,
         "in_stock": true,
         "slug": "survodutide-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-survodutide-10mg.png"
       },
       "slug": "survodutide-10mg"
     },
@@ -1816,7 +1816,7 @@
       "short_desc": "Vasoactive intestinal peptide (aviptadil sequence).",
       "long_desc": "Aviptadil is a synthetic 28-amino acid peptide identical to human vasoactive intestinal peptide (VIP), available as a lyophilized powder for laboratory research.",
       "sort_order": 910,
-      "image_url": "",
+      "image_url": "assets/vial-vip-5mg.png",
       "sizes": [
         {
           "sku": "VIP5",
@@ -1825,7 +1825,7 @@
           "base_price": 70,
           "in_stock": true,
           "slug": "vip-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-vip-5mg.png"
         },
         {
           "sku": "VIP10",
@@ -1834,7 +1834,7 @@
           "base_price": 130,
           "in_stock": true,
           "slug": "vip-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-vip-10mg.png"
         }
       ],
       "default_size": {
@@ -1844,7 +1844,7 @@
         "base_price": 70,
         "in_stock": true,
         "slug": "vip-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-vip-5mg.png"
       },
       "slug": "vip-5mg"
     },
@@ -1900,7 +1900,7 @@
       "short_desc": "Vitamin B12 laboratory solution.",
       "long_desc": "Vitamin B12 solution supplied for laboratory preparation use.",
       "sort_order": 950,
-      "image_url": "",
+      "image_url": "assets/vial-b12-10mg.png",
       "sizes": [
         {
           "sku": "B12",
@@ -1909,7 +1909,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "vitamin-b12-10ml",
-          "image_url": ""
+          "image_url": "assets/vial-b12-10mg.png"
         }
       ],
       "default_size": {
@@ -1919,7 +1919,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "vitamin-b12-10ml",
-        "image_url": ""
+        "image_url": "assets/vial-b12-10mg.png"
       },
       "slug": "vitamin-b12-10ml"
     },
@@ -1933,7 +1933,7 @@
       "short_desc": "Thymic bioregulator peptide.",
       "long_desc": "Thymalin is a thymic peptide bioregulator supplied as a lyophilized powder for laboratory research.",
       "sort_order": 960,
-      "image_url": "",
+      "image_url": "assets/vial-thymalin-10mg.png",
       "sizes": [
         {
           "sku": "TY10",
@@ -1942,7 +1942,7 @@
           "base_price": 60,
           "in_stock": true,
           "slug": "thymalin-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-thymalin-10mg.png"
         }
       ],
       "default_size": {
@@ -1952,7 +1952,7 @@
         "base_price": 60,
         "in_stock": true,
         "slug": "thymalin-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-thymalin-10mg.png"
       },
       "slug": "thymalin-10mg"
     },
@@ -2017,7 +2017,7 @@
       "short_desc": "Sterile water with 0.9% benzyl alcohol.",
       "long_desc": "Bacteriostatic Water is sterile water containing 0.9% benzyl alcohol as preservative, intended as a diluent for laboratory applications.",
       "sort_order": 1030,
-      "image_url": "",
+      "image_url": "assets/vial-sterile-water-3ml.png",
       "sizes": [
         {
           "sku": "WA3",
@@ -2026,7 +2026,7 @@
           "base_price": 10,
           "in_stock": true,
           "slug": "sterile-water-3ml",
-          "image_url": ""
+          "image_url": "assets/vial-sterile-water-3ml.png"
         },
         {
           "sku": "WA10",
@@ -2035,7 +2035,7 @@
           "base_price": 15,
           "in_stock": true,
           "slug": "sterile-water-10ml",
-          "image_url": ""
+          "image_url": "assets/vial-sterile-water-10ml.png"
         }
       ],
       "default_size": {
@@ -2045,7 +2045,7 @@
         "base_price": 10,
         "in_stock": true,
         "slug": "sterile-water-3ml",
-        "image_url": ""
+        "image_url": "assets/vial-sterile-water-3ml.png"
       },
       "slug": "sterile-water-3ml"
     },
@@ -2176,7 +2176,7 @@
       "short_desc": "Dual GLP-1/glucagon receptor agonist research analog.",
       "long_desc": "Mazdutide is a dual GLP-1 and glucagon receptor agonist analog, available as a lyophilized powder for laboratory research.",
       "sort_order": 1100,
-      "image_url": "",
+      "image_url": "assets/vial-mots-c-10mg.png",
       "sizes": [
         {
           "sku": "MZ10",
@@ -2185,7 +2185,7 @@
           "base_price": 160,
           "in_stock": true,
           "slug": "mazdutide-10ml",
-          "image_url": ""
+          "image_url": "assets/vial-mots-c-10mg.png"
         }
       ],
       "default_size": {
@@ -2195,7 +2195,7 @@
         "base_price": 160,
         "in_stock": true,
         "slug": "mazdutide-10ml",
-        "image_url": ""
+        "image_url": "assets/vial-mots-c-10mg.png"
       },
       "slug": "mazdutide-10ml"
     },
@@ -2242,7 +2242,7 @@
       "short_desc": "Synthetic nootropic research peptide.",
       "long_desc": "PE-22-28 is a synthetic peptide supplied as a lyophilized powder for laboratory research.",
       "sort_order": 1130,
-      "image_url": "",
+      "image_url": "assets/vial-pe-22-28-10mg.png",
       "sizes": [
         {
           "sku": "PE10",
@@ -2251,7 +2251,7 @@
           "base_price": 70,
           "in_stock": true,
           "slug": "pe-22-28-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-pe-22-28-10mg.png"
         }
       ],
       "default_size": {
@@ -2261,7 +2261,7 @@
         "base_price": 70,
         "in_stock": true,
         "slug": "pe-22-28-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-pe-22-28-10mg.png"
       },
       "slug": "pe-22-28-10mg"
     },
@@ -2309,7 +2309,7 @@
       "short_desc": "Short bioregulator peptide.",
       "long_desc": "Testagen is a short synthetic bioregulator peptide, available as a lyophilized powder for laboratory research.",
       "sort_order": 1160,
-      "image_url": "",
+      "image_url": "assets/vial-testagen-10mg.png",
       "sizes": [
         {
           "sku": "TE10",
@@ -2318,7 +2318,7 @@
           "base_price": 70,
           "in_stock": true,
           "slug": "testagen-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-testagen-10mg.png"
         },
         {
           "sku": "TE20",
@@ -2327,7 +2327,7 @@
           "base_price": 90,
           "in_stock": true,
           "slug": "testagen-20mg",
-          "image_url": ""
+          "image_url": "assets/vial-testagen-20mg.png"
         }
       ],
       "default_size": {
@@ -2337,7 +2337,7 @@
         "base_price": 70,
         "in_stock": true,
         "slug": "testagen-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-testagen-10mg.png"
       },
       "slug": "testagen-10mg"
     },
