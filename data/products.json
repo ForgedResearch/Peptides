@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T01:45:10.954Z",
+  "updated": "2026-10-01T01:54:41.043Z",
   "products": [
     {
       "name": "Semaglutide",
@@ -271,7 +271,7 @@
           "vial_mg": 10,
           "base_price": 45,
           "in_stock": true,
-          "slug": "mt-2-melanotan-2-acetate-10mg",
+          "slug": "mt-1-10mg",
           "image_url": ""
         }
       ],
@@ -549,7 +549,7 @@
           "vial_mg": 10,
           "base_price": 80,
           "in_stock": true,
-          "slug": "bpc-157-5mg-tb-500-5mg-10mg",
+          "slug": "bpc-157-tb-500-10mg",
           "image_url": ""
         },
         {
@@ -558,7 +558,7 @@
           "vial_mg": 20,
           "base_price": 150,
           "in_stock": true,
-          "slug": "bpc-157-10mg-tb-500-10mg-20mg",
+          "slug": "bpc-157-tb-500-20mg",
           "image_url": ""
         }
       ],
@@ -568,10 +568,10 @@
         "vial_mg": 10,
         "base_price": 80,
         "in_stock": true,
-        "slug": "bpc-157-5mg-tb-500-5mg-10mg",
+        "slug": "bpc-157-tb-500-10mg",
         "image_url": ""
       },
-      "slug": "bpc-157-5mg-tb-500-5mg-10mg"
+      "slug": "bpc-157-tb-500-10mg"
     },
     {
       "name": "Semax",
