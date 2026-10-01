@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T00:53:31.974Z",
+  "updated": "2026-10-01T01:45:10.954Z",
   "products": [
     {
       "name": "Semaglutide",
@@ -221,15 +221,6 @@
           "base_price": 245,
           "in_stock": true,
           "slug": "retatrutide-40mg",
-          "image_url": ""
-        },
-        {
-          "sku": "RT50",
-          "vial_label": "50mg",
-          "vial_mg": 50,
-          "base_price": 290,
-          "in_stock": true,
-          "slug": "retatrutide-50mg",
           "image_url": ""
         },
         {
@@ -540,7 +531,7 @@
       "slug": "tb-500-5mg"
     },
     {
-      "name": "BPC-157 5mg + TB-500 5mg",
+      "name": "BPC-157 + TB-500",
       "featured": true,
       "category_primary": "Recovery",
       "categories": [
@@ -560,6 +551,15 @@
           "in_stock": true,
           "slug": "bpc-157-5mg-tb-500-5mg-10mg",
           "image_url": ""
+        },
+        {
+          "sku": "BB20",
+          "vial_label": "20mg",
+          "vial_mg": 20,
+          "base_price": 150,
+          "in_stock": true,
+          "slug": "bpc-157-10mg-tb-500-10mg-20mg",
+          "image_url": ""
         }
       ],
       "default_size": {
@@ -572,40 +572,6 @@
         "image_url": ""
       },
       "slug": "bpc-157-5mg-tb-500-5mg-10mg"
-    },
-    {
-      "name": "BPC-157 10mg + TB-500 10mg",
-      "featured": false,
-      "category_primary": "Recovery",
-      "categories": [
-        "Recovery",
-        "Gut / Immune"
-      ],
-      "short_desc": "Lyophilized BPC-157 and TB-500 blend.",
-      "long_desc": "BPC-157/TB-500 Blend is a lyophilized formulation containing two synthetic peptides for laboratory research.",
-      "sort_order": 350,
-      "image_url": "",
-      "sizes": [
-        {
-          "sku": "BB20",
-          "vial_label": "20mg",
-          "vial_mg": 20,
-          "base_price": 150,
-          "in_stock": true,
-          "slug": "bpc-157-10mg-tb-500-10mg-20mg",
-          "image_url": ""
-        }
-      ],
-      "default_size": {
-        "sku": "BB20",
-        "vial_label": "20mg",
-        "vial_mg": 20,
-        "base_price": 150,
-        "in_stock": true,
-        "slug": "bpc-157-10mg-tb-500-10mg-20mg",
-        "image_url": ""
-      },
-      "slug": "bpc-157-10mg-tb-500-10mg-20mg"
     },
     {
       "name": "Semax",
