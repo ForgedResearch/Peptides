@@ -96,4 +96,136 @@
         <div class="warn-box">
           <strong>RESEARCH USE ONLY.</strong> Not for human or veterinary use. Not intended to diagnose, treat, cure, or prevent any disease.
         </div>
-        <button class="btn ghost" 
+        <button class="btn ghost" type="button">View sample Certificate of Analysis (PDF)</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="disclaimer">
+    <div class="wrap foot">
+      <div>
+        <strong style="color:#fff">FORGED RESEARCH</strong><br />
+        Laboratory research materials. Not a pharmacy.
+      </div>
+      <div class="policy-links">
+        <a href="fda.html">FDA Disclaimer</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="shipping.html">Shipping &amp; Returns</a>
+        <a href="quality.html">Quality &amp; Testing</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="drawer-bg" id="drawerBg"></div>
+  <aside class="drawer" id="drawer">
+    <div class="drawer-h">
+      <strong>Your cart</strong>
+      <button class="icon-btn" id="closeCart" type="button">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="recommend" id="recommend">
+      <div class="muted" style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px">Recommended</div>
+      <strong>Bacteriostatic Water</strong>
+      <div class="muted" style="margin:6px 0 10px">Sterile water with 0.9% benzyl alcohol. Laboratory diluent. 10 ml.</div>
+      <div class="row">
+        <div class="stepper">
+          <button type="button" id="bacMinus">−</button>
+          <span id="bacQty">1</span>
+          <button type="button" id="bacPlus">+</button>
+        </div>
+        <strong id="bacPrice">$20.99</strong>
+      </div>
+      <button class="btn full" type="button" id="bacAdd" style="margin-top:10px">Add to order</button>
+    </div>
+    <div class="drawer-foot">
+      <div class="row" style="margin-bottom:12px">
+        <span class="muted">Subtotal</span>
+        <strong id="subtotal">$0</strong>
+      </div>
+      <button class="btn full" id="checkoutBtn" type="button">Proceed to checkout</button>
+    </div>
+  </aside>
+
+  <div class="modal-bg" id="modal">
+    <div class="modal">
+      <h2 style="margin-bottom:8px">Important information</h2>
+      <div class="warn-box">RESEARCH USE ONLY — not for human or veterinary use.</div>
+      <p class="muted">These products are not intended to diagnose, treat, cure, or prevent any disease and have not been approved by the FDA.</p>
+      <label class="check">
+        <input type="checkbox" id="agree" />
+        <span>I have read this information and confirm I am purchasing these products for research use only.</span>
+      </label>
+      <button class="btn full warn" id="agreeBtn" type="button">I agree & continue</button>
+    </div>
+  </div>
+
+  <div class="modal-bg" id="productModal">
+    <div class="modal product-modal">
+      <div class="row" style="margin-bottom:12px">
+        <h2 id="pmTitle" style="margin:0;font-size:28px">Product</h2>
+        <button class="icon-btn" type="button" id="pmClose">✕</button>
+      </div>
+      <div class="pm-grid">
+        <img id="pmImg" class="pm-img" alt="" />
+        <div>
+          <span class="tag">RESEARCH USE ONLY</span>
+          <p class="muted" id="pmDesc" style="margin:12px 0"></p>
+          <label class="muted" style="font-size:12px">Select size</label>
+          <select class="size-select" id="pmSize" style="margin:8px 0 14px"></select>
+          <div class="volume">
+            <h3>Volume Discounts</h3>
+            <div id="pmVol"></div>
+          </div>
+          <div class="qty-row">
+            <span class="muted">Quantity:</span>
+            <div class="stepper">
+              <button type="button" id="pmMinus">−</button>
+              <span id="pmQty">1</span>
+              <button type="button" id="pmPlus">+</button>
+            </div>
+          </div>
+          <div class="row" style="margin-top:14px">
+            <strong id="pmLine">$0.00</strong>
+            <button class="btn" type="button" id="pmAdd">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-bg gate" id="gateModal">
+    <div class="modal">
+      <div class="kicker" style="text-align:center">Research use only</div>
+      <h2 style="margin:8px 0 12px;text-align:center">Forged Research supplies materials strictly for qualified scientific laboratory research.</h2>
+      <p class="muted" style="text-align:center;margin-bottom:16px">To continue, acknowledge the following:</p>
+      <ol class="gate-list">
+        <li><strong>Age requirement.</strong> You must be at least 21 years old.</li>
+        <li><strong>Product use.</strong> All products are sold for in-vitro laboratory research only. They are not for human or animal use, cosmetic use, or use as dietary supplements.</li>
+        <li><strong>No medical advice.</strong> Forged Research is not a pharmacy or medical provider. We do not give medical advice, dosing instructions, or reconstitution guidance for human use.</li>
+        <li><strong>Compliance.</strong> You are responsible for handling these materials under your institution’s safety rules and all applicable laws.</li>
+        <li><strong>Sales are final.</strong> Because of the nature of these materials, all sales are final.</li>
+      </ol>
+      <p class="muted" style="font-size:13px;margin:16px 0">By clicking I Agree, you confirm you have read and agree to our
+        <a href="terms.html">Terms &amp; Conditions</a>,
+        <a href="fda.html">FDA Disclaimer</a>, and
+        <a href="shipping.html">Shipping &amp; Returns Policy</a>.</p>
+      <button class="btn full" type="button" id="gateAgree" onclick="sessionStorage.setItem('forgedGate','1');var g=document.getElementById('gateModal');if(g)g.classList.remove('open');">I Agree</button>
+      <button class="btn ghost full" type="button" id="gateDecline" style="margin-top:8px" onclick="window.location.href='https://www.google.com'">I Do Not Agree</button>
+    </div>
+  </div>
+
+  <div class="modal-bg" id="signupModal">
+    <div class="modal">
+      <h2 style="margin-bottom:8px">Join Forged Research</h2>
+      <p class="muted">Get lot updates and new compound notices. Research use only.</p>
+      <form id="signupForm" style="margin-top:16px">
+        <input class="field" type="email" id="signupEmail" placeholder="Email address" required />
+        <button class="btn full" type="submit" style="margin-top:12px">Sign up</button>
+      </form>
+      <button class="btn ghost full" type="button" id="signupLater" style="margin-top:8px">Not now</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
