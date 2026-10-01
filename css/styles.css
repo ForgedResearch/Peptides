@@ -59,30 +59,31 @@ header {
   border-radius: 9px;
 }
 
-/* Card photo: 1.2 zoom. The box clips the edges so the label reads larger. */
+/* Card photo sits in .vial-zoom. That frame clips the 1.2 zoom so it cannot cover the name. */
 .vial-zoom {
-  height: 240px;
+  height: 220px;
   overflow: hidden;
   border-radius: 12px;
   background: #0b0f16;
-  margin: 0 auto 10px;
+  margin: 0 0 10px;
 }
 .vial-img {
   width: 100%;
-  height: 240px;
+  height: 220px;
+  max-width: none;
   object-fit: cover;
   object-position: center 42%;
   transform: scale(1.2);
   transform-origin: center 42%;
-  border-radius: 12px;
+  margin: 0;
+  border-radius: 0;
   background: #0b0f16;
   display: block;
 }
-.product { overflow: hidden; }
 .product .vial-img {
   width: 100%;
-  height: 240px;
-  margin: 0 auto 10px;
+  height: 220px;
+  margin: 0;
 }
 
 .nav-links {
@@ -579,10 +580,10 @@ footer {
   gap: 28px;
   align-items: start;
 }
-/* View panel photo: 1.4 zoom, clipped by the frame. */
+/* View panel photo sits in .pm-zoom. That frame clips the 1.4 zoom. */
 .pm-zoom {
   width: 220px;
-  height: 300px;
+  height: 280px;
   overflow: hidden;
   border-radius: 12px;
   background: #0b0f16;
@@ -590,25 +591,22 @@ footer {
 }
 .pm-img {
   width: 100%;
-  height: 300px;
+  height: 280px;
+  max-width: none;
   max-height: none;
   object-fit: cover;
   object-position: center 42%;
   transform: scale(1.4);
   transform-origin: center 42%;
-  border-radius: 12px;
+  margin: 0;
+  border-radius: 0;
   background: #0b0f16;
   display: block;
 }
 @media (max-width: 700px) {
   .pm-grid { grid-template-columns: 1fr; }
-  .pm-zoom { width: 100%; height: 240px; }
-  .pm-img {
-    width: 100%;
-    height: 240px;
-    max-height: none;
-    margin-inline: auto;
-  }
+  .pm-zoom { width: min(220px, 100%); height: 240px; }
+  .pm-img { width: 100%; height: 240px; margin: 0; }
   .product-modal { padding: 16px; }
 }
 
