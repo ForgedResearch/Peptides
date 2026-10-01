@@ -1,9 +1,9 @@
 {
-  "updated": "2026-09-30T23:58:22.755Z",
+  "updated": "2026-10-01T00:42:40.481Z",
   "products": [
     {
       "name": "Semaglutide",
-      "featured": true,
+      "featured": false,
       "category_primary": "Metabolic",
       "categories": [
         "Metabolic"
@@ -159,7 +159,7 @@
     },
     {
       "name": "Retatrutide",
-      "featured": false,
+      "featured": true,
       "category_primary": "Metabolic",
       "categories": [
         "Metabolic"
@@ -541,7 +541,7 @@
     },
     {
       "name": "BPC-157 5mg + TB-500 5mg",
-      "featured": false,
+      "featured": true,
       "category_primary": "Recovery",
       "categories": [
         "Recovery",
@@ -1683,7 +1683,7 @@
     },
     {
       "name": "KPV",
-      "featured": false,
+      "featured": true,
       "category_primary": "Recovery",
       "categories": [
         "Recovery",
