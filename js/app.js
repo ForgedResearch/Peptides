@@ -324,3 +324,11 @@ fetch('data/products.json')
 syncCart();
 refreshBac();
 openGate();
+const viewAllBtn = document.getElementById('viewAllBtn');
+const catalog = document.getElementById('catalog');
+if (viewAllBtn && catalog) {
+  viewAllBtn.onclick = () => {
+    catalog.hidden = false;
+    catalog.scrollIntoView({ behavior: 'smooth' });
+  };
+}
