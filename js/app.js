@@ -104,21 +104,15 @@ function renderFeatured() {
   box.innerHTML = list.map(p => {
     const id = productId(p);
     const def = p.default_size || p.sizes[0];
-    const options = (p.sizes || []).map((s, i) => {
-      const sel = def && s.sku === def.sku ? ' selected' : '';
-      const oos = s.in_stock ? '' : ' (Out of stock)';
-      return '<option value="' + i + '"' + sel + '>' + s.vial_label + oos + '</option>';
-    }).join('');
     return (
-      '<article class="product">' +
+      '<article class="product" onclick="openProduct(\'' + id + '\')">' +
         '<div class="vial-zoom"><img class="vial-img" src="' + imgSrc(p, def) + '" alt="' + p.name + '"></div>' +
         '<span class="tag">RESEARCH USE ONLY</span>' +
         '<strong>' + p.name + '</strong>' +
         '<div class="card-desc">' + (p.short_desc || '') + '</div>' +
-        '<select class="size-select" id="feat-size-' + id + '" onchange="updateFeaturedPrice(\'' + id + '\')">' + options + '</select>' +
         '<div class="row" style="margin-top:auto">' +
-          '<strong id="feat-price-' + id + '">' + fmt(def ? def.base_price : 0) + '</strong>' +
-          '<button class="btn" type="button" onclick="openFeatured(\'' + id + '\')">View</button>' +
+          '<strong>' + fmt(def ? def.base_price : 0) + '</strong>' +
+          '<button class="btn" type="button">View</button>' +
         '</div>' +
       '</article>'
     );
