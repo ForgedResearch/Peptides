@@ -575,7 +575,7 @@ footer {
   height: 320px;
   max-height: none;
   object-fit: cover;
-  object-position: center 36%;
+  object-position: center 50%;
   border-radius: 12px;
   background: #0b0f16;
 }
