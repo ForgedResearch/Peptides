@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-01T01:54:41.043Z",
+  "updated": "2026-10-01T03:18:31.078Z",
   "products": [
     {
-      "name": "Semaglutide",
+      "name": "GLP-1S-MAGLUTIDE",
       "featured": false,
       "category_primary": "Metabolic",
       "categories": [
@@ -19,7 +19,7 @@
           "vial_mg": 5,
           "base_price": 40,
           "in_stock": true,
-          "slug": "semaglutide-5mg",
+          "slug": "maglutide-5mg",
           "image_url": ""
         },
         {
@@ -28,7 +28,7 @@
           "vial_mg": 10,
           "base_price": 50,
           "in_stock": true,
-          "slug": "semaglutide-10mg",
+          "slug": "maglutide-10mg",
           "image_url": ""
         },
         {
@@ -37,7 +37,7 @@
           "vial_mg": 15,
           "base_price": 60,
           "in_stock": true,
-          "slug": "semaglutide-15mg",
+          "slug": "maglutide-15mg",
           "image_url": ""
         },
         {
@@ -46,7 +46,7 @@
           "vial_mg": 20,
           "base_price": 75,
           "in_stock": true,
-          "slug": "semaglutide-20mg",
+          "slug": "maglutide-20mg",
           "image_url": ""
         },
         {
@@ -55,7 +55,7 @@
           "vial_mg": 30,
           "base_price": 90,
           "in_stock": true,
-          "slug": "semaglutide-30mg",
+          "slug": "maglutide-30mg",
           "image_url": ""
         }
       ],
@@ -65,13 +65,13 @@
         "vial_mg": 5,
         "base_price": 40,
         "in_stock": true,
-        "slug": "semaglutide-5mg",
+        "slug": "maglutide-5mg",
         "image_url": ""
       },
-      "slug": "semaglutide-5mg"
+      "slug": "maglutide-5mg"
     },
     {
-      "name": "Tirzepatide",
+      "name": "GLP-2T-ZEPATIDE",
       "featured": false,
       "category_primary": "Metabolic",
       "categories": [
@@ -88,7 +88,7 @@
           "vial_mg": 10,
           "base_price": 50,
           "in_stock": true,
-          "slug": "tirzepatide-10mg",
+          "slug": "zepatide-10mg",
           "image_url": ""
         },
         {
@@ -97,7 +97,7 @@
           "vial_mg": 15,
           "base_price": 65,
           "in_stock": true,
-          "slug": "tirzepatide-15mg",
+          "slug": "zepatide-15mg",
           "image_url": ""
         },
         {
@@ -106,7 +106,7 @@
           "vial_mg": 20,
           "base_price": 80,
           "in_stock": true,
-          "slug": "tirzepatide-20mg",
+          "slug": "zepatide-20mg",
           "image_url": ""
         },
         {
@@ -115,7 +115,7 @@
           "vial_mg": 30,
           "base_price": 90,
           "in_stock": true,
-          "slug": "tirzepatide-30mg",
+          "slug": "zepatide-30mg",
           "image_url": ""
         },
         {
@@ -124,7 +124,7 @@
           "vial_mg": 40,
           "base_price": 115,
           "in_stock": true,
-          "slug": "tirzepatide-40mg",
+          "slug": "zepatide-40mg",
           "image_url": ""
         },
         {
@@ -133,7 +133,7 @@
           "vial_mg": 50,
           "base_price": 140,
           "in_stock": true,
-          "slug": "tirzepatide-50mg",
+          "slug": "zepatide-50mg",
           "image_url": ""
         },
         {
@@ -142,7 +142,7 @@
           "vial_mg": 60,
           "base_price": 160,
           "in_stock": true,
-          "slug": "tirzepatide-60mg",
+          "slug": "zepatide-60mg",
           "image_url": ""
         }
       ],
@@ -152,13 +152,13 @@
         "vial_mg": 10,
         "base_price": 50,
         "in_stock": true,
-        "slug": "tirzepatide-10mg",
+        "slug": "zepatide-10mg",
         "image_url": ""
       },
-      "slug": "tirzepatide-10mg"
+      "slug": "zepatide-10mg"
     },
     {
-      "name": "Retatrutide",
+      "name": "GLP-3R-TRUTIDE",
       "featured": true,
       "category_primary": "Metabolic",
       "categories": [
@@ -175,7 +175,7 @@
           "vial_mg": 5,
           "base_price": 48,
           "in_stock": true,
-          "slug": "retatrutide-5mg",
+          "slug": "trutide-5mg",
           "image_url": ""
         },
         {
@@ -184,7 +184,7 @@
           "vial_mg": 10,
           "base_price": 80,
           "in_stock": true,
-          "slug": "retatrutide-10mg",
+          "slug": "trutide-10mg",
           "image_url": ""
         },
         {
@@ -193,7 +193,7 @@
           "vial_mg": 15,
           "base_price": 110,
           "in_stock": true,
-          "slug": "retatrutide-15mg",
+          "slug": "trutide-15mg",
           "image_url": ""
         },
         {
@@ -202,7 +202,7 @@
           "vial_mg": 20,
           "base_price": 140,
           "in_stock": true,
-          "slug": "retatrutide-20mg",
+          "slug": "trutide-20mg",
           "image_url": ""
         },
         {
@@ -211,7 +211,7 @@
           "vial_mg": 30,
           "base_price": 195,
           "in_stock": true,
-          "slug": "retatrutide-30mg",
+          "slug": "trutide-30mg",
           "image_url": ""
         },
         {
@@ -220,7 +220,7 @@
           "vial_mg": 40,
           "base_price": 245,
           "in_stock": true,
-          "slug": "retatrutide-40mg",
+          "slug": "trutide-40mg",
           "image_url": ""
         },
         {
@@ -229,7 +229,7 @@
           "vial_mg": 60,
           "base_price": 340,
           "in_stock": true,
-          "slug": "retatrutide-60mg",
+          "slug": "trutide-60mg",
           "image_url": ""
         }
       ],
@@ -239,10 +239,10 @@
         "vial_mg": 5,
         "base_price": 48,
         "in_stock": true,
-        "slug": "retatrutide-5mg",
+        "slug": "trutide-5mg",
         "image_url": ""
       },
-      "slug": "retatrutide-5mg"
+      "slug": "trutide-5mg"
     },
     {
       "name": "Melanotan 1",
@@ -264,15 +264,6 @@
           "in_stock": true,
           "slug": "mt-1-5mg",
           "image_url": ""
-        },
-        {
-          "sku": "ML10",
-          "vial_label": "10mg",
-          "vial_mg": 10,
-          "base_price": 45,
-          "in_stock": true,
-          "slug": "mt-1-10mg",
-          "image_url": ""
         }
       ],
       "default_size": {
@@ -285,6 +276,39 @@
         "image_url": ""
       },
       "slug": "mt-1-5mg"
+    },
+    {
+      "name": "Melanotan 2",
+      "featured": false,
+      "category_primary": "Recovery",
+      "categories": [
+        "Recovery"
+      ],
+      "short_desc": "Synthetic cyclic heptapeptide analog of a-MSH.",
+      "long_desc": "Melanotan 2 is a synthetic cyclic heptapeptide analog of a-MSH, available as a lyophilized powder for laboratory research.",
+      "sort_order": 220,
+      "image_url": "",
+      "sizes": [
+        {
+          "sku": "ML10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 45,
+          "in_stock": true,
+          "slug": "mt-2-acetate-10mg",
+          "image_url": ""
+        }
+      ],
+      "default_size": {
+        "sku": "ML10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 45,
+        "in_stock": true,
+        "slug": "mt-2-acetate-10mg",
+        "image_url": ""
+      },
+      "slug": "mt-2-acetate-10mg"
     },
     {
       "name": "PT-141",
@@ -545,7 +569,7 @@
       "sizes": [
         {
           "sku": "BB10",
-          "vial_label": "10mg",
+          "vial_label": "10mg 5mg+5mg",
           "vial_mg": 10,
           "base_price": 80,
           "in_stock": true,
@@ -554,7 +578,7 @@
         },
         {
           "sku": "BB20",
-          "vial_label": "20mg",
+          "vial_label": "20mg 10mg+10mg",
           "vial_mg": 20,
           "base_price": 150,
           "in_stock": true,
@@ -564,7 +588,7 @@
       ],
       "default_size": {
         "sku": "BB10",
-        "vial_label": "10mg",
+        "vial_label": "10mg 5mg+5mg",
         "vial_mg": 10,
         "base_price": 80,
         "in_stock": true,
@@ -1237,7 +1261,7 @@
       "slug": "pnc-27-5mg"
     },
     {
-      "name": "Cagrilintide 2.5mg + Semaglutide 2.5mg",
+      "name": "Cagrilintide + Semaglutide",
       "featured": false,
       "category_primary": "Metabolic",
       "categories": [
@@ -1256,6 +1280,15 @@
           "in_stock": true,
           "slug": "cagrilintide-2-5mg-semaglutide-2-5mg-5mg",
           "image_url": ""
+        },
+        {
+          "sku": "CS10",
+          "vial_label": "10mg",
+          "vial_mg": 10,
+          "base_price": 135,
+          "in_stock": true,
+          "slug": "cagrilintide-5mg-semaglutide-5mg-10mg",
+          "image_url": ""
         }
       ],
       "default_size": {
@@ -1268,39 +1301,6 @@
         "image_url": ""
       },
       "slug": "cagrilintide-2-5mg-semaglutide-2-5mg-5mg"
-    },
-    {
-      "name": "Cagrilintide 5mg + Semaglutide 5mg",
-      "featured": false,
-      "category_primary": "Metabolic",
-      "categories": [
-        "Metabolic"
-      ],
-      "short_desc": "Cagrilintide plus semaglutide blend.",
-      "long_desc": "Cagrilintide + Semaglutide Blend combines two synthetic acylated peptides for laboratory research.",
-      "sort_order": 680,
-      "image_url": "",
-      "sizes": [
-        {
-          "sku": "CS10",
-          "vial_label": "10mg",
-          "vial_mg": 10,
-          "base_price": 135,
-          "in_stock": true,
-          "slug": "cagrilintide-5mg-semaglutide-5mg-10mg",
-          "image_url": ""
-        }
-      ],
-      "default_size": {
-        "sku": "CS10",
-        "vial_label": "10mg",
-        "vial_mg": 10,
-        "base_price": 135,
-        "in_stock": true,
-        "slug": "cagrilintide-5mg-semaglutide-5mg-10mg",
-        "image_url": ""
-      },
-      "slug": "cagrilintide-5mg-semaglutide-5mg-10mg"
     },
     {
       "name": "Cagrilintide",
@@ -1453,7 +1453,7 @@
       "slug": "ghrp-6-acetate-10mg"
     },
     {
-      "name": "BPC-157 10mg + GHK-Cu 50mg + TB-500 10mg + KPV 10mg",
+      "name": "KLOW Blend",
       "featured": false,
       "category_primary": "Recovery",
       "categories": [
@@ -1487,41 +1487,7 @@
       "slug": "bpc-157-10mg-ghk-cu-50mg-tb-500-10mg-kpv-10mg-80mg"
     },
     {
-      "name": "BPC-157 10mg + GHK-Cu 50mg + KPV 10mg",
-      "featured": false,
-      "category_primary": "Recovery",
-      "categories": [
-        "Recovery",
-        "Gut / Immune"
-      ],
-      "short_desc": "BPC-157, GHK-Cu, and KPV blend.",
-      "long_desc": "Lyophilized blend of BPC-157, GHK-Cu, and KPV for laboratory research.",
-      "sort_order": 760,
-      "image_url": "",
-      "sizes": [
-        {
-          "sku": "GKP70",
-          "vial_label": "70mg",
-          "vial_mg": 70,
-          "base_price": 110,
-          "in_stock": true,
-          "slug": "bpc-157-10mg-ghk-cu-50mg-kpv-10mg-70mg",
-          "image_url": ""
-        }
-      ],
-      "default_size": {
-        "sku": "GKP70",
-        "vial_label": "70mg",
-        "vial_mg": 70,
-        "base_price": 110,
-        "in_stock": true,
-        "slug": "bpc-157-10mg-ghk-cu-50mg-kpv-10mg-70mg",
-        "image_url": ""
-      },
-      "slug": "bpc-157-10mg-ghk-cu-50mg-kpv-10mg-70mg"
-    },
-    {
-      "name": "BPC-157 10mg + GHK-Cu 50mg + TB-500 10mg",
+      "name": "GLOW Blend",
       "featured": false,
       "category_primary": "Recovery",
       "categories": [
@@ -2042,7 +2008,7 @@
       "slug": "dsip-5mg"
     },
     {
-      "name": "Bacteriostatic water",
+      "name": "Sterile Water",
       "featured": false,
       "category_primary": "Recovery",
       "categories": [
@@ -2059,7 +2025,7 @@
           "vial_mg": 3,
           "base_price": 10,
           "in_stock": true,
-          "slug": "bacteriostatic-water-3ml",
+          "slug": "sterile-water-3ml",
           "image_url": ""
         },
         {
@@ -2068,7 +2034,7 @@
           "vial_mg": 10,
           "base_price": 15,
           "in_stock": true,
-          "slug": "bacteriostatic-water-10ml",
+          "slug": "sterile-water-10ml",
           "image_url": ""
         }
       ],
@@ -2078,13 +2044,13 @@
         "vial_mg": 3,
         "base_price": 10,
         "in_stock": true,
-        "slug": "bacteriostatic-water-3ml",
+        "slug": "sterile-water-3ml",
         "image_url": ""
       },
-      "slug": "bacteriostatic-water-3ml"
+      "slug": "sterile-water-3ml"
     },
     {
-      "name": "Benzyl alcohol 0.9% water",
+      "name": "Bacterostatic Water Benzyl alcohol 0.9%",
       "featured": false,
       "category_primary": "Recovery",
       "categories": [
@@ -2101,7 +2067,7 @@
           "vial_mg": 3,
           "base_price": 10,
           "in_stock": true,
-          "slug": "benzyl-alcohol-0-9-water-3ml",
+          "slug": "bacteriostatic-water-3ml",
           "image_url": ""
         },
         {
@@ -2110,7 +2076,7 @@
           "vial_mg": 10,
           "base_price": 15,
           "in_stock": true,
-          "slug": "benzyl-alcohol-0-9-water-10ml",
+          "slug": "bacteriostatic-water-10ml",
           "image_url": ""
         }
       ],
@@ -2120,10 +2086,10 @@
         "vial_mg": 3,
         "base_price": 10,
         "in_stock": true,
-        "slug": "benzyl-alcohol-0-9-water-3ml",
+        "slug": "bacteriostatic-water-3ml",
         "image_url": ""
       },
-      "slug": "benzyl-alcohol-0-9-water-3ml"
+      "slug": "bacteriostatic-water-3ml"
     },
     {
       "name": "Acetic acid water 0.6%",
@@ -2218,7 +2184,7 @@
           "vial_mg": 10,
           "base_price": 160,
           "in_stock": true,
-          "slug": "mazdutide-10mg",
+          "slug": "mazdutide-10ml",
           "image_url": ""
         }
       ],
@@ -2228,10 +2194,10 @@
         "vial_mg": 10,
         "base_price": 160,
         "in_stock": true,
-        "slug": "mazdutide-10mg",
+        "slug": "mazdutide-10ml",
         "image_url": ""
       },
-      "slug": "mazdutide-10mg"
+      "slug": "mazdutide-10ml"
     },
     {
       "name": "FOXO4-DRI",
