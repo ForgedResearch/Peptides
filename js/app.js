@@ -111,7 +111,7 @@ function renderFeatured() {
     }).join('');
     return (
       '<article class="product">' +
-        '<img class="vial-img" src="' + imgSrc(p, def) + '" alt="' + p.name + '">' +
+        '<div class="vial-zoom"><img class="vial-img" src="' + imgSrc(p, def) + '" alt="' + p.name + '"></div>' +
         '<span class="tag">RESEARCH USE ONLY</span>' +
         '<strong>' + p.name + '</strong>' +
         '<div class="card-desc">' + (p.short_desc || '') + '</div>' +
@@ -132,7 +132,7 @@ function renderProducts() {
     const id = productId(p);
     return (
       '<article class="product" data-id="' + id + '" onclick="openProduct(\'' + id + '\')">' +
-        '<img class="vial-img" src="' + imgSrc(p) + '" alt="' + p.name + '">' +
+        '<div class="vial-zoom"><img class="vial-img" src="' + imgSrc(p) + '" alt="' + p.name + '"></div>' +
         '<span class="tag">RESEARCH USE ONLY</span>' +
         '<strong>' + p.name + '</strong>' +
         '<div class="card-desc">' + (p.short_desc || '') + '</div>' +
