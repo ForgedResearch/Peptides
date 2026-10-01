@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T17:13:15.147Z",
+  "updated": "2026-10-01T22:08:21.456Z",
   "products": [
     {
       "name": "GLP-1S-MAGLUTIDE",
@@ -11,7 +11,7 @@
       "short_desc": "GLP-1 receptor agonist research analog.",
       "long_desc": "Semaglutide is a synthetic acylated GLP-1 receptor agonist, available as a lyophilized powder for laboratory research. Research-use only. Not a prescription drug.",
       "sort_order": 10,
-      "image_url": "assets/vial-glp-1s-maglutide-5mg.jpg",
+      "image_url": "assets/vial-glp-1s-maglutide-5mg.png",
       "sizes": [
         {
           "sku": "SM5",
@@ -20,7 +20,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "maglutide-5mg",
-          "image_url": "assets/vial-glp-1s-maglutide-5mg.jpg"
+          "image_url": "assets/vial-glp-1s-maglutide-5mg.png"
         },
         {
           "sku": "SM10",
@@ -29,7 +29,7 @@
           "base_price": 50,
           "in_stock": true,
           "slug": "maglutide-10mg",
-          "image_url": "assets/vial-glp-1s-maglutide-10mg.jpg"
+          "image_url": "assets/vial-glp-1s-maglutide-10mg.png"
         },
         {
           "sku": "SM15",
@@ -38,7 +38,7 @@
           "base_price": 60,
           "in_stock": true,
           "slug": "maglutide-15mg",
-          "image_url": "assets/vial-glp-1s-maglutide-15mg.jpg"
+          "image_url": "assets/vial-glp-1s-maglutide-15mg.png"
         },
         {
           "sku": "SM20",
@@ -47,7 +47,7 @@
           "base_price": 75,
           "in_stock": true,
           "slug": "maglutide-20mg",
-          "image_url": "assets/vial-glp-1s-maglutide-20mg.jpg"
+          "image_url": "assets/vial-glp-1s-maglutide-20mg.png"
         },
         {
           "sku": "SM30",
@@ -56,7 +56,7 @@
           "base_price": 90,
           "in_stock": true,
           "slug": "maglutide-30mg",
-          "image_url": "assets/vial-glp-1s-maglutide-30mg.jpg"
+          "image_url": "assets/vial-glp-1s-maglutide-30mg.png"
         }
       ],
       "default_size": {
@@ -66,7 +66,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "maglutide-5mg",
-        "image_url": "assets/vial-glp-1s-maglutide-5mg.jpg"
+        "image_url": "assets/vial-glp-1s-maglutide-5mg.png"
       },
       "slug": "maglutide-5mg"
     },
@@ -167,7 +167,7 @@
       "short_desc": "Triple GLP-1/GIP/glucagon receptor agonist research analog.",
       "long_desc": "Retatrutide (listed by some labs as GLP-3R) is a synthetic 39-amino acid acylated peptide classified as a triple receptor agonist of GLP-1, GIP, and glucagon receptors, available as a lyophilized powder for laboratory research.",
       "sort_order": 130,
-      "image_url": "",
+      "image_url": "assets/vial-glp-3r-trutide-5mg.png",
       "sizes": [
         {
           "sku": "RT5",
@@ -176,7 +176,7 @@
           "base_price": 48,
           "in_stock": true,
           "slug": "trutide-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-glp-3r-trutide-5mg.png"
         },
         {
           "sku": "RT10",
@@ -185,7 +185,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "trutide-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-glp-3r-trutide-10mg.png"
         },
         {
           "sku": "RT15",
@@ -194,7 +194,7 @@
           "base_price": 110,
           "in_stock": true,
           "slug": "trutide-15mg",
-          "image_url": ""
+          "image_url": "assets/vial-glp-3r-trutide-15mg.png"
         },
         {
           "sku": "RT20",
@@ -203,7 +203,7 @@
           "base_price": 140,
           "in_stock": true,
           "slug": "trutide-20mg",
-          "image_url": ""
+          "image_url": "assets/vial-glp-3r-trutide-20mg.png"
         },
         {
           "sku": "RT30",
@@ -212,7 +212,7 @@
           "base_price": 195,
           "in_stock": true,
           "slug": "trutide-30mg",
-          "image_url": ""
+          "image_url": "assets/vial-glp-3r-trutide-30mg.png"
         },
         {
           "sku": "RT40",
@@ -221,7 +221,7 @@
           "base_price": 245,
           "in_stock": true,
           "slug": "trutide-40mg",
-          "image_url": ""
+          "image_url": "assets/vial-glp-3r-trutide-40mg.png"
         },
         {
           "sku": "RT60",
@@ -230,7 +230,7 @@
           "base_price": 340,
           "in_stock": true,
           "slug": "trutide-60mg",
-          "image_url": ""
+          "image_url": "assets/vial-glp-3r-trutide-60mg.png"
         }
       ],
       "default_size": {
@@ -240,7 +240,7 @@
         "base_price": 48,
         "in_stock": true,
         "slug": "trutide-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-glp-3r-trutide-5mg.png"
       },
       "slug": "trutide-5mg"
     },
@@ -428,7 +428,7 @@
       "short_desc": "Synthetic tetrapeptide Ala-Glu-Asp-Gly.",
       "long_desc": "Epitalon (Epithalon) is a synthetic tetrapeptide with the sequence Ala-Glu-Asp-Gly, available as a lyophilized powder for laboratory research.",
       "sort_order": 270,
-      "image_url": "",
+      "image_url": "assets/vial-epithalon-10mg.png",
       "sizes": [
         {
           "sku": "ET10",
@@ -437,7 +437,7 @@
           "base_price": 60,
           "in_stock": true,
           "slug": "epithalon-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-epithalon-10mg.png"
         },
         {
           "sku": "ET50",
@@ -446,7 +446,7 @@
           "base_price": 150,
           "in_stock": true,
           "slug": "epithalon-40mg",
-          "image_url": ""
+          "image_url": "assets/vial-epithalon-40mg.png"
         }
       ],
       "default_size": {
@@ -456,7 +456,7 @@
         "base_price": 60,
         "in_stock": true,
         "slug": "epithalon-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-epithalon-10mg.png"
       },
       "slug": "epithalon-10mg"
     },
@@ -471,7 +471,7 @@
       "short_desc": "Synthetic 15-amino acid fragment from gastric juice protein.",
       "long_desc": "BPC-157 is a synthetic 15-amino acid peptide fragment derived from human gastric juice protein, available as a lyophilized powder for laboratory research.",
       "sort_order": 290,
-      "image_url": "",
+      "image_url": "assets/vial-bpc157-5mg.png",
       "sizes": [
         {
           "sku": "BC5",
@@ -480,7 +480,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "bpc-157-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-bpc157-5mg.png"
         },
         {
           "sku": "BC10",
@@ -489,7 +489,7 @@
           "base_price": 65,
           "in_stock": true,
           "slug": "bpc-157-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-bpc157-10mg.png"
         },
         {
           "sku": "BC20",
@@ -498,7 +498,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "bpc-157-20mg",
-          "image_url": ""
+          "image_url": "assets/vial-bpc157-20mg.png"
         }
       ],
       "default_size": {
@@ -508,7 +508,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "bpc-157-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-bpc157-5mg.png"
       },
       "slug": "bpc-157-5mg"
     },
@@ -565,7 +565,7 @@
       "short_desc": "Lyophilized BPC-157 and TB-500 blend.",
       "long_desc": "BPC-157/TB-500 Blend is a lyophilized formulation containing two synthetic peptides for laboratory research.",
       "sort_order": 340,
-      "image_url": "",
+      "image_url": "assets/vial-bpc-157-plus-tb-500-10mg.png",
       "sizes": [
         {
           "sku": "BB10",
@@ -574,7 +574,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "bpc-157-tb-500-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-bpc-157-plus-tb-500-10mg.png"
         },
         {
           "sku": "BB20",
@@ -583,7 +583,7 @@
           "base_price": 150,
           "in_stock": true,
           "slug": "bpc-157-tb-500-20mg",
-          "image_url": ""
+          "image_url": "assets/vial-bpc-157-plus-tb-501-20mg.png"
         }
       ],
       "default_size": {
@@ -593,7 +593,7 @@
         "base_price": 80,
         "in_stock": true,
         "slug": "bpc-157-tb-500-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-bpc-157-plus-tb-500-10mg.png"
       },
       "slug": "bpc-157-tb-500-10mg"
     },
@@ -691,7 +691,7 @@
       "short_desc": "Synthetic 29-amino acid GHRH analog (Mod GRF 1-29).",
       "long_desc": "CJC-1295 (no DAC), also known as Mod GRF 1-29, is a synthetic 29-amino acid GHRH analog, available as a lyophilized powder for laboratory research.",
       "sort_order": 400,
-      "image_url": "",
+      "image_url": "assets/vial-cjc-1295-no-dac-5mg.png",
       "sizes": [
         {
           "sku": "CND5",
@@ -700,7 +700,7 @@
           "base_price": 65,
           "in_stock": true,
           "slug": "cjc-1295-no-dac-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-cjc-1295-no-dac-5mg.png"
         },
         {
           "sku": "CND10",
@@ -709,7 +709,7 @@
           "base_price": 110,
           "in_stock": true,
           "slug": "cjc-1295-no-dac-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-cjc-1295-no-dac-10mg.png"
         }
       ],
       "default_size": {
@@ -719,7 +719,7 @@
         "base_price": 65,
         "in_stock": true,
         "slug": "cjc-1295-no-dac-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-cjc-1295-no-dac-5mg.png"
       },
       "slug": "cjc-1295-no-dac-5mg"
     },
@@ -733,7 +733,7 @@
       "short_desc": "GHRH analog plus GHRP blend.",
       "long_desc": "CJC-1295 without DAC combined with Ipamorelin is a lyophilized two-peptide blend for laboratory research on GH-axis signaling.",
       "sort_order": 420,
-      "image_url": "",
+      "image_url": "assets/vial-cjc-1295-no-dac-5mg-plus-ipa-5mg-10mg.png",
       "sizes": [
         {
           "sku": "CP10",
@@ -742,7 +742,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "cjc-1295-no-dac-5mg-ipamorelin-5mg-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-cjc-1295-no-dac-5mg-plus-ipa-5mg-10mg.png"
         },
         {
           "sku": "CP20",
@@ -751,7 +751,7 @@
           "base_price": 140,
           "in_stock": true,
           "slug": "cjc-1295-no-dac-5mg-ipamorelin-5mg-20mg",
-          "image_url": ""
+          "image_url": "assets/vial-cjc-1295-no-dac-5mg-plus-ipa-5mg-20mg.png"
         }
       ],
       "default_size": {
@@ -761,7 +761,7 @@
         "base_price": 80,
         "in_stock": true,
         "slug": "cjc-1295-no-dac-5mg-ipamorelin-5mg-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-cjc-1295-no-dac-5mg-plus-ipa-5mg-10mg.png"
       },
       "slug": "cjc-1295-no-dac-5mg-ipamorelin-5mg-10mg"
     },
@@ -775,7 +775,7 @@
       "short_desc": "GHRH analog conjugated with a Drug Affinity Complex.",
       "long_desc": "CJC-1295 with DAC is a synthetic peptide analog of GHRH conjugated with a Drug Affinity Complex, available as a lyophilized powder for laboratory research.",
       "sort_order": 440,
-      "image_url": "",
+      "image_url": "assets/vial-cjc-1295-with-dac-5mg.png",
       "sizes": [
         {
           "sku": "CD5",
@@ -784,7 +784,7 @@
           "base_price": 135,
           "in_stock": true,
           "slug": "cjc-1295-with-dac-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-cjc-1295-with-dac-5mg.png"
         }
       ],
       "default_size": {
@@ -794,7 +794,7 @@
         "base_price": 135,
         "in_stock": true,
         "slug": "cjc-1295-with-dac-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-cjc-1295-with-dac-5mg.png"
       },
       "slug": "cjc-1295-with-dac-5mg"
     },
@@ -892,7 +892,7 @@
       "short_desc": "Synthetic hGH(177-191) fragment with N-terminal tyrosine.",
       "long_desc": "AOD-9604 is a synthetic 16-amino acid peptide fragment corresponding to hGH(177-191) with added N-terminal tyrosine, available as a lyophilized powder for laboratory research.",
       "sort_order": 490,
-      "image_url": "",
+      "image_url": "assets/vial-aod9604-5mg.png",
       "sizes": [
         {
           "sku": "5AD",
@@ -901,7 +901,7 @@
           "base_price": 90,
           "in_stock": true,
           "slug": "aod-9604-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-aod9604-5mg.png"
         },
         {
           "sku": "10AD",
@@ -910,7 +910,7 @@
           "base_price": 160,
           "in_stock": true,
           "slug": "aod-9604-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-aod9605-10mg.png"
         }
       ],
       "default_size": {
@@ -920,7 +920,7 @@
         "base_price": 90,
         "in_stock": true,
         "slug": "aod-9604-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-aod9604-5mg.png"
       },
       "slug": "aod-9604-5mg"
     },
@@ -967,7 +967,7 @@
       "short_desc": "Glycine-histidine-lysine copper(II) tripeptide complex.",
       "long_desc": "GHK-Cu is a tripeptide-copper complex consisting of glycine-histidine-lysine bound to a copper(II) ion, available as a lyophilized powder for laboratory research.",
       "sort_order": 520,
-      "image_url": "",
+      "image_url": "assets/vial-ghk-cu-50mg.png",
       "sizes": [
         {
           "sku": "CU50",
@@ -976,7 +976,7 @@
           "base_price": 30,
           "in_stock": true,
           "slug": "ghk-cu-50mg",
-          "image_url": ""
+          "image_url": "assets/vial-ghk-cu-50mg.png"
         },
         {
           "sku": "CU100",
@@ -985,7 +985,7 @@
           "base_price": 45,
           "in_stock": true,
           "slug": "ghk-cu-100mg",
-          "image_url": ""
+          "image_url": "assets/vial-ghk-cu-100mg.png"
         }
       ],
       "default_size": {
@@ -995,7 +995,7 @@
         "base_price": 30,
         "in_stock": true,
         "slug": "ghk-cu-50mg",
-        "image_url": ""
+        "image_url": "assets/vial-ghk-cu-50mg.png"
       },
       "slug": "ghk-cu-50mg"
     },
@@ -1135,7 +1135,7 @@
       "short_desc": "Small-molecule NNMT inhibitor.",
       "long_desc": "5-Amino-1MQ is a small-molecule compound and NNMT inhibitor available in lyophilized form for laboratory research.",
       "sort_order": 600,
-      "image_url": "",
+      "image_url": "assets/vial-5-amino-1mq-5mg.png",
       "sizes": [
         {
           "sku": "5AM",
@@ -1144,7 +1144,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "5-amino-1mq-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-5-amino-1mq-5mg.png"
         },
         {
           "sku": "50AM",
@@ -1153,7 +1153,7 @@
           "base_price": 100,
           "in_stock": true,
           "slug": "5-amino-1mq-50mg",
-          "image_url": ""
+          "image_url": "assets/vial-5-amino-1mq-50mg.png"
         }
       ],
       "default_size": {
@@ -1163,7 +1163,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "5-amino-1mq-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-5-amino-1mq-5mg.png"
       },
       "slug": "5-amino-1mq-5mg"
     },
@@ -1270,7 +1270,7 @@
       "short_desc": "Cagrilintide plus semaglutide blend.",
       "long_desc": "Cagrilintide + Semaglutide Blend combines two synthetic acylated peptides for laboratory research.",
       "sort_order": 670,
-      "image_url": "",
+      "image_url": "assets/vial-cagrilintide-plus-samaglutide-5mg.png",
       "sizes": [
         {
           "sku": "CS5",
@@ -1279,7 +1279,7 @@
           "base_price": 90,
           "in_stock": true,
           "slug": "cagrilintide-2-5mg-semaglutide-2-5mg-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-cagrilintide-plus-samaglutide-5mg.png"
         },
         {
           "sku": "CS10",
@@ -1288,7 +1288,7 @@
           "base_price": 135,
           "in_stock": true,
           "slug": "cagrilintide-5mg-semaglutide-5mg-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-cagrilintide-plus-samaglutide-10mg.png"
         }
       ],
       "default_size": {
@@ -1298,7 +1298,7 @@
         "base_price": 90,
         "in_stock": true,
         "slug": "cagrilintide-2-5mg-semaglutide-2-5mg-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-cagrilintide-plus-samaglutide-5mg.png"
       },
       "slug": "cagrilintide-2-5mg-semaglutide-2-5mg-5mg"
     },
@@ -1312,7 +1312,7 @@
       "short_desc": "Dual amylin and calcitonin receptor agonist (DACRA).",
       "long_desc": "Cagrilintide is a synthetic 39-amino acid acylated peptide analog classified as a dual amylin and calcitonin receptor agonist (DACRA), available as a lyophilized powder for laboratory research.",
       "sort_order": 690,
-      "image_url": "",
+      "image_url": "assets/vial-bpc157-5mg.png",
       "sizes": [
         {
           "sku": "CGL5",
@@ -1321,7 +1321,7 @@
           "base_price": 110,
           "in_stock": true,
           "slug": "cagrilintide-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-bpc157-5mg.png"
         },
         {
           "sku": "CGL10",
@@ -1330,7 +1330,7 @@
           "base_price": 160,
           "in_stock": true,
           "slug": "cagrilintide-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-cagrilintide-10mg-10vials.png"
         }
       ],
       "default_size": {
@@ -1340,7 +1340,7 @@
         "base_price": 110,
         "in_stock": true,
         "slug": "cagrilintide-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-bpc157-5mg.png"
       },
       "slug": "cagrilintide-5mg"
     },
@@ -1354,7 +1354,7 @@
       "short_desc": "Tripeptide antioxidant cofactor (GSH).",
       "long_desc": "Glutathione is a tripeptide (gamma-L-glutamyl-L-cysteinyl-glycine) with a characteristic gamma peptide linkage, available as a lyophilized powder for laboratory research.",
       "sort_order": 710,
-      "image_url": "",
+      "image_url": "assets/vial-glutathione-600mg.png",
       "sizes": [
         {
           "sku": "GT600",
@@ -1363,7 +1363,7 @@
           "base_price": 50,
           "in_stock": true,
           "slug": "glutathione-600mg",
-          "image_url": ""
+          "image_url": "assets/vial-glutathione-600mg.png"
         },
         {
           "sku": "GT1500",
@@ -1372,7 +1372,7 @@
           "base_price": 70,
           "in_stock": true,
           "slug": "glutathione-1500mg",
-          "image_url": ""
+          "image_url": "assets/vial-glutathione-1500mg.png"
         }
       ],
       "default_size": {
@@ -1382,7 +1382,7 @@
         "base_price": 50,
         "in_stock": true,
         "slug": "glutathione-600mg",
-        "image_url": ""
+        "image_url": "assets/vial-glutathione-600mg.png"
       },
       "slug": "glutathione-600mg"
     },
@@ -1429,7 +1429,7 @@
       "short_desc": "Synthetic hexapeptide ghrelin receptor agonist.",
       "long_desc": "GHRP-6 is a synthetic hexapeptide classified as a growth hormone secretagogue and ghrelin receptor agonist, available as a lyophilized powder for laboratory research.",
       "sort_order": 740,
-      "image_url": "",
+      "image_url": "assets/vial-ghrp-6-acetata-10mg.png",
       "sizes": [
         {
           "sku": "G610",
@@ -1438,7 +1438,7 @@
           "base_price": 75,
           "in_stock": true,
           "slug": "ghrp-6-acetate-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-ghrp-6-acetata-10mg.png"
         }
       ],
       "default_size": {
@@ -1448,7 +1448,7 @@
         "base_price": 75,
         "in_stock": true,
         "slug": "ghrp-6-acetate-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-ghrp-6-acetata-10mg.png"
       },
       "slug": "ghrp-6-acetate-10mg"
     },
@@ -1497,7 +1497,7 @@
       "short_desc": "GLOW-style three-peptide blend.",
       "long_desc": "Glow is a lyophilized formulation containing BPC-157 (10mg), GHK-Cu (50mg), and TB-500 (10mg) for laboratory research.",
       "sort_order": 770,
-      "image_url": "",
+      "image_url": "assets/vial-glow-blend-70mg.png",
       "sizes": [
         {
           "sku": "BBG70",
@@ -1506,7 +1506,7 @@
           "base_price": 150,
           "in_stock": true,
           "slug": "bpc-157-10mg-ghk-cu-50mg-tb-500-10mg-70mg",
-          "image_url": ""
+          "image_url": "assets/vial-glow-blend-70mg.png"
         }
       ],
       "default_size": {
@@ -1516,7 +1516,7 @@
         "base_price": 150,
         "in_stock": true,
         "slug": "bpc-157-10mg-ghk-cu-50mg-tb-500-10mg-70mg",
-        "image_url": ""
+        "image_url": "assets/vial-glow-blend-70mg.png"
       },
       "slug": "bpc-157-10mg-ghk-cu-50mg-tb-500-10mg-70mg"
     },
@@ -1675,7 +1675,7 @@
       "short_desc": "11-amino acid EPO helix-B peptide.",
       "long_desc": "ARA-290 is a synthetic 11-amino acid peptide derived from the helix B surface region of erythropoietin (EPO), available as a lyophilized powder for laboratory research.",
       "sort_order": 860,
-      "image_url": "",
+      "image_url": "assets/vial-ara-290-10mg.png",
       "sizes": [
         {
           "sku": "RA10",
@@ -1684,7 +1684,7 @@
           "base_price": 60,
           "in_stock": true,
           "slug": "ara-290-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-ara-290-10mg.png"
         }
       ],
       "default_size": {
@@ -1694,7 +1694,7 @@
         "base_price": 60,
         "in_stock": true,
         "slug": "ara-290-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-ara-290-10mg.png"
       },
       "slug": "ara-290-10mg"
     },
@@ -1966,7 +1966,7 @@
       "short_desc": "Delta sleep-inducing nonapeptide.",
       "long_desc": "DSIP (Delta Sleep-Inducing Peptide) is a synthetic nonapeptide with the sequence Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu, available as a lyophilized powder for laboratory research.",
       "sort_order": 970,
-      "image_url": "",
+      "image_url": "assets/vial-dsip-5mg.png",
       "sizes": [
         {
           "sku": "DS5",
@@ -1975,7 +1975,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "dsip-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-dsip-5mg.png"
         },
         {
           "sku": "DS10",
@@ -1984,7 +1984,7 @@
           "base_price": 60,
           "in_stock": true,
           "slug": "dsip-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-dsip-10mg.png"
         },
         {
           "sku": "DS15",
@@ -1993,7 +1993,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "dsip-15mg",
-          "image_url": ""
+          "image_url": "assets/vial-dsip-15mg.png"
         }
       ],
       "default_size": {
@@ -2003,7 +2003,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "dsip-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-dsip-5mg.png"
       },
       "slug": "dsip-5mg"
     },
@@ -2059,7 +2059,7 @@
       "short_desc": "Sterile water with 0.9% benzyl alcohol.",
       "long_desc": "Bacteriostatic Water is sterile water containing 0.9% benzyl alcohol as preservative, intended as a diluent for laboratory applications.",
       "sort_order": 1050,
-      "image_url": "",
+      "image_url": "assets/vial-bac-water-benzyl-alcoh-0-9pct-3ml.png",
       "sizes": [
         {
           "sku": "BA3",
@@ -2068,7 +2068,7 @@
           "base_price": 10,
           "in_stock": true,
           "slug": "bacteriostatic-water-3ml",
-          "image_url": ""
+          "image_url": "assets/vial-bac-water-benzyl-alcoh-0-9pct-3ml.png"
         },
         {
           "sku": "BA10",
@@ -2077,7 +2077,7 @@
           "base_price": 15,
           "in_stock": true,
           "slug": "bacteriostatic-water-10ml",
-          "image_url": ""
+          "image_url": "assets/vial-bac-water-benzyl-alcoh-0-9pct-10ml.png"
         }
       ],
       "default_size": {
@@ -2087,7 +2087,7 @@
         "base_price": 10,
         "in_stock": true,
         "slug": "bacteriostatic-water-3ml",
-        "image_url": ""
+        "image_url": "assets/vial-bac-water-benzyl-alcoh-0-9pct-3ml.png"
       },
       "slug": "bacteriostatic-water-3ml"
     },
@@ -2101,7 +2101,7 @@
       "short_desc": "0.6% acetic acid laboratory diluent.",
       "long_desc": "Acetic Acid 0.6% is a high-purity diluent commonly used for precise preparation and stabilization of various lab materials.",
       "sort_order": 1070,
-      "image_url": "",
+      "image_url": "assets/vial-asetic-acid-water-0-6pct-3ml.png",
       "sizes": [
         {
           "sku": "AA3",
@@ -2110,7 +2110,7 @@
           "base_price": 10,
           "in_stock": true,
           "slug": "acetic-acid-water-0-6-3ml",
-          "image_url": ""
+          "image_url": "assets/vial-asetic-acid-water-0-6pct-3ml.png"
         },
         {
           "sku": "AA10",
@@ -2119,7 +2119,7 @@
           "base_price": 15,
           "in_stock": true,
           "slug": "acetic-acid-water-0-6-10ml",
-          "image_url": ""
+          "image_url": "assets/vial-asetic-acid-water-0-6pct-10ml.png"
         }
       ],
       "default_size": {
@@ -2129,7 +2129,7 @@
         "base_price": 10,
         "in_stock": true,
         "slug": "acetic-acid-water-0-6-3ml",
-        "image_url": ""
+        "image_url": "assets/vial-asetic-acid-water-0-6pct-3ml.png"
       },
       "slug": "acetic-acid-water-0-6-3ml"
     },
@@ -2143,7 +2143,7 @@
       "short_desc": "Chimeric targeting/proapoptotic research peptide.",
       "long_desc": "Adipotide is a synthetic chimeric peptide consisting of a targeting sequence linked to a proapoptotic motif, available as a lyophilized powder for laboratory research.",
       "sort_order": 1090,
-      "image_url": "",
+      "image_url": "assets/vial-adipotide-5ml.png",
       "sizes": [
         {
           "sku": "AP5",
@@ -2152,7 +2152,7 @@
           "base_price": 125,
           "in_stock": true,
           "slug": "adipotide-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-adipotide-5ml.png"
         }
       ],
       "default_size": {
@@ -2162,7 +2162,7 @@
         "base_price": 125,
         "in_stock": true,
         "slug": "adipotide-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-adipotide-5ml.png"
       },
       "slug": "adipotide-5mg"
     },
@@ -2209,7 +2209,7 @@
       "short_desc": "D-retro-inverso FOXO4 research peptide.",
       "long_desc": "FOXO4-DRI is a synthetic D-retro-inverso peptide based on the FOXO4 transcription factor sequence, available as a lyophilized powder for laboratory research.",
       "sort_order": 1120,
-      "image_url": "",
+      "image_url": "assets/vial-fox4-10ml.png",
       "sizes": [
         {
           "sku": "F410",
@@ -2218,7 +2218,7 @@
           "base_price": 295,
           "in_stock": true,
           "slug": "foxo4-dri-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-fox4-10ml.png"
         }
       ],
       "default_size": {
@@ -2228,7 +2228,7 @@
         "base_price": 295,
         "in_stock": true,
         "slug": "foxo4-dri-10mg",
-        "image_url": ""
+        "image_url": "assets/vial-fox4-10ml.png"
       },
       "slug": "foxo4-dri-10mg"
     },
@@ -2351,7 +2351,7 @@
       "short_desc": "Selective amylin receptor agonist analog.",
       "long_desc": "Eloralintide is a synthetic 37-amino acid acylated analog of human amylin, classified as a selective amylin receptor agonist, available as a lyophilized powder for laboratory research.",
       "sort_order": 1180,
-      "image_url": "",
+      "image_url": "assets/vial-eloralintide-5mg.png",
       "sizes": [
         {
           "sku": "ELO5",
@@ -2360,7 +2360,7 @@
           "base_price": 180,
           "in_stock": true,
           "slug": "eloralintide-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-eloralintide-5mg.png"
         },
         {
           "sku": "ELO10",
@@ -2369,7 +2369,7 @@
           "base_price": 300,
           "in_stock": true,
           "slug": "eloralintide-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-eloralintide-10mg.png"
         }
       ],
       "default_size": {
@@ -2379,7 +2379,7 @@
         "base_price": 180,
         "in_stock": true,
         "slug": "eloralintide-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-eloralintide-5mg.png"
       },
       "slug": "eloralintide-5mg"
     }
