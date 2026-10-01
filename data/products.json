@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T03:18:31.078Z",
+  "updated": "2026-10-01T03:23:19.821Z",
   "products": [
     {
       "name": "GLP-1S-MAGLUTIDE",
@@ -11,7 +11,7 @@
       "short_desc": "GLP-1 receptor agonist research analog.",
       "long_desc": "Semaglutide is a synthetic acylated GLP-1 receptor agonist, available as a lyophilized powder for laboratory research. Research-use only. Not a prescription drug.",
       "sort_order": 10,
-      "image_url": "",
+      "image_url": "assets/vial-glp-1s-maglutide-5mg.png",
       "sizes": [
         {
           "sku": "SM5",
@@ -20,7 +20,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "maglutide-5mg",
-          "image_url": ""
+          "image_url": "assets/vial-glp-1s-maglutide-5mg.png"
         },
         {
           "sku": "SM10",
@@ -29,7 +29,7 @@
           "base_price": 50,
           "in_stock": true,
           "slug": "maglutide-10mg",
-          "image_url": ""
+          "image_url": "assets/vial-glp-1s-maglutide-10mg.png"
         },
         {
           "sku": "SM15",
@@ -38,7 +38,7 @@
           "base_price": 60,
           "in_stock": true,
           "slug": "maglutide-15mg",
-          "image_url": ""
+          "image_url": "assets/vial-glp-1s-maglutide-15mg.png"
         },
         {
           "sku": "SM20",
@@ -47,7 +47,7 @@
           "base_price": 75,
           "in_stock": true,
           "slug": "maglutide-20mg",
-          "image_url": ""
+          "image_url": "assets/vial-glp-1s-maglutide-20mg.png"
         },
         {
           "sku": "SM30",
@@ -56,7 +56,7 @@
           "base_price": 90,
           "in_stock": true,
           "slug": "maglutide-30mg",
-          "image_url": ""
+          "image_url": "assets/vial-glp-1s-maglutide-30mg.png"
         }
       ],
       "default_size": {
@@ -66,7 +66,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "maglutide-5mg",
-        "image_url": ""
+        "image_url": "assets/vial-glp-1s-maglutide-5mg.png"
       },
       "slug": "maglutide-5mg"
     },
