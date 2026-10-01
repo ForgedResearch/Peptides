@@ -243,7 +243,7 @@ if (document.getElementById('bacAdd')) {
 }
 
 function openProduct(id) {
-  const p = products.find(x => productId(p) === id);
+  const p = products.find(x => productId(x) === id);
   if (!p || !document.getElementById('productModal')) return;
   activeId = id;
   const def = p.default_size || p.sizes[0];
@@ -310,3 +310,27 @@ if (document.getElementById('gateAgree')) {
   };
 }
 if (document.getElementById('gateDecline')) {
+  document.getElementById('gateDecline').onclick = () => {
+    window.location.href = 'https://www.google.com';
+  };
+}
+
+fetch('data/products.json')
+  .then(r => {
+    if (!r.ok) throw new Error('Missing data/products.json');
+    return r.json();
+  })
+  .then(data => {
+    products = data.products || [];
+    renderFeatured();
+    renderProducts();
+  })
+  .catch(err => {
+    console.error(err);
+    if (grid) grid.innerHTML = '<p class="muted">Catalog is updating. Run the Sync sheet Action, then refresh.</p>';
+  });
+
+syncCart();
+refreshBac();
+openGate();
+
