@@ -48,8 +48,10 @@ function fromPrice(p) {
   const s = p.default_size || (p.sizes && p.sizes[0]);
   return s ? s.base_price : 0;
 }
-function imgSrc(p) {
-  return p.image_url || (p.default_size && p.default_size.image_url) || 'assets/logo-mark.png';
+
+function imgSrc(p, size) {
+  const s = size || (p && p.default_size) || (p && p.sizes && p.sizes[0]);
+  return (s && s.image_url) || (p && p.image_url) || 'assets/logo-mark.png';
 }
 
 function volumeRows(base, qty) {
@@ -80,6 +82,9 @@ function updateFeaturedPrice(id) {
   if (!p || !sel || !priceEl) return;
   const size = p.sizes[Number(sel.value)] || p.default_size;
   priceEl.textContent = fmt(size.base_price);
+  const card = sel.closest('.product');
+  const img = card && card.querySelector('.vial-img');
+  if (img) img.src = imgSrc(p, size);
 }
 
 function openFeatured(id) {
@@ -89,7 +94,7 @@ function openFeatured(id) {
     activeId = id;
     detailSize = Number(sel.value) || 0;
   }
-  openProduct(id);
+  openProduct(id, true);
 }
 
 function renderFeatured() {
@@ -106,7 +111,7 @@ function renderFeatured() {
     }).join('');
     return (
       '<article class="product">' +
-        '<img class="vial-img" src="' + imgSrc(p) + '" alt="' + p.name + '">' +
+        '<img class="vial-img" src="' + imgSrc(p, def) + '" alt="' + p.name + '">' +
         '<span class="tag">RESEARCH USE ONLY</span>' +
         '<strong>' + p.name + '</strong>' +
         '<div class="card-desc">' + (p.short_desc || '') + '</div>' +
@@ -242,15 +247,18 @@ if (document.getElementById('bacAdd')) {
   };
 }
 
-function openProduct(id) {
+function openProduct(id, keepSize) {
   const p = products.find(x => productId(x) === id);
   if (!p || !document.getElementById('productModal')) return;
-  activeId = id;
-  const def = p.default_size || p.sizes[0];
-  detailSize = Math.max(0, p.sizes.findIndex(s => s.sku === (def && def.sku)));
+  if (!keepSize) {
+    activeId = id;
+    const def = p.default_size || p.sizes[0];
+    detailSize = Math.max(0, p.sizes.findIndex(s => s.sku === (def && def.sku)));
+  } else {
+    activeId = id;
+  }
   if (!qtyState[id]) qtyState[id] = 1;
   document.getElementById('pmTitle').textContent = p.name;
-  document.getElementById('pmImg').src = imgSrc(p);
   document.getElementById('pmImg').alt = p.name;
   document.getElementById('pmDesc').textContent = p.long_desc || p.short_desc || '';
   document.getElementById('pmSize').innerHTML = p.sizes.map((s, i) => {
@@ -273,6 +281,8 @@ function refreshDetail() {
   const p = currentProduct();
   const size = currentSize(p);
   if (!p || !size) return;
+  const img = document.getElementById('pmImg');
+  if (img) img.src = imgSrc(p, size);
   const qty = currentQty(activeId);
   const line = getVolumePrice(size.base_price, qty).unitPrice * qty;
   document.getElementById('pmVol').innerHTML = volumeRows(size.base_price, qty);
@@ -333,4 +343,3 @@ fetch('data/products.json')
 syncCart();
 refreshBac();
 openGate();
-
