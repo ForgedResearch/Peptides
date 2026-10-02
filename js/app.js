@@ -171,10 +171,10 @@ function cartOffer() {
   }
   let note = '';
   if (!cart.length) note = '';
-  else if (!active) note = 'Add another product to start cart discounts. Qty 5+ stays on that line only.';
-  else if (tier === '10+') note = 'Cart discount: 20% off items still at qty 1-4. Qty 5+ is not counted.';
-  else if (tier === '5-9') note = 'Cart discount: 10% off items at qty 1-4. Add ' + (10 - meterQty) + ' more of those for 20% off.';
-  else note = 'Add ' + (5 - meterQty) + ' more items at qty 1-4 for 10% off. Qty 5+ is not counted.';
+  else if (!active) note = 'Add more products. You need 3 products.';
+  else if (tier === '10+') note = 'You got the big discount. 20% off.';
+  else if (tier === '5-9') note = 'You have 10% off. Add ' + (10 - meterQty) + ' more vials for 20% off.';
+  else note = 'Add ' + (5 - meterQty) + ' more vials for 10% off.';
   return { qty, meterQty, percentOff, tier, note, active, productCount: Object.keys(names).length };
 }
 
@@ -270,7 +270,7 @@ function syncCart() {
       listEl.innerHTML = '<p class="muted">Your cart is empty.</p>';
     } else {
       listEl.innerHTML = lines.join('') + (offer.note ? '<p class="muted cart-note">' + offer.note + '</p>' : '') +
-        '<p class="muted cart-note">Mix and Match minimums:<br>3 products - 5 vials min. 10% cart discount<br>3 products - 10 vials min. 20% cart discount</p>';
+        '<p class="muted cart-note">How to get a discount:<br>3 products and 5 vials = 10% off<br>3 products and 10 vials = 20% off</p>';
     }
   }
 }
