@@ -276,7 +276,7 @@ function syncCart() {
       listEl.innerHTML = '<p class="muted">Your cart is empty.</p>';
     } else {
       listEl.innerHTML = lines.join('') + (offer.note ? '<p class="muted cart-note">' + offer.note + '</p>' : '') +
-        '<p class="muted cart-note">How to get a discount:<br>3 products and 5 vials = 10% off<br>3 products and 10 vials = 20% off</p>';
+        '<p class="muted cart-note">Orders over $1,500 get an extra 30% off.</p>';
     }
   }
 }
