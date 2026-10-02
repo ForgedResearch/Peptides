@@ -226,14 +226,19 @@ function syncCart() {
   const countEl = document.getElementById('cartCount');
   const subEl = document.getElementById('subtotal');
   const totalEl = document.getElementById('orderTotal');
-  const discountEl = document.getElementById('orderDiscount');
+  const extraRow = document.getElementById('extraRow');
+  const extraEl = document.getElementById('extraSavings');
+  const saveRow = document.getElementById('totalSaveRow');
+  const saveEl = document.getElementById('totalSavings');
   const listEl = document.getElementById('cartItems');
   const offer = cartOffer();
   let charged = 0;
+  let lineSaved = 0;
   const lines = cart.map((c, i) => {
     const q = quoteLine(c, offer);
     c.unitPrice = q.unit;
     charged += q.line;
+    lineSaved += q.lineSave;
     const kindLabel = q.kind === 'cart' ? 'cart ' : 'panel ';
     const where = c.qty >= 5 ? 'Panel price · not counted' : 'Cart price · counted';
     const saveHtml = q.lineSave > 0 ? '<div class="save cart-save">(' + kindLabel + 'savings ' + fmt(q.lineSave) + ')</div>' : '';
@@ -248,20 +253,17 @@ function syncCart() {
       '<strong class="cart-line-price">' + fmt(q.line) + '</strong></div>';
   });
   charged = money(charged);
+  lineSaved = money(lineSaved);
   const extra = charged >= 1501 ? money(charged * 0.30) : 0;
   const due = money(charged - extra);
+  const allSaved = money(lineSaved + extra);
   if (countEl) countEl.textContent = offer.qty;
   if (subEl) subEl.textContent = fmt(charged);
   if (totalEl) totalEl.textContent = fmt(due);
-  if (discountEl) {
-    if (extra) {
-      discountEl.hidden = false;
-      discountEl.textContent = 'Order over $1,500. 30% off applied (additional savings on this order ' + fmt(extra) + ')';
-    } else {
-      discountEl.hidden = true;
-      discountEl.textContent = '';
-    }
-  }
+  if (extraRow) extraRow.hidden = !extra;
+  if (extraEl) extraEl.textContent = fmt(extra);
+  if (saveRow) saveRow.hidden = !allSaved;
+  if (saveEl) saveEl.textContent = fmt(allSaved);
   if (listEl) {
     if (!cart.length) {
       listEl.innerHTML = '<p class="muted">Your cart is empty.</p>';
