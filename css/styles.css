@@ -639,14 +639,3 @@ footer {
   max-height: calc(100dvh - 24px);
   overflow: auto;
 }
-@media (max-width: 700px) {
-  .product .btn { display: none; }
-  #viewAllBtn { display: inline-block; }
-  .hero { min-height: 0; padding: 48px 0 36px; }
-  .hero h1 { font-size: 34px; }
-  .section { padding: 36px 0; }
-  .product { padding: 14px; }
-  .gate .modal,
-  #gateModal .modal { padding: 16px; }
-  .gate-list { gap: 6px; font-size: 13px; }
-}
