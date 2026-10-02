@@ -1,4 +1,3 @@
-
 function money(n) {
   return Math.round((Number(n) + Number.EPSILON) * 100) / 100;
 }
@@ -213,14 +212,16 @@ function syncCart() {
     const lineSave = money((base - unit) * c.qty);
     charged += line;
     saved += lineSave;
-    const saveHtml = lineSave > 0 ? '<div class="save" style="font-size:13px">(savings ' + fmt(lineSave) + ')</div>' : '';
-    return '<div class="cart-line"><div><strong>' + c.name + '</strong><div class="muted">' + c.size + ' · ' + c.qty + ' × ' + fmt(unit) + '</div>' +
-      '<div class="stepper" style="margin-top:8px">' +
-      '<button type="button" data-act="minus" data-i="' + i + '">−</button>' +
+    const saveHtml = lineSave > 0 ? '<div class="save cart-save">(savings ' + fmt(lineSave) + ')</div>' : '';
+    return '<div class="cart-line">' +
+      '<div class="cart-main"><strong>' + c.name + '</strong><div class="muted">' + c.size + '</div>' + saveHtml + '</div>' +
+      '<div class="cart-controls">' +
+      '<button type="button" data-act="minus" data-i="' + i + '" aria-label="Decrease">−</button>' +
       '<span>' + c.qty + '</span>' +
-      '<button type="button" data-act="plus" data-i="' + i + '">+</button>' +
-      '<button type="button" data-act="remove" data-i="' + i + '">Remove</button>' +
-      '</div>' + saveHtml + '</div><strong>' + fmt(line) + '</strong></div>';
+      '<button type="button" data-act="plus" data-i="' + i + '" aria-label="Increase">+</button>' +
+      '<button type="button" class="cart-x" data-act="remove" data-i="' + i + '" aria-label="Remove">×</button>' +
+      '</div>' +
+      '<strong class="cart-line-price">' + fmt(line) + '</strong></div>';
   });
   if (countEl) countEl.textContent = offer.qty;
   if (subEl) subEl.textContent = fmt(charged);
