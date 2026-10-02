@@ -270,7 +270,7 @@ function syncCart() {
       listEl.innerHTML = '<p class="muted">Your cart is empty.</p>';
     } else {
       listEl.innerHTML = lines.join('') + (offer.note ? '<p class="muted cart-note">' + offer.note + '</p>' : '') +
-        '<p class="muted cart-note">Mix and Match:<br>3 products - 5 vials total 10% cart discount<br>3 products - 10 vials total 20% cart discount</p>';
+        '<p class="muted cart-note">Mix and Match minimums:<br>3 products - 5 vials min. 10% cart discount<br>3 products - 10 vials min. 20% cart discount</p>';
     }
   }
 }
