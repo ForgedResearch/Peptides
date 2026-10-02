@@ -1,3 +1,4 @@
+
 function money(n) {
   return Math.round((Number(n) + Number.EPSILON) * 100) / 100;
 }
@@ -203,7 +204,7 @@ function syncCart() {
   const offer = cartOffer();
   let charged = 0;
   let saved = 0;
-  const lines = cart.map(c => {
+  const lines = cart.map((c, i) => {
     const base = money(c.basePrice || c.unitPrice);
     const percent = Math.max(offer.percentOff, c.panelPercent || 0);
     const unit = money(base - money(base * (percent / 100)));
@@ -212,8 +213,14 @@ function syncCart() {
     const lineSave = money((base - unit) * c.qty);
     charged += line;
     saved += lineSave;
-    const saveHtml = lineSave > 0 ? '<div class="save">(savings ' + fmt(lineSave) + ')</div>' : '';
-    return '<div class="cart-line"><div><strong>' + c.name + '</strong><div class="muted">' + c.size + ' · ' + c.qty + ' × ' + fmt(unit) + '</div>' + saveHtml + '</div><strong>' + fmt(line) + '</strong></div>';
+    const saveHtml = lineSave > 0 ? '<div class="save" style="font-size:13px">(savings ' + fmt(lineSave) + ')</div>' : '';
+    return '<div class="cart-line"><div><strong>' + c.name + '</strong><div class="muted">' + c.size + ' · ' + c.qty + ' × ' + fmt(unit) + '</div>' +
+      '<div class="stepper" style="margin-top:8px">' +
+      '<button type="button" data-act="minus" data-i="' + i + '">−</button>' +
+      '<span>' + c.qty + '</span>' +
+      '<button type="button" data-act="plus" data-i="' + i + '">+</button>' +
+      '<button type="button" data-act="remove" data-i="' + i + '">Remove</button>' +
+      '</div>' + saveHtml + '</div><strong>' + fmt(line) + '</strong></div>';
   });
   if (countEl) countEl.textContent = offer.qty;
   if (subEl) subEl.textContent = fmt(charged);
@@ -256,26 +263,68 @@ if (document.getElementById('agreeBtn')) {
   };
 }
 
-const BAC_BASE = 20.99;
 let bacQty = 1;
+function bacProduct() {
+  return products.find(p => /bactero?static water/i.test(p.name) && !/acetic/i.test(p.name));
+}
+function bacSize(p) {
+  if (!p || !p.sizes) return null;
+  const stocked = p.sizes.filter(s => s.in_stock !== false);
+  const list = stocked.length ? stocked : p.sizes;
+  return list.slice().sort((a, b) => (Number(a.vial_mg) || 0) - (Number(b.vial_mg) || 0))[0];
+}
 function refreshBac() {
-  const p = getVolumePrice(BAC_BASE, bacQty);
+  const item = bacProduct();
+  const size = bacSize(item);
+  const box = document.getElementById('recommend');
   const qel = document.getElementById('bacQty');
   const pel = document.getElementById('bacPrice');
+  if (!item || !size) {
+    if (box) box.style.display = 'none';
+    return;
+  }
+  if (box) box.style.display = '';
+  const title = box && box.querySelector('strong');
+  const desc = box && box.querySelectorAll('.muted')[1];
+  if (title) title.textContent = item.name;
+  if (desc) desc.textContent = item.short_desc || '';
+  const priced = getVolumePrice(size.base_price, bacQty);
   if (qel) qel.textContent = bacQty;
-  if (pel) pel.textContent = fmt(p.unitPrice * bacQty);
+  if (pel) pel.textContent = fmt(priced.unitPrice * bacQty);
 }
 if (document.getElementById('bacMinus')) document.getElementById('bacMinus').onclick = () => { bacQty = Math.max(1, bacQty - 1); refreshBac(); };
 if (document.getElementById('bacPlus')) document.getElementById('bacPlus').onclick = () => { bacQty += 1; refreshBac(); };
 if (document.getElementById('bacAdd')) {
   document.getElementById('bacAdd').onclick = () => {
-    const p = getVolumePrice(BAC_BASE, bacQty);
-    cart.push({ id: 'bac-' + Date.now(), name: 'Bacteriostatic Water', size: '10 ml', qty: bacQty, basePrice: BAC_BASE, panelPercent: p.percentOff, unitPrice: p.unitPrice });
+    const item = bacProduct();
+    const size = bacSize(item);
+    if (!item || !size) return;
+    const priced = getVolumePrice(size.base_price, bacQty);
+    cart.push({
+      id: size.sku + '-' + Date.now(),
+      name: item.name,
+      size: size.vial_label,
+      qty: bacQty,
+      basePrice: money(size.base_price),
+      panelPercent: priced.percentOff,
+      unitPrice: priced.unitPrice
+    });
     bacQty = 1;
     refreshBac();
     syncCart();
   };
 }
+const cartList = document.getElementById('cartItems');
+if (cartList) cartList.addEventListener('click', (e) => {
+  const btn = e.target.closest('[data-act]');
+  if (!btn) return;
+  const i = Number(btn.dataset.i);
+  if (!cart[i]) return;
+  if (btn.dataset.act === 'plus') cart[i].qty += 1;
+  if (btn.dataset.act === 'minus') cart[i].qty = Math.max(1, cart[i].qty - 1);
+  if (btn.dataset.act === 'remove') cart.splice(i, 1);
+  syncCart();
+});
 
 function openProduct(id, keepSize) {
   const p = products.find(x => productId(x) === id);
@@ -364,6 +413,7 @@ fetch('data/products.json')
     products = data.products || [];
     renderFeatured();
     renderProducts();
+    refreshBac();
   })
   .catch(err => {
     console.error(err);
