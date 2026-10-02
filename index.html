@@ -123,24 +123,19 @@
       <button class="icon-btn" id="closeCart" type="button">✕</button>
     </div>
     <div class="cart-items" id="cartItems"></div>
-    <div class="recommend" id="recommend">
-      <div class="muted" style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px">Recommended</div>
-      <strong>Bacteriostatic Water</strong>
-      <div class="muted" style="margin:6px 0 10px">Sterile water with 0.9% benzyl alcohol. Laboratory diluent. 10 ml.</div>
-      <div class="row">
-        <div class="stepper">
-          <button type="button" id="bacMinus">−</button>
-          <span id="bacQty">1</span>
-          <button type="button" id="bacPlus">+</button>
-        </div>
-        <strong id="bacPrice">$20.99</strong>
-      </div>
-      <button class="btn full" type="button" id="bacAdd" style="margin-top:10px">Add to order</button>
-    </div>
     <div class="drawer-foot">
-      <div class="row" style="margin-bottom:12px">
+      <div class="row" style="margin-bottom:8px">
         <span class="muted">Subtotal</span>
-        <strong id="subtotal">$0</strong>
+        <strong id="subtotal">$0.00</strong>
+      </div>
+      <p class="save cart-save" id="orderDiscount" hidden></p>
+      <div class="row" style="margin:8px 0">
+        <span class="muted">Shipping</span>
+        <strong>Free</strong>
+      </div>
+      <div class="row" style="margin-bottom:12px">
+        <span>Total</span>
+        <strong id="orderTotal">$0.00</strong>
       </div>
       <button class="btn full" id="checkoutBtn" type="button">Proceed to checkout</button>
     </div>
