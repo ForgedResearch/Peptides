@@ -159,18 +159,15 @@ document.querySelectorAll('.chip').forEach(chip => {
 
 function cartOffer() {
   const qty = cart.reduce((a, b) => a + b.qty, 0);
-  const baseSubtotal = money(cart.reduce((a, b) => a + (b.basePrice || b.unitPrice) * b.qty, 0));
   let percentOff = 0;
   let tier = '1-4';
-  if (baseSubtotal > 1500) { percentOff = 30; tier = '1500'; }
-  else if (qty >= 10) { percentOff = 20; tier = '10+'; }
+  if (qty >= 10) { percentOff = 20; tier = '10+'; }
   else if (qty >= 5) { percentOff = 10; tier = '5-9'; }
   let note = '';
-  if (tier === '1500') note = 'Order over $1,500. 30% off applied.';
-  else if (tier === '10+') note = 'Top discount reached.';
+  if (tier === '10+') note = 'Top discount reached.';
   else if (tier === '5-9') note = 'Add ' + (10 - qty) + ' items to reach 20% off.';
   else if (qty > 0) note = 'Add ' + (5 - qty) + ' items to reach 10% off.';
-  return { qty, baseSubtotal, percentOff, tier, note };
+  return { qty, percentOff, tier, note };
 }
 
 function addToCartFromDetail() {
@@ -205,7 +202,8 @@ function syncCart() {
   let saved = 0;
   const lines = cart.map((c, i) => {
     const base = money(c.basePrice || c.unitPrice);
-    const percent = Math.max(offer.percentOff, c.panelPercent || 0);
+    const panel = c.panelPercent || 0;
+    const percent = panel > 0 ? panel : offer.percentOff;
     const unit = money(base - money(base * (percent / 100)));
     c.unitPrice = unit;
     const line = money(unit * c.qty);
@@ -224,14 +222,19 @@ function syncCart() {
       '<strong class="cart-line-price">' + fmt(line) + '</strong></div>';
   });
   if (countEl) countEl.textContent = offer.qty;
-  if (subEl) subEl.textContent = fmt(charged);
+  const extra = charged > 1500 ? money(charged * 0.30) : 0;
+  const due = money(charged - extra);
+  if (subEl) subEl.textContent = fmt(cart.length ? due : 0);
   if (listEl) {
     if (!cart.length) {
       listEl.innerHTML = '<p class="muted">Your cart is empty.</p>';
     } else {
+      const extraLine = extra ? '<p class="save cart-save cart-total-save">(additional 30% savings ' + fmt(extra) + ')</p>' : '';
+      const note = extra ? 'Order over $1,500 after discounts. Extra 30% off the cart total.' : offer.note;
       listEl.innerHTML = lines.join('')
-        + '<p class="muted" style="margin-top:12px;font-size:13px">' + offer.note + '</p>'
-        + '<p class="save" style="margin-top:6px;font-size:13px">(total savings on this order ' + fmt(saved) + ')</p>';
+        + '<p class="muted cart-note">' + note + '</p>'
+        + extraLine
+        + '<p class="save cart-save cart-total-save">(total savings on this order ' + fmt(money(saved + extra)) + ')</p>';
     }
   }
 }
