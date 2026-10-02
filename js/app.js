@@ -239,18 +239,19 @@ function syncCart() {
     c.unitPrice = q.unit;
     charged += q.line;
     lineSaved += q.lineSave;
-    const kindLabel = q.kind === 'cart' ? 'cart ' : 'panel ';
+    const kindLabel = q.kind === 'cart' ? 'cart' : 'panel';
     const where = c.qty >= 5 ? 'Panel price · not counted' : 'Cart price · counted';
-    const saveHtml = q.lineSave > 0 ? '<div class="save cart-save">(' + kindLabel + 'savings ' + fmt(q.lineSave) + ')</div>' : '';
+    const saveHtml = q.lineSave > 0 ? '<span class="save">(' + kindLabel + ' savings ' + fmt(q.lineSave) + ')</span>' : '<span></span>';
     return '<div class="cart-line">' +
-      '<div class="cart-main"><strong>' + c.name + '</strong><div class="muted">' + c.size + ' · qty ' + c.qty + '</div><div class="muted">' + where + '</div>' + saveHtml + '</div>' +
+      '<div class="row"><strong>' + c.name + '</strong><strong class="cart-line-price">' + fmt(q.line) + '</strong></div>' +
+      '<div class="row"><span class="muted">Qty ' + c.qty + '</span>' + saveHtml + '</div>' +
+      '<div class="muted">' + c.size + ' · ' + where + '</div>' +
       '<div class="cart-controls">' +
       '<button type="button" data-act="minus" data-i="' + i + '" aria-label="Decrease">−</button>' +
       '<span>' + c.qty + '</span>' +
       '<button type="button" data-act="plus" data-i="' + i + '" aria-label="Increase">+</button>' +
       '<button type="button" class="cart-x" data-act="remove" data-i="' + i + '" aria-label="Remove">×</button>' +
-      '</div>' +
-      '<strong class="cart-line-price">' + fmt(q.line) + '</strong></div>';
+      '</div></div>';
   });
   charged = money(charged);
   lineSaved = money(lineSaved);
@@ -408,3 +409,4 @@ fetch('data/products.json')
 
 syncCart();
 openGate();
+
