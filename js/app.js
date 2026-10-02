@@ -173,7 +173,13 @@ function cartOffer() {
   if (!cart.length) note = '';
   else if (!active) note = 'Add more products. You need 3 products.';
   else if (tier === '10+') note = 'You got the big discount. 20% off.';
-  else if (tier === '5-9') note = 'You have 10% off. Add ' + (10 - meterQty) + ' more vials for 20% off.';
+  else if (tier === '5-9') {
+    const needProducts = Math.max(0, 3 - Object.keys(names).length);
+    const needVials = 10 - meterQty;
+    note = needProducts
+      ? 'You have 10% off. Add ' + needProducts + ' more product and ' + needVials + ' more vials for 20% off.'
+      : 'You have 10% off. Add ' + needVials + ' more vials for 20% off.';
+  }
   else note = 'Add ' + (5 - meterQty) + ' more vials for 10% off.';
   return { qty, meterQty, percentOff, tier, note, active, productCount: Object.keys(names).length };
 }
