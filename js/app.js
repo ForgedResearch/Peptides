@@ -181,9 +181,10 @@ document.querySelectorAll('.chip').forEach(chip => {
 
 function cartOffer() {
   const qty = cart.reduce((a, b) => a + b.qty, 0);
-  const names = {};
-  cart.forEach(c => { names[c.name] = true; });
-  const active = cart.length >= 2;
+  const sizes = {};
+  cart.forEach(c => { sizes[c.name + '|' + c.size] = true; });
+  const productCount = Object.keys(sizes).length;
+  const active = productCount >= 2;
   const meterQty = cart.reduce((sum, c) => sum + (c.qty <= 4 ? c.qty : 0), 0);
   let percentOff = 0;
   let tier = '1-4';
@@ -196,14 +197,14 @@ function cartOffer() {
   else if (!active) note = 'Add more products. You need 3 products.';
   else if (tier === '10+') note = 'You got the big discount. 20% off.';
   else if (tier === '5-9') {
-    const needProducts = Math.max(0, 3 - Object.keys(names).length);
+    const needProducts = Math.max(0, 3 - productCount);
     const needVials = 10 - meterQty;
     note = needProducts
       ? 'You have 10% off. Add ' + needProducts + ' more product and ' + needVials + ' more vials for 20% off.'
       : 'You have 10% off. Add ' + needVials + ' more vials for 20% off.';
   }
   else note = 'Add ' + (5 - meterQty) + ' more vials for 10% off.';
-  return { qty, meterQty, percentOff, tier, note, active, productCount: Object.keys(names).length };
+  return { qty, meterQty, percentOff, tier, note, active, productCount };
 }
 
 function quoteLine(c, offer) {
