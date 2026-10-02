@@ -246,12 +246,10 @@ function syncCart() {
     charged += q.line;
     lineSaved += q.lineSave;
     const kindLabel = q.kind === 'cart' ? 'cart' : 'panel';
-    const where = c.qty >= 5 ? 'Panel price · not counted' : 'Cart price · counted';
     const saveHtml = q.lineSave > 0 ? '<span class="save">(' + kindLabel + ' savings ' + fmt(q.lineSave) + ')</span>' : '<span></span>';
     return '<div class="cart-line">' +
       '<div class="row"><strong>' + c.name + '</strong><strong class="cart-line-price">' + fmt(q.line) + '</strong></div>' +
-      '<div class="row"><span class="muted">Qty ' + c.qty + '</span>' + saveHtml + '</div>' +
-      '<div class="muted">' + c.size + ' · ' + where + '</div>' +
+      '<div class="row"><span class="muted">' + c.size + '</span>' + saveHtml + '</div>' +
       '<div class="cart-controls">' +
       '<button type="button" data-act="minus" data-i="' + i + '" aria-label="Decrease">−</button>' +
       '<span>' + c.qty + '</span>' +
