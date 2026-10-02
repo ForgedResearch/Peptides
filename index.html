@@ -9,6 +9,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .drawer { font-size: 15px; }
+    .cart-line { display: block; padding: 14px 0; }
+    .cart-line .row { align-items: start; }
+    .cart-controls { margin: 8px 0 0; }
+    .cart-line-price { margin: 0; font-size: 16px; }
+    .drawer-foot .save, .drawer-foot .save strong { color: #f5b942; }
+    .drawer-foot .total-row { font-size: 18px; font-weight: 800; margin-top: 8px; padding-top: 10px; border-top: 1px solid #2a3344; }
+  </style>
 </head>
 <body>
   <header>
@@ -140,7 +149,7 @@
         <span class="muted">Shipping</span>
         <strong>Free</strong>
       </div>
-      <div class="row" style="margin-bottom:12px">
+      <div class="row total-row" style="margin-bottom:12px">
         <span>Total</span>
         <strong id="orderTotal">$0.00</strong>
       </div>
