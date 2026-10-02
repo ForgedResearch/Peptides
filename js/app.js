@@ -121,7 +121,15 @@ function renderFeatured() {
 
 function renderProducts() {
   if (!grid) return;
-  const list = products.filter(p => filter === 'all' || catKey(p) === filter);
+  const q = (document.getElementById('catalogSearch') || {}).value || '';
+  const query = q.trim().toLowerCase();
+  const list = products.filter(p => {
+    if (filter !== 'all' && catKey(p) !== filter) return false;
+    if (!query) return true;
+    const sizes = (p.sizes || []).map(s => s.vial_label || '').join(' ');
+    const hay = (p.name + ' ' + (p.short_desc || '') + ' ' + (p.category_primary || '') + ' ' + sizes).toLowerCase();
+    return hay.indexOf(query) !== -1;
+  });
   grid.innerHTML = list.map(p => {
     const id = productId(p);
     return (
@@ -136,11 +144,25 @@ function renderProducts() {
         '</div>' +
       '</article>'
     );
-  }).join('') || '<p class="muted">No products in this category.</p>';
+  }).join('') || '<p class="muted">No matching products.</p>';
 }
 
 const viewAllBtn = document.getElementById('viewAllBtn');
 const catalog = document.getElementById('catalog');
+const catalogSearch = document.getElementById('catalogSearch');
+if (catalogSearch && catalog) {
+  catalogSearch.oninput = () => {
+    catalog.hidden = false;
+    renderProducts();
+  };
+}
+const searchBtn = document.querySelector('.nav-actions .icon-btn[title="Search"]');
+if (searchBtn && catalogSearch) {
+  searchBtn.onclick = () => {
+    catalogSearch.focus();
+    catalogSearch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+}
 if (viewAllBtn && catalog) {
   viewAllBtn.onclick = () => {
     catalog.hidden = false;
