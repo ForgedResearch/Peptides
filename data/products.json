@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01T22:28:06.201Z",
+  "updated": "2026-10-02T01:55:29.717Z",
   "products": [
     {
       "name": "GLP-1S-MAGLUTIDE",
@@ -11,7 +11,7 @@
       "short_desc": "GLP-1 receptor agonist research analog.",
       "long_desc": "Semaglutide is a synthetic acylated GLP-1 receptor agonist, available as a lyophilized powder for laboratory research. Research-use only. Not a prescription drug.",
       "sort_order": 10,
-      "image_url": "assets/vial-glp-1s-maglutide-5mg.png",
+      "image_url": "assets/vial-glp-1s-maglutide-10mg.png",
       "sizes": [
         {
           "sku": "SM5",
@@ -471,7 +471,7 @@
       "short_desc": "Synthetic 15-amino acid fragment from gastric juice protein.",
       "long_desc": "BPC-157 is a synthetic 15-amino acid peptide fragment derived from human gastric juice protein, available as a lyophilized powder for laboratory research.",
       "sort_order": 290,
-      "image_url": "assets/vial-bpc157-5mg.png",
+      "image_url": "assets/vial-bpc157-10mg.png",
       "sizes": [
         {
           "sku": "BC5",
@@ -691,7 +691,7 @@
       "short_desc": "Synthetic 29-amino acid GHRH analog (Mod GRF 1-29).",
       "long_desc": "CJC-1295 (no DAC), also known as Mod GRF 1-29, is a synthetic 29-amino acid GHRH analog, available as a lyophilized powder for laboratory research.",
       "sort_order": 400,
-      "image_url": "assets/vial-cjc-1295-no-dac-5mg.png",
+      "image_url": "assets/vial-cjc-1295-no-dac-10mg.png",
       "sizes": [
         {
           "sku": "CND5",
@@ -892,7 +892,7 @@
       "short_desc": "Synthetic hGH(177-191) fragment with N-terminal tyrosine.",
       "long_desc": "AOD-9604 is a synthetic 16-amino acid peptide fragment corresponding to hGH(177-191) with added N-terminal tyrosine, available as a lyophilized powder for laboratory research.",
       "sort_order": 490,
-      "image_url": "assets/vial-aod9604-5mg.png",
+      "image_url": "assets/vial-aod9605-10mg.png",
       "sizes": [
         {
           "sku": "5AD",
@@ -967,7 +967,7 @@
       "short_desc": "Glycine-histidine-lysine copper(II) tripeptide complex.",
       "long_desc": "GHK-Cu is a tripeptide-copper complex consisting of glycine-histidine-lysine bound to a copper(II) ion, available as a lyophilized powder for laboratory research.",
       "sort_order": 520,
-      "image_url": "assets/vial-ghk-cu-50mg.png",
+      "image_url": "assets/vial-ghk-cu-100mg.png",
       "sizes": [
         {
           "sku": "CU50",
@@ -1135,7 +1135,7 @@
       "short_desc": "Small-molecule NNMT inhibitor.",
       "long_desc": "5-Amino-1MQ is a small-molecule compound and NNMT inhibitor available in lyophilized form for laboratory research.",
       "sort_order": 600,
-      "image_url": "assets/vial-5-amino-1mq-5mg.png",
+      "image_url": "assets/vial-5-amino-1mq-50mg.png",
       "sizes": [
         {
           "sku": "5AM",
@@ -1312,7 +1312,7 @@
       "short_desc": "Dual amylin and calcitonin receptor agonist (DACRA).",
       "long_desc": "Cagrilintide is a synthetic 39-amino acid acylated peptide analog classified as a dual amylin and calcitonin receptor agonist (DACRA), available as a lyophilized powder for laboratory research.",
       "sort_order": 690,
-      "image_url": "assets/vial-bpc157-5mg.png",
+      "image_url": "assets/vial-cagrilintide-10mg-10vials.png",
       "sizes": [
         {
           "sku": "CGL5",
@@ -1966,7 +1966,7 @@
       "short_desc": "Delta sleep-inducing nonapeptide.",
       "long_desc": "DSIP (Delta Sleep-Inducing Peptide) is a synthetic nonapeptide with the sequence Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu, available as a lyophilized powder for laboratory research.",
       "sort_order": 970,
-      "image_url": "assets/vial-dsip-5mg.png",
+      "image_url": "assets/vial-dsip-10mg.png",
       "sizes": [
         {
           "sku": "DS5",
@@ -2059,7 +2059,7 @@
       "short_desc": "Sterile water with 0.9% benzyl alcohol.",
       "long_desc": "Bacteriostatic Water is sterile water containing 0.9% benzyl alcohol as preservative, intended as a diluent for laboratory applications.",
       "sort_order": 1050,
-      "image_url": "assets/vial-bac-water-benzyl-alcoh-0-9pct-3ml.png",
+      "image_url": "assets/vial-bac-water-benzyl-alcoh-0-9pct-10ml.png",
       "sizes": [
         {
           "sku": "BA3",
@@ -2101,7 +2101,7 @@
       "short_desc": "0.6% acetic acid laboratory diluent.",
       "long_desc": "Acetic Acid 0.6% is a high-purity diluent commonly used for precise preparation and stabilization of various lab materials.",
       "sort_order": 1070,
-      "image_url": "assets/vial-asetic-acid-water-0-6pct-3ml.png",
+      "image_url": "assets/vial-asetic-acid-water-0-6pct-10ml.png",
       "sizes": [
         {
           "sku": "AA3",
@@ -2266,40 +2266,6 @@
       "slug": "pe-22-28-10mg"
     },
     {
-      "name": "GHK-Cu 100mg + KPV 10mg",
-      "featured": false,
-      "category_primary": "Recovery",
-      "categories": [
-        "Recovery",
-        "Gut / Immune"
-      ],
-      "short_desc": "GHK-Cu and KPV blend.",
-      "long_desc": "Lyophilized blend of GHK-Cu and KPV for laboratory research.",
-      "sort_order": 1140,
-      "image_url": "",
-      "sizes": [
-        {
-          "sku": "GK110",
-          "vial_label": "110mg",
-          "vial_mg": 110,
-          "base_price": 105,
-          "in_stock": true,
-          "slug": "ghk-cu-100mg-kpv-10mg-110mg",
-          "image_url": ""
-        }
-      ],
-      "default_size": {
-        "sku": "GK110",
-        "vial_label": "110mg",
-        "vial_mg": 110,
-        "base_price": 105,
-        "in_stock": true,
-        "slug": "ghk-cu-100mg-kpv-10mg-110mg",
-        "image_url": ""
-      },
-      "slug": "ghk-cu-100mg-kpv-10mg-110mg"
-    },
-    {
       "name": "Testagen",
       "featured": false,
       "category_primary": "Recovery",
@@ -2351,7 +2317,7 @@
       "short_desc": "Selective amylin receptor agonist analog.",
       "long_desc": "Eloralintide is a synthetic 37-amino acid acylated analog of human amylin, classified as a selective amylin receptor agonist, available as a lyophilized powder for laboratory research.",
       "sort_order": 1180,
-      "image_url": "assets/vial-eloralintide-5mg.png",
+      "image_url": "assets/vial-eloralintide-10mg.png",
       "sizes": [
         {
           "sku": "ELO5",
