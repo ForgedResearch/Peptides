@@ -639,3 +639,16 @@ footer {
   max-height: calc(100dvh - 24px);
   overflow: auto;
 }
+.drawer { font-size: 75%; }
+.cart-line { align-items: center; }
+.cart-main { flex: 1; min-width: 0; }
+.cart-controls { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+.cart-controls button {
+  width: 28px; height: 28px; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--panel-2); color: #fff; cursor: pointer;
+}
+.cart-x { color: #e11d2e !important; font-size: 18px; font-weight: 700; background: transparent !important; border: 0 !important; }
+.cart-line-price { margin-left: 10px; white-space: nowrap; }
+.cart-save { font-size: 13px; }
+.cart-note { margin-top: 12px; font-size: 13px; }
+.cart-total-save { margin-top: 6px; text-align: right; }
