@@ -269,7 +269,8 @@ function syncCart() {
     if (!cart.length) {
       listEl.innerHTML = '<p class="muted">Your cart is empty.</p>';
     } else {
-      listEl.innerHTML = lines.join('') + (offer.note ? '<p class="muted cart-note">' + offer.note + '</p>' : '');
+      listEl.innerHTML = lines.join('') + (offer.note ? '<p class="muted cart-note">' + offer.note + '</p>' : '') +
+        '<p class="muted cart-note">Mix and Match:<br>3 products - 5 vials total 10% cart discount<br>3 products - 10 vials total 20% cart discount</p>';
     }
   }
 }
@@ -409,4 +410,3 @@ fetch('data/products.json')
 
 syncCart();
 openGate();
-
