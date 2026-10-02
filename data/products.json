@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T14:22:11.273Z",
+  "updated": "2026-10-02T19:03:43.770Z",
   "products": [
     {
       "name": "GLP-1S-MAGLUTIDE",
@@ -10,18 +10,9 @@
       ],
       "short_desc": "GLP-1 receptor agonist research analog.",
       "long_desc": "Semaglutide is a synthetic acylated GLP-1 receptor agonist, available as a lyophilized powder for laboratory research. Research-use only. Not a prescription drug.",
-      "sort_order": 10,
+      "sort_order": 20,
       "image_url": "assets/glp-1s-maglutide-10mg.png",
       "sizes": [
-        {
-          "sku": "SM5",
-          "vial_label": "5mg",
-          "vial_mg": 5,
-          "base_price": 40,
-          "in_stock": true,
-          "slug": "maglutide-5mg",
-          "image_url": "assets/glp-1s-maglutide-5mg.png"
-        },
         {
           "sku": "SM10",
           "vial_label": "10mg",
@@ -60,15 +51,15 @@
         }
       ],
       "default_size": {
-        "sku": "SM5",
-        "vial_label": "5mg",
-        "vial_mg": 5,
-        "base_price": 40,
+        "sku": "SM10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 50,
         "in_stock": true,
-        "slug": "maglutide-5mg",
-        "image_url": "assets/glp-1s-maglutide-5mg.png"
+        "slug": "maglutide-10mg",
+        "image_url": "assets/glp-1s-maglutide-10mg.png"
       },
-      "slug": "maglutide-5mg"
+      "slug": "maglutide-10mg"
     },
     {
       "name": "GLP-2T-ZEPATIDE",
@@ -159,25 +150,16 @@
     },
     {
       "name": "GLP-3R-TRUTIDE",
-      "featured": true,
+      "featured": false,
       "category_primary": "Metabolic",
       "categories": [
         "Metabolic"
       ],
       "short_desc": "Triple GLP-1/GIP/glucagon receptor agonist research analog.",
       "long_desc": "Retatrutide (listed by some labs as GLP-3R) is a synthetic 39-amino acid acylated peptide classified as a triple receptor agonist of GLP-1, GIP, and glucagon receptors, available as a lyophilized powder for laboratory research.",
-      "sort_order": 130,
+      "sort_order": 140,
       "image_url": "assets/glp-3r-trutide-10mg.png",
       "sizes": [
-        {
-          "sku": "RT5",
-          "vial_label": "5mg",
-          "vial_mg": 5,
-          "base_price": 48,
-          "in_stock": true,
-          "slug": "trutide-5mg",
-          "image_url": "assets/glp-3r-trutide-5mg.png"
-        },
         {
           "sku": "RT10",
           "vial_label": "10mg",
@@ -234,15 +216,15 @@
         }
       ],
       "default_size": {
-        "sku": "RT5",
-        "vial_label": "5mg",
-        "vial_mg": 5,
-        "base_price": 48,
+        "sku": "RT10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 80,
         "in_stock": true,
-        "slug": "trutide-5mg",
-        "image_url": "assets/glp-3r-trutide-5mg.png"
+        "slug": "trutide-10mg",
+        "image_url": "assets/glp-3r-trutide-10mg.png"
       },
-      "slug": "trutide-5mg"
+      "slug": "trutide-10mg"
     },
     {
       "name": "Melanotan 1",
@@ -462,7 +444,7 @@
     },
     {
       "name": "BPC-157",
-      "featured": true,
+      "featured": false,
       "category_primary": "Recovery",
       "categories": [
         "Recovery",
@@ -470,18 +452,9 @@
       ],
       "short_desc": "Synthetic 15-amino acid fragment from gastric juice protein.",
       "long_desc": "BPC-157 is a synthetic 15-amino acid peptide fragment derived from human gastric juice protein, available as a lyophilized powder for laboratory research.",
-      "sort_order": 290,
+      "sort_order": 300,
       "image_url": "assets/bpc-157-10mg.png",
       "sizes": [
-        {
-          "sku": "BC5",
-          "vial_label": "5mg",
-          "vial_mg": 5,
-          "base_price": 40,
-          "in_stock": true,
-          "slug": "bpc-157-5mg",
-          "image_url": "assets/bpc-157-5mg.png"
-        },
         {
           "sku": "BC10",
           "vial_label": "10mg",
@@ -502,15 +475,15 @@
         }
       ],
       "default_size": {
-        "sku": "BC5",
-        "vial_label": "5mg",
-        "vial_mg": 5,
-        "base_price": 40,
+        "sku": "BC10",
+        "vial_label": "10mg",
+        "vial_mg": 10,
+        "base_price": 65,
         "in_stock": true,
-        "slug": "bpc-157-5mg",
-        "image_url": "assets/bpc-157-5mg.png"
+        "slug": "bpc-157-10mg",
+        "image_url": "assets/bpc-157-10mg.png"
       },
-      "slug": "bpc-157-5mg"
+      "slug": "bpc-157-10mg"
     },
     {
       "name": "TB-500",
@@ -2016,18 +1989,9 @@
       ],
       "short_desc": "Sterile water with 0.9% benzyl alcohol.",
       "long_desc": "Bacteriostatic Water is sterile water containing 0.9% benzyl alcohol as preservative, intended as a diluent for laboratory applications.",
-      "sort_order": 1030,
+      "sort_order": 1040,
       "image_url": "assets/sterile-water-10ml.png",
       "sizes": [
-        {
-          "sku": "WA3",
-          "vial_label": "3ml",
-          "vial_mg": 3,
-          "base_price": 10,
-          "in_stock": true,
-          "slug": "sterile-water-3ml",
-          "image_url": "assets/sterile-water-3ml.png"
-        },
         {
           "sku": "WA10",
           "vial_label": "10ml",
@@ -2039,15 +2003,15 @@
         }
       ],
       "default_size": {
-        "sku": "WA3",
-        "vial_label": "3ml",
-        "vial_mg": 3,
-        "base_price": 10,
+        "sku": "WA10",
+        "vial_label": "10ml",
+        "vial_mg": 10,
+        "base_price": 15,
         "in_stock": true,
-        "slug": "sterile-water-3ml",
-        "image_url": "assets/sterile-water-3ml.png"
+        "slug": "sterile-water-10ml",
+        "image_url": "assets/sterile-water-10ml.png"
       },
-      "slug": "sterile-water-3ml"
+      "slug": "sterile-water-10ml"
     },
     {
       "name": "Bacterostatic Water Benzyl alcohol 0.9%",
@@ -2058,18 +2022,9 @@
       ],
       "short_desc": "Sterile water with 0.9% benzyl alcohol.",
       "long_desc": "Bacteriostatic Water is sterile water containing 0.9% benzyl alcohol as preservative, intended as a diluent for laboratory applications.",
-      "sort_order": 1050,
+      "sort_order": 1060,
       "image_url": "assets/bacteriostatic-water-10ml.png",
       "sizes": [
-        {
-          "sku": "BA3",
-          "vial_label": "3ml",
-          "vial_mg": 3,
-          "base_price": 10,
-          "in_stock": true,
-          "slug": "bacteriostatic-water-3ml",
-          "image_url": "assets/bacteriostatic-water-3ml.png"
-        },
         {
           "sku": "BA10",
           "vial_label": "10ml",
@@ -2081,15 +2036,15 @@
         }
       ],
       "default_size": {
-        "sku": "BA3",
-        "vial_label": "3ml",
-        "vial_mg": 3,
-        "base_price": 10,
+        "sku": "BA10",
+        "vial_label": "10ml",
+        "vial_mg": 10,
+        "base_price": 15,
         "in_stock": true,
-        "slug": "bacteriostatic-water-3ml",
-        "image_url": "assets/bacteriostatic-water-3ml.png"
+        "slug": "bacteriostatic-water-10ml",
+        "image_url": "assets/bacteriostatic-water-10ml.png"
       },
-      "slug": "bacteriostatic-water-3ml"
+      "slug": "bacteriostatic-water-10ml"
     },
     {
       "name": "Acetic acid water 0.6%",
