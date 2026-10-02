@@ -159,15 +159,46 @@ document.querySelectorAll('.chip').forEach(chip => {
 
 function cartOffer() {
   const qty = cart.reduce((a, b) => a + b.qty, 0);
+  const names = {};
+  cart.forEach(c => { names[c.name] = true; });
+  const active = cart.length >= 2;
+  const meterQty = cart.reduce((sum, c) => sum + (c.qty <= 4 ? c.qty : 0), 0);
   let percentOff = 0;
   let tier = '1-4';
-  if (qty >= 10) { percentOff = 20; tier = '10+'; }
-  else if (qty >= 5) { percentOff = 10; tier = '5-9'; }
+  if (active) {
+    if (meterQty >= 10) { percentOff = 20; tier = '10+'; }
+    else if (meterQty >= 5) { percentOff = 10; tier = '5-9'; }
+  }
   let note = '';
-  if (tier === '10+') note = 'Top discount reached.';
-  else if (tier === '5-9') note = 'Add ' + (10 - qty) + ' items to reach 20% off.';
-  else if (qty > 0) note = 'Add ' + (5 - qty) + ' items to reach 10% off.';
-  return { qty, percentOff, tier, note };
+  if (!cart.length) note = '';
+  else if (!active) note = 'Add another product to start cart discounts. Qty 5+ stays on that line only.';
+  else if (tier === '10+') note = 'Cart discount: 20% off items still at qty 1-4. Qty 5+ is not counted.';
+  else if (tier === '5-9') note = 'Cart discount: 10% off items at qty 1-4. Add ' + (10 - meterQty) + ' more of those for 20% off.';
+  else note = 'Add ' + (5 - meterQty) + ' more items at qty 1-4 for 10% off. Qty 5+ is not counted.';
+  return { qty, meterQty, percentOff, tier, note, active, productCount: Object.keys(names).length };
+}
+
+function quoteLine(c, offer) {
+  const base = money(c.basePrice || c.unitPrice);
+  const own = getVolumePrice(base, c.qty);
+  let percent = 0;
+  let kind = 'panel';
+  if (c.qty >= 5) {
+    percent = own.percentOff;
+    kind = 'panel';
+  } else if (offer.active) {
+    percent = offer.percentOff;
+    kind = 'cart';
+  }
+  const unit = money(base - money(base * (percent / 100)));
+  return {
+    base,
+    percent,
+    unit,
+    kind,
+    line: money(unit * c.qty),
+    lineSave: money((base - unit) * c.qty)
+  };
 }
 
 function addToCartFromDetail() {
@@ -179,15 +210,13 @@ function addToCartFromDetail() {
     return;
   }
   const qty = currentQty(activeId);
-  const priced = getVolumePrice(size.base_price, qty);
   cart.push({
     id: size.sku + '-' + Date.now(),
     name: item.name,
     size: size.vial_label,
     qty,
     basePrice: money(size.base_price),
-    panelPercent: priced.percentOff,
-    unitPrice: priced.unitPrice
+    unitPrice: money(size.base_price)
   });
   syncCart();
   openCart();
@@ -196,45 +225,48 @@ function addToCartFromDetail() {
 function syncCart() {
   const countEl = document.getElementById('cartCount');
   const subEl = document.getElementById('subtotal');
+  const totalEl = document.getElementById('orderTotal');
+  const discountEl = document.getElementById('orderDiscount');
   const listEl = document.getElementById('cartItems');
   const offer = cartOffer();
   let charged = 0;
-  let saved = 0;
   const lines = cart.map((c, i) => {
-    const base = money(c.basePrice || c.unitPrice);
-    const panel = c.panelPercent || 0;
-    const percent = panel > 0 ? panel : offer.percentOff;
-    const unit = money(base - money(base * (percent / 100)));
-    c.unitPrice = unit;
-    const line = money(unit * c.qty);
-    const lineSave = money((base - unit) * c.qty);
-    charged += line;
-    saved += lineSave;
-    const saveHtml = lineSave > 0 ? '<div class="save cart-save">(savings ' + fmt(lineSave) + ')</div>' : '';
+    const q = quoteLine(c, offer);
+    c.unitPrice = q.unit;
+    charged += q.line;
+    const kindLabel = q.kind === 'cart' ? 'cart ' : 'panel ';
+    const where = c.qty >= 5 ? 'Panel price · not counted' : 'Cart price · counted';
+    const saveHtml = q.lineSave > 0 ? '<div class="save cart-save">(' + kindLabel + 'savings ' + fmt(q.lineSave) + ')</div>' : '';
     return '<div class="cart-line">' +
-      '<div class="cart-main"><strong>' + c.name + '</strong><div class="muted">' + c.size + '</div>' + saveHtml + '</div>' +
+      '<div class="cart-main"><strong>' + c.name + '</strong><div class="muted">' + c.size + ' · qty ' + c.qty + '</div><div class="muted">' + where + '</div>' + saveHtml + '</div>' +
       '<div class="cart-controls">' +
       '<button type="button" data-act="minus" data-i="' + i + '" aria-label="Decrease">−</button>' +
       '<span>' + c.qty + '</span>' +
       '<button type="button" data-act="plus" data-i="' + i + '" aria-label="Increase">+</button>' +
       '<button type="button" class="cart-x" data-act="remove" data-i="' + i + '" aria-label="Remove">×</button>' +
       '</div>' +
-      '<strong class="cart-line-price">' + fmt(line) + '</strong></div>';
+      '<strong class="cart-line-price">' + fmt(q.line) + '</strong></div>';
   });
-  if (countEl) countEl.textContent = offer.qty;
-  const extra = charged > 1500 ? money(charged * 0.30) : 0;
+  charged = money(charged);
+  const extra = charged >= 1501 ? money(charged * 0.30) : 0;
   const due = money(charged - extra);
-  if (subEl) subEl.textContent = fmt(cart.length ? due : 0);
+  if (countEl) countEl.textContent = offer.qty;
+  if (subEl) subEl.textContent = fmt(charged);
+  if (totalEl) totalEl.textContent = fmt(due);
+  if (discountEl) {
+    if (extra) {
+      discountEl.hidden = false;
+      discountEl.textContent = 'Order over $1,500. 30% off applied (additional savings on this order ' + fmt(extra) + ')';
+    } else {
+      discountEl.hidden = true;
+      discountEl.textContent = '';
+    }
+  }
   if (listEl) {
     if (!cart.length) {
       listEl.innerHTML = '<p class="muted">Your cart is empty.</p>';
     } else {
-      const extraLine = extra ? '<p class="save cart-save cart-total-save">(additional 30% savings ' + fmt(extra) + ')</p>' : '';
-      const note = extra ? 'Order over $1,500 after discounts. Extra 30% off the cart total.' : offer.note;
-      listEl.innerHTML = lines.join('')
-        + '<p class="muted cart-note">' + note + '</p>'
-        + extraLine
-        + '<p class="save cart-save cart-total-save">(total savings on this order ' + fmt(money(saved + extra)) + ')</p>';
+      listEl.innerHTML = lines.join('') + (offer.note ? '<p class="muted cart-note">' + offer.note + '</p>' : '');
     }
   }
 }
@@ -267,57 +299,6 @@ if (document.getElementById('agreeBtn')) {
   };
 }
 
-let bacQty = 1;
-function bacProduct() {
-  return products.find(p => /bactero?static water/i.test(p.name) && !/acetic/i.test(p.name));
-}
-function bacSize(p) {
-  if (!p || !p.sizes) return null;
-  const stocked = p.sizes.filter(s => s.in_stock !== false);
-  const list = stocked.length ? stocked : p.sizes;
-  return list.slice().sort((a, b) => (Number(a.vial_mg) || 0) - (Number(b.vial_mg) || 0))[0];
-}
-function refreshBac() {
-  const item = bacProduct();
-  const size = bacSize(item);
-  const box = document.getElementById('recommend');
-  const qel = document.getElementById('bacQty');
-  const pel = document.getElementById('bacPrice');
-  if (!item || !size) {
-    if (box) box.style.display = 'none';
-    return;
-  }
-  if (box) box.style.display = '';
-  const title = box && box.querySelector('strong');
-  const desc = box && box.querySelectorAll('.muted')[1];
-  if (title) title.textContent = item.name;
-  if (desc) desc.textContent = item.short_desc || '';
-  const priced = getVolumePrice(size.base_price, bacQty);
-  if (qel) qel.textContent = bacQty;
-  if (pel) pel.textContent = fmt(priced.unitPrice * bacQty);
-}
-if (document.getElementById('bacMinus')) document.getElementById('bacMinus').onclick = () => { bacQty = Math.max(1, bacQty - 1); refreshBac(); };
-if (document.getElementById('bacPlus')) document.getElementById('bacPlus').onclick = () => { bacQty += 1; refreshBac(); };
-if (document.getElementById('bacAdd')) {
-  document.getElementById('bacAdd').onclick = () => {
-    const item = bacProduct();
-    const size = bacSize(item);
-    if (!item || !size) return;
-    const priced = getVolumePrice(size.base_price, bacQty);
-    cart.push({
-      id: size.sku + '-' + Date.now(),
-      name: item.name,
-      size: size.vial_label,
-      qty: bacQty,
-      basePrice: money(size.base_price),
-      panelPercent: priced.percentOff,
-      unitPrice: priced.unitPrice
-    });
-    bacQty = 1;
-    refreshBac();
-    syncCart();
-  };
-}
 const cartList = document.getElementById('cartItems');
 if (cartList) cartList.addEventListener('click', (e) => {
   const btn = e.target.closest('[data-act]');
@@ -417,7 +398,6 @@ fetch('data/products.json')
     products = data.products || [];
     renderFeatured();
     renderProducts();
-    refreshBac();
   })
   .catch(err => {
     console.error(err);
@@ -425,5 +405,4 @@ fetch('data/products.json')
   });
 
 syncCart();
-refreshBac();
 openGate();
