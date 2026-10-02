@@ -73,7 +73,7 @@ header {
   max-width: none;
   object-fit: cover;
   object-position: center 42%;
-  transform: scale(.95);
+  transform: scale(1);
   transform-origin: center 42%;
   margin: 0;
   border-radius: 0;
