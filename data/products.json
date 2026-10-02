@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T02:18:31.467Z",
+  "updated": "2026-10-02T02:33:55.294Z",
   "products": [
     {
       "name": "GLP-1S-MAGLUTIDE",
@@ -254,7 +254,7 @@
       "short_desc": "Synthetic alpha-MSH analog.",
       "long_desc": "Melanotan 1 is a synthetic analog of alpha-melanocyte stimulating hormone, available as a lyophilized powder for laboratory research.",
       "sort_order": 210,
-      "image_url": "assets/mt-2-melanotan-2-acetate-10mg.png",
+      "image_url": "assets/mt-1-5mg.png",
       "sizes": [
         {
           "sku": "MT1",
@@ -263,7 +263,7 @@
           "base_price": 45,
           "in_stock": true,
           "slug": "mt-1-5mg",
-          "image_url": "assets/mt-2-melanotan-2-acetate-10mg.png"
+          "image_url": "assets/mt-1-5mg.png"
         }
       ],
       "default_size": {
@@ -273,7 +273,7 @@
         "base_price": 45,
         "in_stock": true,
         "slug": "mt-1-5mg",
-        "image_url": "assets/mt-2-melanotan-2-acetate-10mg.png"
+        "image_url": "assets/mt-1-5mg.png"
       },
       "slug": "mt-1-5mg"
     },
@@ -287,7 +287,7 @@
       "short_desc": "Synthetic cyclic heptapeptide analog of a-MSH.",
       "long_desc": "Melanotan 2 is a synthetic cyclic heptapeptide analog of a-MSH, available as a lyophilized powder for laboratory research.",
       "sort_order": 220,
-      "image_url": "assets/nad-plus-1000mg.png",
+      "image_url": "assets/mt-2-acetate-10mg.png",
       "sizes": [
         {
           "sku": "ML10",
@@ -296,7 +296,7 @@
           "base_price": 45,
           "in_stock": true,
           "slug": "mt-2-acetate-10mg",
-          "image_url": "assets/nad-plus-1000mg.png"
+          "image_url": "assets/mt-2-acetate-10mg.png"
         }
       ],
       "default_size": {
@@ -306,7 +306,7 @@
         "base_price": 45,
         "in_stock": true,
         "slug": "mt-2-acetate-10mg",
-        "image_url": "assets/nad-plus-1000mg.png"
+        "image_url": "assets/mt-2-acetate-10mg.png"
       },
       "slug": "mt-2-acetate-10mg"
     },
@@ -471,7 +471,7 @@
       "short_desc": "Synthetic 15-amino acid fragment from gastric juice protein.",
       "long_desc": "BPC-157 is a synthetic 15-amino acid peptide fragment derived from human gastric juice protein, available as a lyophilized powder for laboratory research.",
       "sort_order": 290,
-      "image_url": "assets/bpc157-10mg.png",
+      "image_url": "assets/bpc-157-10mg.png",
       "sizes": [
         {
           "sku": "BC5",
@@ -480,7 +480,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "bpc-157-5mg",
-          "image_url": "assets/bpc157-5mg.png"
+          "image_url": "assets/bpc-157-5mg.png"
         },
         {
           "sku": "BC10",
@@ -489,7 +489,7 @@
           "base_price": 65,
           "in_stock": true,
           "slug": "bpc-157-10mg",
-          "image_url": "assets/bpc157-10mg.png"
+          "image_url": "assets/bpc-157-10mg.png"
         },
         {
           "sku": "BC20",
@@ -498,7 +498,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "bpc-157-20mg",
-          "image_url": "assets/bpc157-20mg.png"
+          "image_url": "assets/bpc-157-20mg.png"
         }
       ],
       "default_size": {
@@ -508,7 +508,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "bpc-157-5mg",
-        "image_url": "assets/bpc157-5mg.png"
+        "image_url": "assets/bpc-157-5mg.png"
       },
       "slug": "bpc-157-5mg"
     },
@@ -522,7 +522,7 @@
       "short_desc": "Thymosin Beta-4 fragment used in tissue-repair research.",
       "long_desc": "TB-500 is the common research-market name for Thymosin Beta-4 (Tb4), a 43-amino-acid peptide, available as a lyophilized powder for laboratory research.",
       "sort_order": 320,
-      "image_url": "assets/tb500-5mg.png",
+      "image_url": "assets/tb-500-5mg.png",
       "sizes": [
         {
           "sku": "BT5",
@@ -531,7 +531,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "tb-500-5mg",
-          "image_url": "assets/tb500-5mg.png"
+          "image_url": "assets/tb-500-5mg.png"
         },
         {
           "sku": "BT10",
@@ -540,7 +540,7 @@
           "base_price": 130,
           "in_stock": true,
           "slug": "tb-500-10mg",
-          "image_url": "assets/tb500-10mg.png"
+          "image_url": "assets/tb-500-10mg.png"
         }
       ],
       "default_size": {
@@ -550,7 +550,7 @@
         "base_price": 80,
         "in_stock": true,
         "slug": "tb-500-5mg",
-        "image_url": "assets/tb500-5mg.png"
+        "image_url": "assets/tb-500-5mg.png"
       },
       "slug": "tb-500-5mg"
     },
@@ -565,7 +565,7 @@
       "short_desc": "Lyophilized BPC-157 and TB-500 blend.",
       "long_desc": "BPC-157/TB-500 Blend is a lyophilized formulation containing two synthetic peptides for laboratory research.",
       "sort_order": 340,
-      "image_url": "assets/bpc-157-plus-tb-500-10mg.png",
+      "image_url": "assets/bpc-157-tb-500-10mg.png",
       "sizes": [
         {
           "sku": "BB10",
@@ -574,7 +574,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "bpc-157-tb-500-10mg",
-          "image_url": "assets/bpc-157-plus-tb-500-10mg.png"
+          "image_url": "assets/bpc-157-tb-500-10mg.png"
         },
         {
           "sku": "BB20",
@@ -583,7 +583,7 @@
           "base_price": 150,
           "in_stock": true,
           "slug": "bpc-157-tb-500-20mg",
-          "image_url": "assets/bpc-157-plus-tb-501-20mg.png"
+          "image_url": "assets/bpc-157-tb-500-20mg.png"
         }
       ],
       "default_size": {
@@ -593,7 +593,7 @@
         "base_price": 80,
         "in_stock": true,
         "slug": "bpc-157-tb-500-10mg",
-        "image_url": "assets/bpc-157-plus-tb-500-10mg.png"
+        "image_url": "assets/bpc-157-tb-500-10mg.png"
       },
       "slug": "bpc-157-tb-500-10mg"
     },
@@ -733,7 +733,7 @@
       "short_desc": "GHRH analog plus GHRP blend.",
       "long_desc": "CJC-1295 without DAC combined with Ipamorelin is a lyophilized two-peptide blend for laboratory research on GH-axis signaling.",
       "sort_order": 420,
-      "image_url": "assets/cjc-1295-no-dac-5mg-plus-ipa-5mg-10mg.png",
+      "image_url": "assets/cjc-1295-no-dac-5mg-ipa-5mg-10mg.png",
       "sizes": [
         {
           "sku": "CP10",
@@ -742,7 +742,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "cjc-1295-no-dac-5mg-ipamorelin-5mg-10mg",
-          "image_url": "assets/cjc-1295-no-dac-5mg-plus-ipa-5mg-10mg.png"
+          "image_url": "assets/cjc-1295-no-dac-5mg-ipa-5mg-10mg.png"
         },
         {
           "sku": "CP20",
@@ -751,7 +751,7 @@
           "base_price": 140,
           "in_stock": true,
           "slug": "cjc-1295-no-dac-5mg-ipamorelin-5mg-20mg",
-          "image_url": "assets/cjc-1295-no-dac-5mg-plus-ipa-5mg-20mg.png"
+          "image_url": "assets/cjc-1295-no-dac-5mg-ipa-5mg-20mg.png"
         }
       ],
       "default_size": {
@@ -761,7 +761,7 @@
         "base_price": 80,
         "in_stock": true,
         "slug": "cjc-1295-no-dac-5mg-ipamorelin-5mg-10mg",
-        "image_url": "assets/cjc-1295-no-dac-5mg-plus-ipa-5mg-10mg.png"
+        "image_url": "assets/cjc-1295-no-dac-5mg-ipa-5mg-10mg.png"
       },
       "slug": "cjc-1295-no-dac-5mg-ipamorelin-5mg-10mg"
     },
@@ -892,7 +892,7 @@
       "short_desc": "Synthetic hGH(177-191) fragment with N-terminal tyrosine.",
       "long_desc": "AOD-9604 is a synthetic 16-amino acid peptide fragment corresponding to hGH(177-191) with added N-terminal tyrosine, available as a lyophilized powder for laboratory research.",
       "sort_order": 490,
-      "image_url": "assets/aod9605-10mg.png",
+      "image_url": "assets/aod-9604-10mg.png",
       "sizes": [
         {
           "sku": "5AD",
@@ -901,7 +901,7 @@
           "base_price": 90,
           "in_stock": true,
           "slug": "aod-9604-5mg",
-          "image_url": "assets/aod9604-5mg.png"
+          "image_url": "assets/aod-9604-5mg.png"
         },
         {
           "sku": "10AD",
@@ -910,7 +910,7 @@
           "base_price": 160,
           "in_stock": true,
           "slug": "aod-9604-10mg",
-          "image_url": "assets/aod9605-10mg.png"
+          "image_url": "assets/aod-9604-10mg.png"
         }
       ],
       "default_size": {
@@ -920,7 +920,7 @@
         "base_price": 90,
         "in_stock": true,
         "slug": "aod-9604-5mg",
-        "image_url": "assets/aod9604-5mg.png"
+        "image_url": "assets/aod-9604-5mg.png"
       },
       "slug": "aod-9604-5mg"
     },
@@ -1027,7 +1027,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "kisspeptin-10-10mg",
-          "image_url": "assets/kisspeptin-11-10mg.png"
+          "image_url": "assets/kisspeptin-10-10mg.png"
         }
       ],
       "default_size": {
@@ -1228,7 +1228,7 @@
       "short_desc": "Synthetic p53-derived research peptide.",
       "long_desc": "PNC-27 is a synthetic peptide studied in laboratory models, available as a lyophilized powder for research use only.",
       "sort_order": 650,
-      "image_url": "assets/pnc27-5mg.png",
+      "image_url": "assets/pnc-27-5mg.png",
       "sizes": [
         {
           "sku": "PN5",
@@ -1237,7 +1237,7 @@
           "base_price": 80,
           "in_stock": true,
           "slug": "pnc-27-5mg",
-          "image_url": "assets/pnc27-5mg.png"
+          "image_url": "assets/pnc-27-5mg.png"
         },
         {
           "sku": "PN10",
@@ -1246,7 +1246,7 @@
           "base_price": 125,
           "in_stock": true,
           "slug": "pnc-27-10mg",
-          "image_url": "assets/pnc28-10mg.png"
+          "image_url": "assets/pnc-27-10mg.png"
         }
       ],
       "default_size": {
@@ -1256,7 +1256,7 @@
         "base_price": 80,
         "in_stock": true,
         "slug": "pnc-27-5mg",
-        "image_url": "assets/pnc27-5mg.png"
+        "image_url": "assets/pnc-27-5mg.png"
       },
       "slug": "pnc-27-5mg"
     },
@@ -1270,7 +1270,7 @@
       "short_desc": "Cagrilintide plus semaglutide blend.",
       "long_desc": "Cagrilintide + Semaglutide Blend combines two synthetic acylated peptides for laboratory research.",
       "sort_order": 670,
-      "image_url": "assets/cagrilintide-plus-samaglutide-5mg.png",
+      "image_url": "assets/cagrilintide-2-5mg-semaglutide-2-5mg-5mg.png",
       "sizes": [
         {
           "sku": "CS5",
@@ -1279,7 +1279,7 @@
           "base_price": 90,
           "in_stock": true,
           "slug": "cagrilintide-2-5mg-semaglutide-2-5mg-5mg",
-          "image_url": "assets/cagrilintide-plus-samaglutide-5mg.png"
+          "image_url": "assets/cagrilintide-2-5mg-semaglutide-2-5mg-5mg.png"
         },
         {
           "sku": "CS10",
@@ -1288,7 +1288,7 @@
           "base_price": 135,
           "in_stock": true,
           "slug": "cagrilintide-5mg-semaglutide-5mg-10mg",
-          "image_url": "assets/cagrilintide-plus-samaglutide-10mg.png"
+          "image_url": "assets/cagrilintide-5mg-semaglutide-5mg-10mg.png"
         }
       ],
       "default_size": {
@@ -1298,7 +1298,7 @@
         "base_price": 90,
         "in_stock": true,
         "slug": "cagrilintide-2-5mg-semaglutide-2-5mg-5mg",
-        "image_url": "assets/cagrilintide-plus-samaglutide-5mg.png"
+        "image_url": "assets/cagrilintide-2-5mg-semaglutide-2-5mg-5mg.png"
       },
       "slug": "cagrilintide-2-5mg-semaglutide-2-5mg-5mg"
     },
@@ -1312,7 +1312,7 @@
       "short_desc": "Dual amylin and calcitonin receptor agonist (DACRA).",
       "long_desc": "Cagrilintide is a synthetic 39-amino acid acylated peptide analog classified as a dual amylin and calcitonin receptor agonist (DACRA), available as a lyophilized powder for laboratory research.",
       "sort_order": 690,
-      "image_url": "assets/cagrilintide-10mg-10vials.png",
+      "image_url": "assets/cagrilintide-10mg.png",
       "sizes": [
         {
           "sku": "CGL5",
@@ -1321,7 +1321,7 @@
           "base_price": 110,
           "in_stock": true,
           "slug": "cagrilintide-5mg",
-          "image_url": "assets/bpc157-5mg.png"
+          "image_url": "assets/cagrilintide-5mg.png"
         },
         {
           "sku": "CGL10",
@@ -1330,7 +1330,7 @@
           "base_price": 160,
           "in_stock": true,
           "slug": "cagrilintide-10mg",
-          "image_url": "assets/cagrilintide-10mg-10vials.png"
+          "image_url": "assets/cagrilintide-10mg.png"
         }
       ],
       "default_size": {
@@ -1340,7 +1340,7 @@
         "base_price": 110,
         "in_stock": true,
         "slug": "cagrilintide-5mg",
-        "image_url": "assets/bpc157-5mg.png"
+        "image_url": "assets/cagrilintide-5mg.png"
       },
       "slug": "cagrilintide-5mg"
     },
@@ -1429,7 +1429,7 @@
       "short_desc": "Synthetic hexapeptide ghrelin receptor agonist.",
       "long_desc": "GHRP-6 is a synthetic hexapeptide classified as a growth hormone secretagogue and ghrelin receptor agonist, available as a lyophilized powder for laboratory research.",
       "sort_order": 740,
-      "image_url": "assets/ghrp-6-acetata-10mg.png",
+      "image_url": "assets/ghrp-6-acetate-10mg.png",
       "sizes": [
         {
           "sku": "G610",
@@ -1438,7 +1438,7 @@
           "base_price": 75,
           "in_stock": true,
           "slug": "ghrp-6-acetate-10mg",
-          "image_url": "assets/ghrp-6-acetata-10mg.png"
+          "image_url": "assets/ghrp-6-acetate-10mg.png"
         }
       ],
       "default_size": {
@@ -1448,7 +1448,7 @@
         "base_price": 75,
         "in_stock": true,
         "slug": "ghrp-6-acetate-10mg",
-        "image_url": "assets/ghrp-6-acetata-10mg.png"
+        "image_url": "assets/ghrp-6-acetate-10mg.png"
       },
       "slug": "ghrp-6-acetate-10mg"
     },
@@ -1548,7 +1548,7 @@
           "base_price": 135,
           "in_stock": true,
           "slug": "thymosin-alpha-1-10mg",
-          "image_url": "assets/thymosin-alpha-2-10mg.png"
+          "image_url": "assets/thymosin-alpha-1-10mg.png"
         }
       ],
       "default_size": {
@@ -1572,7 +1572,7 @@
       "short_desc": "Nicotinamide adenine dinucleotide coenzyme.",
       "long_desc": "NAD+ (Nicotinamide Adenine Dinucleotide) is a dinucleotide coenzyme, available as a lyophilized powder for laboratory research.",
       "sort_order": 800,
-      "image_url": "assets/nad-plus-100mg.png",
+      "image_url": "assets/nad-100mg.png",
       "sizes": [
         {
           "sku": "NJ100",
@@ -1581,7 +1581,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "nad-100mg",
-          "image_url": "assets/nad-plus-100mg.png"
+          "image_url": "assets/nad-100mg.png"
         },
         {
           "sku": "NJ500",
@@ -1590,7 +1590,7 @@
           "base_price": 60,
           "in_stock": true,
           "slug": "nad-500mg",
-          "image_url": "assets/nad-plus-500mg.png"
+          "image_url": "assets/nad-500mg.png"
         },
         {
           "sku": "NJ1000",
@@ -1599,7 +1599,7 @@
           "base_price": 130,
           "in_stock": true,
           "slug": "nad-1000mg",
-          "image_url": "assets/nad-plus-1000mg.png"
+          "image_url": "assets/nad-1000mg.png"
         }
       ],
       "default_size": {
@@ -1609,7 +1609,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "nad-100mg",
-        "image_url": "assets/nad-plus-100mg.png"
+        "image_url": "assets/nad-100mg.png"
       },
       "slug": "nad-100mg"
     },
@@ -1774,7 +1774,7 @@
       "short_desc": "Long Arg3 IGF-1 analog (83 amino acids).",
       "long_desc": "IGF-1 LR3 is an 83-amino acid synthetic analog of human IGF-1 with N-terminal extension and Arg3 substitution, available as a lyophilized powder for laboratory research.",
       "sort_order": 890,
-      "image_url": "assets/igf-1lr3-0-1mg.png",
+      "image_url": "assets/igf-1-lr3-0-1mg.png",
       "sizes": [
         {
           "sku": "IG01",
@@ -1783,7 +1783,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "igf-1-lr3-0-1mg",
-          "image_url": "assets/igf-1lr3-0-1mg.png"
+          "image_url": "assets/igf-1-lr3-0-1mg.png"
         },
         {
           "sku": "IG1",
@@ -1792,7 +1792,7 @@
           "base_price": 170,
           "in_stock": true,
           "slug": "igf-1-lr3-1mg",
-          "image_url": "assets/igf-1lr4-1mg.png"
+          "image_url": "assets/igf-1-lr3-1mg.png"
         }
       ],
       "default_size": {
@@ -1802,7 +1802,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "igf-1-lr3-0-1mg",
-        "image_url": "assets/igf-1lr3-0-1mg.png"
+        "image_url": "assets/igf-1-lr3-0-1mg.png"
       },
       "slug": "igf-1-lr3-0-1mg"
     },
@@ -1900,7 +1900,7 @@
       "short_desc": "Vitamin B12 laboratory solution.",
       "long_desc": "Vitamin B12 solution supplied for laboratory preparation use.",
       "sort_order": 950,
-      "image_url": "assets/b12-10mg.png",
+      "image_url": "assets/vitamin-b12-10ml.png",
       "sizes": [
         {
           "sku": "B12",
@@ -1909,7 +1909,7 @@
           "base_price": 40,
           "in_stock": true,
           "slug": "vitamin-b12-10ml",
-          "image_url": "assets/b12-10mg.png"
+          "image_url": "assets/vitamin-b12-10ml.png"
         }
       ],
       "default_size": {
@@ -1919,7 +1919,7 @@
         "base_price": 40,
         "in_stock": true,
         "slug": "vitamin-b12-10ml",
-        "image_url": "assets/b12-10mg.png"
+        "image_url": "assets/vitamin-b12-10ml.png"
       },
       "slug": "vitamin-b12-10ml"
     },
