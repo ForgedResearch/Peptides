@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T02:33:55.294Z",
+  "updated": "2026-10-02T07:50:31.574Z",
   "products": [
     {
       "name": "GLP-1S-MAGLUTIDE",
@@ -167,7 +167,7 @@
       "short_desc": "Triple GLP-1/GIP/glucagon receptor agonist research analog.",
       "long_desc": "Retatrutide (listed by some labs as GLP-3R) is a synthetic 39-amino acid acylated peptide classified as a triple receptor agonist of GLP-1, GIP, and glucagon receptors, available as a lyophilized powder for laboratory research.",
       "sort_order": 130,
-      "image_url": "assets/glp-3r-trutide-5mg.png",
+      "image_url": "assets/glp-3r-trutide-10mg.png",
       "sizes": [
         {
           "sku": "RT5",
@@ -353,7 +353,7 @@
       "short_desc": "Synthetic tuftsin analog studied in CNS signaling models.",
       "long_desc": "Selank is a synthetic peptide analog investigated in neurotransmitter and cognitive-signaling research, available as a lyophilized powder for laboratory research.",
       "sort_order": 240,
-      "image_url": "assets/selank-5mg.png",
+      "image_url": "assets/selank-10mg.png",
       "sizes": [
         {
           "sku": "SK5",
@@ -522,7 +522,7 @@
       "short_desc": "Thymosin Beta-4 fragment used in tissue-repair research.",
       "long_desc": "TB-500 is the common research-market name for Thymosin Beta-4 (Tb4), a 43-amino-acid peptide, available as a lyophilized powder for laboratory research.",
       "sort_order": 320,
-      "image_url": "assets/tb-500-5mg.png",
+      "image_url": "assets/tb-500-10mg.png",
       "sizes": [
         {
           "sku": "BT5",
@@ -607,7 +607,7 @@
       "short_desc": "Synthetic ACTH(4-10) analog studied in neuro research.",
       "long_desc": "Semax is a synthetic peptide analog derived from ACTH(4-10), available as a lyophilized powder for laboratory research.",
       "sort_order": 360,
-      "image_url": "assets/semax-5mg.png",
+      "image_url": "assets/semax-10mg.png",
       "sizes": [
         {
           "sku": "XA5",
@@ -808,7 +808,7 @@
       "short_desc": "Synthetic GHRH(1-29) analog.",
       "long_desc": "Sermorelin Acetate is a synthetic GHRH fragment, available as a lyophilized powder for laboratory research.",
       "sort_order": 450,
-      "image_url": "assets/sermorelin-acetate-5mg.png",
+      "image_url": "assets/sermorelin-acetate-10mg.png",
       "sizes": [
         {
           "sku": "SMO5",
@@ -850,7 +850,7 @@
       "short_desc": "Human chorionic gonadotropin research material.",
       "long_desc": "HCG is supplied as a lyophilized research material for laboratory use only.",
       "sort_order": 470,
-      "image_url": "assets/hcg-5000iu.png",
+      "image_url": "assets/hcg-10000iu.png",
       "sizes": [
         {
           "sku": "G5K",
@@ -1009,7 +1009,7 @@
       "short_desc": "C-terminal decapeptide of kisspeptin.",
       "long_desc": "Kisspeptin-10 is a synthetic decapeptide corresponding to the C-terminal 10 amino acids of full-length kisspeptin, available as a lyophilized powder for laboratory research.",
       "sort_order": 540,
-      "image_url": "assets/kisspeptin-10-5mg.png",
+      "image_url": "assets/kisspeptin-10-10mg.png",
       "sizes": [
         {
           "sku": "KS5",
@@ -1177,7 +1177,7 @@
       "short_desc": "Synthetic Glu-Asp-Arg tripeptide (Khavinson class).",
       "long_desc": "Pinealon is a synthetic tripeptide (Glu-Asp-Arg / EDR) in the Khavinson peptide class, available as a lyophilized powder for laboratory research.",
       "sort_order": 620,
-      "image_url": "assets/pinealon-5mg.png",
+      "image_url": "assets/pinealon-10mg.png",
       "sizes": [
         {
           "sku": "PI5",
@@ -1228,7 +1228,7 @@
       "short_desc": "Synthetic p53-derived research peptide.",
       "long_desc": "PNC-27 is a synthetic peptide studied in laboratory models, available as a lyophilized powder for research use only.",
       "sort_order": 650,
-      "image_url": "assets/pnc-27-5mg.png",
+      "image_url": "assets/pnc-27-10mg.png",
       "sizes": [
         {
           "sku": "PN5",
@@ -1354,7 +1354,7 @@
       "short_desc": "Tripeptide antioxidant cofactor (GSH).",
       "long_desc": "Glutathione is a tripeptide (gamma-L-glutamyl-L-cysteinyl-glycine) with a characteristic gamma peptide linkage, available as a lyophilized powder for laboratory research.",
       "sort_order": 710,
-      "image_url": "assets/glutathione-600mg.png",
+      "image_url": "assets/glutathione-1500mg.png",
       "sizes": [
         {
           "sku": "GT600",
@@ -1530,7 +1530,7 @@
       "short_desc": "28-amino acid synthetic thymic peptide.",
       "long_desc": "Thymosin Alpha-1 is a 28-amino acid synthetic peptide corresponding to the natural thymic peptide sequence, available as a lyophilized powder for laboratory research.",
       "sort_order": 780,
-      "image_url": "assets/thymosin-alpha-1-5mg.png",
+      "image_url": "assets/thymosin-alpha-1-10mg.png",
       "sizes": [
         {
           "sku": "TA5",
@@ -1572,7 +1572,7 @@
       "short_desc": "Nicotinamide adenine dinucleotide coenzyme.",
       "long_desc": "NAD+ (Nicotinamide Adenine Dinucleotide) is a dinucleotide coenzyme, available as a lyophilized powder for laboratory research.",
       "sort_order": 800,
-      "image_url": "assets/nad-100mg.png",
+      "image_url": "assets/nad-1000mg.png",
       "sizes": [
         {
           "sku": "NJ100",
@@ -1624,7 +1624,7 @@
       "short_desc": "Lys-Pro-Val C-terminal fragment of a-MSH.",
       "long_desc": "KPV is a synthetic tripeptide (Lys-Pro-Val) corresponding to the C-terminal fragment of a-MSH, available as a lyophilized powder for laboratory research.",
       "sort_order": 830,
-      "image_url": "assets/kpv-5mg.png",
+      "image_url": "assets/kpv-10mg.png",
       "sizes": [
         {
           "sku": "KPV5",
@@ -1816,7 +1816,7 @@
       "short_desc": "Vasoactive intestinal peptide (aviptadil sequence).",
       "long_desc": "Aviptadil is a synthetic 28-amino acid peptide identical to human vasoactive intestinal peptide (VIP), available as a lyophilized powder for laboratory research.",
       "sort_order": 910,
-      "image_url": "assets/vip-5mg.png",
+      "image_url": "assets/vip-10mg.png",
       "sizes": [
         {
           "sku": "VIP5",
@@ -1858,7 +1858,7 @@
       "short_desc": "Selective ghrelin-receptor GHRP analog.",
       "long_desc": "Ipamorelin is a synthetic pentapeptide growth hormone secretagogue, available as a lyophilized powder for laboratory research.",
       "sort_order": 930,
-      "image_url": "assets/ipamorelin-5mg.png",
+      "image_url": "assets/ipamorelin-10mg.png",
       "sizes": [
         {
           "sku": "IP5",
@@ -2017,7 +2017,7 @@
       "short_desc": "Sterile water with 0.9% benzyl alcohol.",
       "long_desc": "Bacteriostatic Water is sterile water containing 0.9% benzyl alcohol as preservative, intended as a diluent for laboratory applications.",
       "sort_order": 1030,
-      "image_url": "assets/sterile-water-3ml.png",
+      "image_url": "assets/sterile-water-10ml.png",
       "sizes": [
         {
           "sku": "WA3",
@@ -2059,7 +2059,7 @@
       "short_desc": "Sterile water with 0.9% benzyl alcohol.",
       "long_desc": "Bacteriostatic Water is sterile water containing 0.9% benzyl alcohol as preservative, intended as a diluent for laboratory applications.",
       "sort_order": 1050,
-      "image_url": "assets/bac-water-benzyl-alcoh-0-9pct-10ml.png",
+      "image_url": "assets/bacteriostatic-water-10ml.png",
       "sizes": [
         {
           "sku": "BA3",
@@ -2068,7 +2068,7 @@
           "base_price": 10,
           "in_stock": true,
           "slug": "bacteriostatic-water-3ml",
-          "image_url": "assets/bac-water-benzyl-alcoh-0-9pct-3ml.png"
+          "image_url": "assets/bacteriostatic-water-3ml.png"
         },
         {
           "sku": "BA10",
@@ -2077,7 +2077,7 @@
           "base_price": 15,
           "in_stock": true,
           "slug": "bacteriostatic-water-10ml",
-          "image_url": "assets/bac-water-benzyl-alcoh-0-9pct-10ml.png"
+          "image_url": "assets/bacteriostatic-water-10ml.png"
         }
       ],
       "default_size": {
@@ -2087,7 +2087,7 @@
         "base_price": 10,
         "in_stock": true,
         "slug": "bacteriostatic-water-3ml",
-        "image_url": "assets/bac-water-benzyl-alcoh-0-9pct-3ml.png"
+        "image_url": "assets/bacteriostatic-water-3ml.png"
       },
       "slug": "bacteriostatic-water-3ml"
     },
@@ -2101,7 +2101,7 @@
       "short_desc": "0.6% acetic acid laboratory diluent.",
       "long_desc": "Acetic Acid 0.6% is a high-purity diluent commonly used for precise preparation and stabilization of various lab materials.",
       "sort_order": 1070,
-      "image_url": "assets/asetic-acid-water-0-6pct-10ml.png",
+      "image_url": "assets/acetic-acid-water-0-6-10ml.png",
       "sizes": [
         {
           "sku": "AA3",
@@ -2110,7 +2110,7 @@
           "base_price": 10,
           "in_stock": true,
           "slug": "acetic-acid-water-0-6-3ml",
-          "image_url": "assets/asetic-acid-water-0-6pct-3ml.png"
+          "image_url": "assets/acetic-acid-water-0-6-3ml.png"
         },
         {
           "sku": "AA10",
@@ -2119,7 +2119,7 @@
           "base_price": 15,
           "in_stock": true,
           "slug": "acetic-acid-water-0-6-10ml",
-          "image_url": "assets/asetic-acid-water-0-6pct-10ml.png"
+          "image_url": "assets/acetic-acid-water-0-6-10ml.png"
         }
       ],
       "default_size": {
@@ -2129,7 +2129,7 @@
         "base_price": 10,
         "in_stock": true,
         "slug": "acetic-acid-water-0-6-3ml",
-        "image_url": "assets/asetic-acid-water-0-6pct-3ml.png"
+        "image_url": "assets/acetic-acid-water-0-6-3ml.png"
       },
       "slug": "acetic-acid-water-0-6-3ml"
     },
@@ -2143,7 +2143,7 @@
       "short_desc": "Chimeric targeting/proapoptotic research peptide.",
       "long_desc": "Adipotide is a synthetic chimeric peptide consisting of a targeting sequence linked to a proapoptotic motif, available as a lyophilized powder for laboratory research.",
       "sort_order": 1090,
-      "image_url": "assets/adipotide-5ml.png",
+      "image_url": "assets/adipotide-5mg.png",
       "sizes": [
         {
           "sku": "AP5",
@@ -2152,7 +2152,7 @@
           "base_price": 125,
           "in_stock": true,
           "slug": "adipotide-5mg",
-          "image_url": "assets/adipotide-5ml.png"
+          "image_url": "assets/adipotide-5mg.png"
         }
       ],
       "default_size": {
@@ -2162,7 +2162,7 @@
         "base_price": 125,
         "in_stock": true,
         "slug": "adipotide-5mg",
-        "image_url": "assets/adipotide-5ml.png"
+        "image_url": "assets/adipotide-5mg.png"
       },
       "slug": "adipotide-5mg"
     },
@@ -2209,7 +2209,7 @@
       "short_desc": "D-retro-inverso FOXO4 research peptide.",
       "long_desc": "FOXO4-DRI is a synthetic D-retro-inverso peptide based on the FOXO4 transcription factor sequence, available as a lyophilized powder for laboratory research.",
       "sort_order": 1120,
-      "image_url": "assets/fox4-10ml.png",
+      "image_url": "assets/foxo4-dri-10mg.png",
       "sizes": [
         {
           "sku": "F410",
@@ -2218,7 +2218,7 @@
           "base_price": 295,
           "in_stock": true,
           "slug": "foxo4-dri-10mg",
-          "image_url": "assets/fox4-10ml.png"
+          "image_url": "assets/foxo4-dri-10mg.png"
         }
       ],
       "default_size": {
@@ -2228,7 +2228,7 @@
         "base_price": 295,
         "in_stock": true,
         "slug": "foxo4-dri-10mg",
-        "image_url": "assets/fox4-10ml.png"
+        "image_url": "assets/foxo4-dri-10mg.png"
       },
       "slug": "foxo4-dri-10mg"
     },
