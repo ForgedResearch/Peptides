@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-02T19:03:43.770Z",
+  "updated": "2026-10-02T19:24:33.125Z",
   "products": [
     {
       "name": "GLP-1S-MAGLUTIDE",
@@ -10,9 +10,18 @@
       ],
       "short_desc": "GLP-1 receptor agonist research analog.",
       "long_desc": "Semaglutide is a synthetic acylated GLP-1 receptor agonist, available as a lyophilized powder for laboratory research. Research-use only. Not a prescription drug.",
-      "sort_order": 20,
+      "sort_order": 10,
       "image_url": "assets/glp-1s-maglutide-10mg.png",
       "sizes": [
+        {
+          "sku": "SM5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "maglutide-5mg",
+          "image_url": "assets/glp-1s-maglutide-5mg.png"
+        },
         {
           "sku": "SM10",
           "vial_label": "10mg",
@@ -51,15 +60,15 @@
         }
       ],
       "default_size": {
-        "sku": "SM10",
-        "vial_label": "10mg",
-        "vial_mg": 10,
-        "base_price": 50,
+        "sku": "SM5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 40,
         "in_stock": true,
-        "slug": "maglutide-10mg",
-        "image_url": "assets/glp-1s-maglutide-10mg.png"
+        "slug": "maglutide-5mg",
+        "image_url": "assets/glp-1s-maglutide-5mg.png"
       },
-      "slug": "maglutide-10mg"
+      "slug": "maglutide-5mg"
     },
     {
       "name": "GLP-2T-ZEPATIDE",
@@ -150,16 +159,25 @@
     },
     {
       "name": "GLP-3R-TRUTIDE",
-      "featured": false,
+      "featured": true,
       "category_primary": "Metabolic",
       "categories": [
         "Metabolic"
       ],
       "short_desc": "Triple GLP-1/GIP/glucagon receptor agonist research analog.",
       "long_desc": "Retatrutide (listed by some labs as GLP-3R) is a synthetic 39-amino acid acylated peptide classified as a triple receptor agonist of GLP-1, GIP, and glucagon receptors, available as a lyophilized powder for laboratory research.",
-      "sort_order": 140,
+      "sort_order": 130,
       "image_url": "assets/glp-3r-trutide-10mg.png",
       "sizes": [
+        {
+          "sku": "RT5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 48,
+          "in_stock": true,
+          "slug": "trutide-5mg",
+          "image_url": "assets/glp-3r-trutide-5mg.png"
+        },
         {
           "sku": "RT10",
           "vial_label": "10mg",
@@ -216,15 +234,15 @@
         }
       ],
       "default_size": {
-        "sku": "RT10",
-        "vial_label": "10mg",
-        "vial_mg": 10,
-        "base_price": 80,
+        "sku": "RT5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 48,
         "in_stock": true,
-        "slug": "trutide-10mg",
-        "image_url": "assets/glp-3r-trutide-10mg.png"
+        "slug": "trutide-5mg",
+        "image_url": "assets/glp-3r-trutide-5mg.png"
       },
-      "slug": "trutide-10mg"
+      "slug": "trutide-5mg"
     },
     {
       "name": "Melanotan 1",
@@ -444,7 +462,7 @@
     },
     {
       "name": "BPC-157",
-      "featured": false,
+      "featured": true,
       "category_primary": "Recovery",
       "categories": [
         "Recovery",
@@ -452,9 +470,18 @@
       ],
       "short_desc": "Synthetic 15-amino acid fragment from gastric juice protein.",
       "long_desc": "BPC-157 is a synthetic 15-amino acid peptide fragment derived from human gastric juice protein, available as a lyophilized powder for laboratory research.",
-      "sort_order": 300,
+      "sort_order": 290,
       "image_url": "assets/bpc-157-10mg.png",
       "sizes": [
+        {
+          "sku": "BC5",
+          "vial_label": "5mg",
+          "vial_mg": 5,
+          "base_price": 40,
+          "in_stock": true,
+          "slug": "bpc-157-5mg",
+          "image_url": "assets/bpc-157-5mg.png"
+        },
         {
           "sku": "BC10",
           "vial_label": "10mg",
@@ -475,15 +502,15 @@
         }
       ],
       "default_size": {
-        "sku": "BC10",
-        "vial_label": "10mg",
-        "vial_mg": 10,
-        "base_price": 65,
+        "sku": "BC5",
+        "vial_label": "5mg",
+        "vial_mg": 5,
+        "base_price": 40,
         "in_stock": true,
-        "slug": "bpc-157-10mg",
-        "image_url": "assets/bpc-157-10mg.png"
+        "slug": "bpc-157-5mg",
+        "image_url": "assets/bpc-157-5mg.png"
       },
-      "slug": "bpc-157-10mg"
+      "slug": "bpc-157-5mg"
     },
     {
       "name": "TB-500",
@@ -2055,18 +2082,9 @@
       ],
       "short_desc": "0.6% acetic acid laboratory diluent.",
       "long_desc": "Acetic Acid 0.6% is a high-purity diluent commonly used for precise preparation and stabilization of various lab materials.",
-      "sort_order": 1070,
+      "sort_order": 1080,
       "image_url": "assets/acetic-acid-water-0-6-10ml.png",
       "sizes": [
-        {
-          "sku": "AA3",
-          "vial_label": "3ml",
-          "vial_mg": 3,
-          "base_price": 10,
-          "in_stock": true,
-          "slug": "acetic-acid-water-0-6-3ml",
-          "image_url": "assets/acetic-acid-water-0-6-3ml.png"
-        },
         {
           "sku": "AA10",
           "vial_label": "10ml",
@@ -2078,15 +2096,15 @@
         }
       ],
       "default_size": {
-        "sku": "AA3",
-        "vial_label": "3ml",
-        "vial_mg": 3,
-        "base_price": 10,
+        "sku": "AA10",
+        "vial_label": "10ml",
+        "vial_mg": 10,
+        "base_price": 15,
         "in_stock": true,
-        "slug": "acetic-acid-water-0-6-3ml",
-        "image_url": "assets/acetic-acid-water-0-6-3ml.png"
+        "slug": "acetic-acid-water-0-6-10ml",
+        "image_url": "assets/acetic-acid-water-0-6-10ml.png"
       },
-      "slug": "acetic-acid-water-0-6-3ml"
+      "slug": "acetic-acid-water-0-6-10ml"
     },
     {
       "name": "Adipotide",
