@@ -1,641 +1,375 @@
-/* Forged Research — locked styles */
-:root {
-  --void: #05070b;
-  --bg: #07090e;
-  --chrome: #0b0f16;
-  --panel: #12171f;
-  --panel-2: #1a2130;
-  --line: #2a3344;
-  --text: #f4f7fb;
-  --muted: #8b97ab;
-  --blue: #2f7bff;
-  --blue-2: #1d6fea;
-  --gold: #f5b942;
-  --warn: #e11d2e;
+function money(n) {
+  return Math.round((Number(n) + Number.EPSILON) * 100) / 100;
+}
+function fmt(n) { return '$' + money(n).toFixed(2); }
+
+function getVolumePrice(basePrice, qty) {
+  const base = money(basePrice);
+  const q = Math.max(1, parseInt(qty, 10) || 1);
+  let percentOff = 0;
+  let tier = '1-4';
+  if (q >= 10) { percentOff = 20; tier = '10+'; }
+  else if (q >= 5) { percentOff = 10; tier = '5-9'; }
+  const savings = money(base * (percentOff / 100));
+  const unitPrice = money(base - savings);
+  return { unitPrice, savings, percentOff, tier };
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  font-family: Inter, system-ui, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.5;
+function catKey(p) {
+  const c = String(p.category_primary || '').toLowerCase();
+  if (c.includes('metabol')) return 'metabolic';
+  if (c.includes('recover')) return 'recovery';
+  if (c.includes('immune') || c.includes('gut')) return 'immune';
+  return '';
 }
 
-a { color: inherit; text-decoration: none; }
-img { max-width: 100%; display: block; }
-.wrap { width: min(1180px, calc(100% - 32px)); margin-inline: auto; }
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 40;
-  background: rgba(7, 9, 14, 0.86);
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--line);
+function productId(p) {
+  return p.slug || p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 72px;
+const grid = document.getElementById('productGrid');
+let products = [];
+let cart = [];
+let filter = 'all';
+let activeId = null;
+let detailSize = 0;
+const qtyState = {};
+
+function currentProduct() {
+  return products.find(p => productId(p) === activeId);
+}
+function currentSize(p) {
+  if (!p || !p.sizes || !p.sizes.length) return null;
+  if (productId(p) === activeId) return p.sizes[detailSize] || p.sizes[0];
+  return p.default_size || p.sizes[0];
+}
+function currentQty(id) { return qtyState[id] || 1; }
+function fromPrice(p) {
+  const s = p.default_size || (p.sizes && p.sizes[0]);
+  return s ? s.base_price : 0;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+function imgSrc(p, size) {
+  const s = size || (p && p.default_size) || (p && p.sizes && p.sizes[0]);
+  return (s && s.image_url) || (p && p.image_url) || 'assets/logo-mark.png';
 }
 
-.logo {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-  background: #0b0f16;
-  border-radius: 9px;
+function volumeRows(base, qty) {
+  const tiers = [
+    { key: '1-4', label: 'Qty: 1 - 4', sample: 1 },
+    { key: '5-9', label: 'Qty: 5 - 9', sample: 5 },
+    { key: '10+', label: 'Qty: 10+', sample: 10 }
+  ];
+  const selected = getVolumePrice(base, qty).tier;
+  return tiers.map(t => {
+    const p = getVolumePrice(base, t.sample);
+    const save = p.percentOff ? ' <span class="save">(save ' + fmt(p.savings) + ')</span>' : '';
+    return '<div class="vrow' + (selected === t.key ? ' active' : '') + '"><span>' + t.label + '</span><span>' + fmt(p.unitPrice) + ' each' + save + '</span></div>';
+  }).join('');
 }
 
-/* Card photo sits in .vial-zoom. That frame clips the 1.2 zoom so it cannot cover the name. */
-.vial-zoom {
-  height: 220px;
-  overflow: hidden;
-  border-radius: 12px;
-  background: #0b0f16;
-  margin: 0 0 10px;
-}
-.vial-img {
-  width: 100%;
-  height: 220px;
-  max-width: none;
-  object-fit: cover;
-  object-position: center 42%;
-  transform: scale(1);
-  transform-origin: center 42%;
-  margin: 0;
-  border-radius: 0;
-  background: #0b0f16;
-  display: block;
-}
-.product .vial-img {
-  width: 100%;
-  height: 220px;
-  margin: 0;
+function featuredList() {
+  return products
+    .filter(p => p.featured)
+    .sort((a, b) => a.sort_order - b.sort_order || a.name.localeCompare(b.name))
+    .slice(0, 4);
 }
 
-.nav-links {
-  display: flex;
-  gap: 28px;
-  color: var(--muted);
-  font-weight: 500;
+function updateFeaturedPrice(id) {
+  const p = products.find(x => productId(x) === id);
+  const sel = document.getElementById('feat-size-' + id);
+  const priceEl = document.getElementById('feat-price-' + id);
+  if (!p || !sel || !priceEl) return;
+  const size = p.sizes[Number(sel.value)] || p.default_size;
+  priceEl.textContent = fmt(size.base_price);
+  const card = sel.closest('.product');
+  const img = card && card.querySelector('.vial-img');
+  if (img) img.src = imgSrc(p, size);
 }
 
-.nav-links a:hover { color: #fff; }
-
-.nav-actions {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+function openFeatured(id) {
+  const p = products.find(x => productId(x) === id);
+  const sel = document.getElementById('feat-size-' + id);
+  if (p && sel) {
+    activeId = id;
+    detailSize = Number(sel.value) || 0;
+  }
+  openProduct(id, true);
 }
 
-.icon-btn,
-.btn {
-  border: 0;
-  cursor: pointer;
-  font-family: inherit;
+function renderFeatured() {
+  const box = document.getElementById('featuredGrid');
+  if (!box) return;
+  const list = featuredList();
+  box.innerHTML = list.map(p => {
+    const id = productId(p);
+    const def = p.default_size || p.sizes[0];
+    return (
+      '<article class="product" onclick="openProduct(\'' + id + '\')">' +
+        '<div class="vial-zoom"><img class="vial-img" src="' + imgSrc(p, def) + '" alt="' + p.name + '"></div>' +
+        '<span class="tag">RESEARCH USE ONLY</span>' +
+        '<strong>' + p.name + '</strong>' +
+        '<div class="card-desc">' + (p.short_desc || '') + '</div>' +
+        '<div class="row" style="margin-top:auto">' +
+          '<strong>' + fmt(def ? def.base_price : 0) + '</strong>' +
+          '<button class="btn" type="button">View</button>' +
+        '</div>' +
+      '</article>'
+    );
+  }).join('') || '<p class="muted">No featured products. Set featured to TRUE on the Website tab.</p>';
 }
 
-.icon-btn {
-  background: var(--panel-2);
-  color: #fff;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  border: 1px solid var(--line);
-  font-size: 16px;
-  position: relative;
+function renderProducts() {
+  if (!grid) return;
+  const list = products.filter(p => filter === 'all' || catKey(p) === filter);
+  grid.innerHTML = list.map(p => {
+    const id = productId(p);
+    return (
+      '<article class="product" data-id="' + id + '" onclick="openProduct(\'' + id + '\')">' +
+        '<div class="vial-zoom"><img class="vial-img" src="' + imgSrc(p) + '" alt="' + p.name + '"></div>' +
+        '<span class="tag">RESEARCH USE ONLY</span>' +
+        '<strong>' + p.name + '</strong>' +
+        '<div class="card-desc">' + (p.short_desc || '') + '</div>' +
+        '<div class="row" style="margin-top:auto">' +
+          '<strong>' + fmt(fromPrice(p)) + '</strong>' +
+          '<button class="btn" type="button">View</button>' +
+        '</div>' +
+      '</article>'
+    );
+  }).join('') || '<p class="muted">No products in this category.</p>';
 }
 
-.cart-count {
-  position: absolute;
-  top: -6px;
-  right: -6px;
-  background: var(--blue);
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
-  min-width: 18px;
-  height: 18px;
-  border-radius: 99px;
-  display: grid;
-  place-items: center;
+const viewAllBtn = document.getElementById('viewAllBtn');
+const catalog = document.getElementById('catalog');
+if (viewAllBtn && catalog) {
+  viewAllBtn.onclick = () => {
+    catalog.hidden = false;
+    catalog.scrollIntoView({ behavior: 'smooth' });
+  };
 }
 
-.btn {
-  background: var(--blue);
-  color: #fff;
-  font-weight: 700;
-  padding: 12px 18px;
-  border-radius: 12px;
-  font-size: 14px;
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.onclick = () => {
+    document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    filter = chip.dataset.filter;
+    renderProducts();
+  };
+});
+
+function cartOffer() {
+  const qty = cart.reduce((a, b) => a + b.qty, 0);
+  const baseSubtotal = money(cart.reduce((a, b) => a + (b.basePrice || b.unitPrice) * b.qty, 0));
+  let percentOff = 0;
+  let tier = '1-4';
+  if (baseSubtotal > 1500) { percentOff = 30; tier = '1500'; }
+  else if (qty >= 10) { percentOff = 20; tier = '10+'; }
+  else if (qty >= 5) { percentOff = 10; tier = '5-9'; }
+  let note = '';
+  if (tier === '1500') note = 'Order over $1,500. 30% off applied.';
+  else if (tier === '10+') note = 'Top discount reached.';
+  else if (tier === '5-9') note = 'Add ' + (10 - qty) + ' items to reach 20% off.';
+  else if (qty > 0) note = 'Add ' + (5 - qty) + ' items to reach 10% off.';
+  return { qty, baseSubtotal, percentOff, tier, note };
 }
 
-.btn:hover { background: var(--blue-2); }
-
-.btn.ghost {
-  background: transparent;
-  border: 1px solid var(--line);
-  color: var(--text);
+function addToCartFromDetail() {
+  const item = currentProduct();
+  const size = currentSize(item);
+  if (!item || !size) return;
+  if (!size.in_stock) {
+    alert('That size is out of stock.');
+    return;
+  }
+  const qty = currentQty(activeId);
+  const priced = getVolumePrice(size.base_price, qty);
+  cart.push({
+    id: size.sku + '-' + Date.now(),
+    name: item.name,
+    size: size.vial_label,
+    qty,
+    basePrice: money(size.base_price),
+    panelPercent: priced.percentOff,
+    unitPrice: priced.unitPrice
+  });
+  syncCart();
+  openCart();
 }
 
-.btn.full { width: 100%; }
-.btn.warn { background: #b91c1c; }
-
-.hero {
-  position: relative;
-  overflow: hidden;
-  padding: 88px 0 72px;
-  min-height: 560px;
-  background-color: #05070b;
-  background-image:
-    linear-gradient(90deg, rgba(5,7,11,.82) 0%, rgba(5,7,11,.45) 36%, rgba(5,7,11,.12) 62%, rgba(5,7,11,.06) 100%),
-    url("https://mako-burn-e.github.io/Forged-Research/assets/hero-mountains.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0 0;
-  height: 90px;
-  background: linear-gradient(180deg, transparent, var(--bg));
-  pointer-events: none;
-}
-
-.hero .wrap { position: relative; z-index: 1; }
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 640px);
-  gap: 40px;
-  align-items: center;
-}
-
-.hero .vials { display: none; }
-
-.hero h1 {
-  color: #fff;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.75);
-}
-
-.hero .lede {
-  color: #fff;
-  font-weight: 500;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
-}
-
-.hero .kicker {
-  color: #dbe8ff;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
-}
-
-.hero .trust {
-  color: #f3f6fb;
-  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.7);
-}
-
-.hero .btn.ghost {
-  background: rgba(7, 9, 14, 0.7);
-  border-color: rgba(255, 255, 255, 0.4);
-  color: #fff;
-}
-
-.kicker {
-  color: #93c5fd;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-h1 {
-  font-size: clamp(36px, 5vw, 62px);
-  line-height: 1.05;
-  letter-spacing: -0.03em;
-  margin: 12px 0 16px;
-}
-
-.lede {
-  color: var(--muted);
-  font-size: 18px;
-  max-width: 540px;
-}
-
-.hero-cta {
-  display: flex;
-  gap: 12px;
-  margin: 28px 0 22px;
-  flex-wrap: wrap;
-}
-
-.trust {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.trust span {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.vials {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-.vial-card {
-  background: linear-gradient(180deg, #1a2230, #10151e);
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  padding: 22px;
-  text-align: center;
-}
-
-.section { padding: 56px 0; }
-
-.section h2 {
-  font-size: 28px;
-  letter-spacing: -0.02em;
-  margin-bottom: 6px;
-}
-
-.sub {
-  color: var(--muted);
-  margin-bottom: 28px;
-}
-
-.filters {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-bottom: 22px;
-}
-
-.chip {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  color: var(--muted);
-  padding: 8px 14px;
-  border-radius: 999px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 13px;
-}
-
-.chip.active,
-.chip:hover {
-  background: #1d4ed8;
-  border-color: #1d4ed8;
-  color: #fff;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-
-.product {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.tag {
-  display: inline-block;
-  background: #172554;
-  color: #93c5fd;
-  font-size: 11px;
-  font-weight: 700;
-  padding: 4px 8px;
-  border-radius: 6px;
-}
-
-.stars { color: var(--gold); font-size: 13px; }
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-}
-
-.muted { color: var(--muted); }
-
-.info-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 20px;
-}
-
-.panel {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 24px;
-}
-
-.warn-box {
-  background: #2a1214;
-  border: 1px solid #7f1d1d;
-  color: #fecaca;
-  border-radius: 12px;
-  padding: 14px 16px;
-  margin: 16px 0;
-  font-size: 14px;
-}
-
-.specs {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-}
-
-.specs td {
-  padding: 10px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.specs td:first-child { color: var(--muted); }
-
-footer {
-  border-top: 1px solid var(--line);
-  padding: 36px 0 48px;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.foot {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-
-.drawer-bg {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  display: none;
-  z-index: 50;
-}
-
-.drawer {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: min(420px, 100%);
-  height: 100%;
-  background: #0d121b;
-  border-left: 1px solid var(--line);
-  z-index: 60;
-  transform: translateX(100%);
-  transition: 0.25s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.drawer.open { transform: none; }
-.drawer-bg.open { display: block; }
-
-.drawer-h {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 20px;
-  border-bottom: 1px solid var(--line);
-}
-
-.cart-items {
-  padding: 16px 20px;
-  flex: 1;
-  overflow: auto;
-}
-
-.cart-line {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 12px 0;
-  border-bottom: 1px solid var(--line);
-}
-
-.qty {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.qty button {
-  width: 26px;
-  height: 26px;
-  border-radius: 8px;
-  background: var(--panel-2);
-  color: #fff;
-  border: 1px solid var(--line);
-  cursor: pointer;
-}
-
-.drawer-foot {
-  padding: 16px 20px 24px;
-  border-top: 1px solid var(--line);
-}
-
-.modal-bg {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.65);
-  display: none;
-  z-index: 70;
-  place-items: center;
-  padding: 20px;
-}
-
-.modal-bg.open { display: grid; }
-
-.modal {
-  width: min(520px, 100%);
-  background: #111827;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 24px;
-}
-
-.check {
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  margin: 16px 0;
-  font-size: 14px;
-  color: var(--muted);
-}
-
-@media (max-width: 960px) {
-  .hero-grid,
-  .info-grid { grid-template-columns: 1fr; }
-  .nav-links { display: none; }
-  .grid { grid-template-columns: 1fr 1fr; }
-}
-
-@media (max-width: 900px) {
-  .hero {
-    background-position: left center;
-    min-height: 520px;
+function syncCart() {
+  const countEl = document.getElementById('cartCount');
+  const subEl = document.getElementById('subtotal');
+  const listEl = document.getElementById('cartItems');
+  const offer = cartOffer();
+  let charged = 0;
+  let saved = 0;
+  const lines = cart.map(c => {
+    const base = money(c.basePrice || c.unitPrice);
+    const percent = Math.max(offer.percentOff, c.panelPercent || 0);
+    const unit = money(base - money(base * (percent / 100)));
+    c.unitPrice = unit;
+    const line = money(unit * c.qty);
+    const lineSave = money((base - unit) * c.qty);
+    charged += line;
+    saved += lineSave;
+    const saveHtml = lineSave > 0 ? '<div class="save">(savings ' + fmt(lineSave) + ')</div>' : '';
+    return '<div class="cart-line"><div><strong>' + c.name + '</strong><div class="muted">' + c.size + ' · ' + c.qty + ' × ' + fmt(unit) + '</div>' + saveHtml + '</div><strong>' + fmt(line) + '</strong></div>';
+  });
+  if (countEl) countEl.textContent = offer.qty;
+  if (subEl) subEl.textContent = fmt(charged);
+  if (listEl) {
+    if (!cart.length) {
+      listEl.innerHTML = '<p class="muted">Your cart is empty.</p>';
+    } else {
+      listEl.innerHTML = lines.join('')
+        + '<p class="muted" style="margin-top:12px;font-size:13px">' + offer.note + '</p>'
+        + '<p class="save" style="margin-top:6px;font-size:13px">(total savings on this order ' + fmt(saved) + ')</p>';
+    }
   }
 }
 
-@media (max-width: 560px) {
-  .grid { grid-template-columns: 1fr; }
-  .hero { background-position: 12% center; }
+const drawer = document.getElementById('drawer');
+const drawerBg = document.getElementById('drawerBg');
+const checkoutModal = document.getElementById('modal');
+function openCart() { if (drawer) drawer.classList.add('open'); if (drawerBg) drawerBg.classList.add('open'); }
+function closeCart() { if (drawer) drawer.classList.remove('open'); if (drawerBg) drawerBg.classList.remove('open'); }
+if (document.getElementById('cartBtn')) document.getElementById('cartBtn').onclick = openCart;
+if (document.getElementById('closeCart')) document.getElementById('closeCart').onclick = closeCart;
+if (drawerBg) drawerBg.onclick = closeCart;
+if (document.getElementById('checkoutBtn')) {
+  document.getElementById('checkoutBtn').onclick = () => {
+    if (!cart.length) return;
+    if (checkoutModal) checkoutModal.classList.add('open');
+  };
+}
+if (document.getElementById('agreeBtn')) {
+  document.getElementById('agreeBtn').onclick = () => {
+    if (!document.getElementById('agree') || !document.getElementById('agree').checked) {
+      alert('Please confirm research-use-only before continuing.');
+      return;
+    }
+    if (checkoutModal) checkoutModal.classList.remove('open');
+    alert('Demo checkout. Connect a payment provider before taking live orders.');
+    cart = [];
+    syncCart();
+    closeCart();
+  };
 }
 
-.size-select {
-  background: #0b0f16;
-  color: #fff;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 8px 10px;
-  font: inherit;
-  font-size: 13px;
-  width: 100%;
+const BAC_BASE = 20.99;
+let bacQty = 1;
+function refreshBac() {
+  const p = getVolumePrice(BAC_BASE, bacQty);
+  const qel = document.getElementById('bacQty');
+  const pel = document.getElementById('bacPrice');
+  if (qel) qel.textContent = bacQty;
+  if (pel) pel.textContent = fmt(p.unitPrice * bacQty);
+}
+if (document.getElementById('bacMinus')) document.getElementById('bacMinus').onclick = () => { bacQty = Math.max(1, bacQty - 1); refreshBac(); };
+if (document.getElementById('bacPlus')) document.getElementById('bacPlus').onclick = () => { bacQty += 1; refreshBac(); };
+if (document.getElementById('bacAdd')) {
+  document.getElementById('bacAdd').onclick = () => {
+    const p = getVolumePrice(BAC_BASE, bacQty);
+    cart.push({ id: 'bac-' + Date.now(), name: 'Bacteriostatic Water', size: '10 ml', qty: bacQty, basePrice: BAC_BASE, panelPercent: p.percentOff, unitPrice: p.unitPrice });
+    bacQty = 1;
+    refreshBac();
+    syncCart();
+  };
 }
 
-.volume { margin-top: 10px; display: grid; gap: 6px; }
-.volume h3 { font-size: 13px; font-weight: 700; }
-.vrow {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 8px 10px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  font-size: 12px;
-  background: #0b0f16;
+function openProduct(id, keepSize) {
+  const p = products.find(x => productId(x) === id);
+  if (!p || !document.getElementById('productModal')) return;
+  if (!keepSize) {
+    activeId = id;
+    const def = p.default_size || p.sizes[0];
+    detailSize = Math.max(0, p.sizes.findIndex(s => s.sku === (def && def.sku)));
+  } else {
+    activeId = id;
+  }
+  if (!qtyState[id]) qtyState[id] = 1;
+  document.getElementById('pmTitle').textContent = p.name;
+  document.getElementById('pmImg').alt = p.name;
+  document.getElementById('pmDesc').textContent = p.long_desc || p.short_desc || '';
+  document.getElementById('pmSize').innerHTML = p.sizes.map((s, i) => {
+    const oos = s.in_stock ? '' : ' (Out of stock)';
+    return '<option value="' + i + '">' + s.vial_label + ' — ' + fmt(s.base_price) + oos + '</option>';
+  }).join('');
+  document.getElementById('pmSize').value = String(detailSize);
+  document.getElementById('pmSize').onchange = () => {
+    detailSize = Number(document.getElementById('pmSize').value);
+    refreshDetail();
+  };
+  refreshDetail();
+  document.getElementById('productModal').classList.add('open');
 }
-.vrow.active { border-color: #2f7bff; background: #17315f; }
-.save { color: #f5b942; font-weight: 700; }
-.qty-row { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
-.stepper { display: flex; align-items: center; gap: 8px; }
-.stepper button {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  background: var(--panel-2);
-  color: #fff;
-  cursor: pointer;
+function closeProduct() {
+  const el = document.getElementById('productModal');
+  if (el) el.classList.remove('open');
+}
+function refreshDetail() {
+  const p = currentProduct();
+  const size = currentSize(p);
+  if (!p || !size) return;
+  const img = document.getElementById('pmImg');
+  if (img) img.src = imgSrc(p, size);
+  const qty = currentQty(activeId);
+  const line = getVolumePrice(size.base_price, qty).unitPrice * qty;
+  document.getElementById('pmVol').innerHTML = volumeRows(size.base_price, qty);
+  document.getElementById('pmQty').textContent = qty;
+  document.getElementById('pmLine').textContent = fmt(line);
+  const add = document.getElementById('pmAdd');
+  if (add) add.disabled = !size.in_stock;
+}
+function changeProductQty(id, d) {
+  if (!id) return;
+  qtyState[id] = Math.max(1, currentQty(id) + d);
+  refreshDetail();
+}
+if (document.getElementById('pmClose')) document.getElementById('pmClose').onclick = closeProduct;
+if (document.getElementById('productModal')) {
+  document.getElementById('productModal').addEventListener('click', (e) => {
+    if (e.target.id === 'productModal') closeProduct();
+  });
+}
+if (document.getElementById('pmMinus')) document.getElementById('pmMinus').onclick = () => changeProductQty(activeId, -1);
+if (document.getElementById('pmPlus')) document.getElementById('pmPlus').onclick = () => changeProductQty(activeId, 1);
+if (document.getElementById('pmAdd')) document.getElementById('pmAdd').onclick = () => { addToCartFromDetail(); closeProduct(); };
+
+const gateModal = document.getElementById('gateModal');
+function openGate() {
+  if (!gateModal) return;
+  if (sessionStorage.getItem('forgedGate') === '1') return;
+  gateModal.classList.add('open');
+}
+function closeGate() { if (gateModal) gateModal.classList.remove('open'); }
+if (document.getElementById('gateAgree')) {
+  document.getElementById('gateAgree').onclick = () => {
+    sessionStorage.setItem('forgedGate', '1');
+    closeGate();
+  };
+}
+if (document.getElementById('gateDecline')) {
+  document.getElementById('gateDecline').onclick = () => {
+    window.location.href = 'https://www.google.com';
+  };
 }
 
-.recommend {
-  margin: 0 20px 12px;
-  padding: 14px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: #0b0f16;
-}
+fetch('data/products.json')
+  .then(r => {
+    if (!r.ok) throw new Error('Missing data/products.json');
+    return r.json();
+  })
+  .then(data => {
+    products = data.products || [];
+    renderFeatured();
+    renderProducts();
+  })
+  .catch(err => {
+    console.error(err);
+    if (grid) grid.innerHTML = '<p class="muted">Catalog is updating. Run the Sync sheet Action, then refresh.</p>';
+  });
 
-.field {
-  width: 100%;
-  background: #0b0f16;
-  color: #fff;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 12px 14px;
-  font: inherit;
-}
-
-.product { cursor: pointer; }
-.product-modal {
-  width: min(860px, calc(100vw - 32px));
-  max-height: calc(100vh - 32px);
-  overflow: auto;
-}
-.pm-grid {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 28px;
-  align-items: start;
-}
-/* View panel photo sits in .pm-zoom. That frame clips the 1.4 zoom. */
-.pm-zoom {
-  width: 220px;
-  height: 280px;
-  overflow: hidden;
-  border-radius: 12px;
-  background: #0b0f16;
-  margin-inline: auto;
-}
-.pm-img {
-  width: 100%;
-  height: 280px;
-  max-width: none;
-  max-height: none;
-  object-fit: cover;
-  object-position: center 42%;
-  transform: scale(1.2);
-  transform-origin: center 42%;
-  margin: 0;
-  border-radius: 0;
-  background: #0b0f16;
-  display: block;
-}
-@media (max-width: 700px) {
-  .pm-grid { grid-template-columns: 1fr; }
-  .pm-zoom { width: min(220px, 100%); height: 240px; }
-  .pm-img { width: 100%; height: 240px; margin: 0; }
-  .product-modal { padding: 16px; }
-}
-
-.card-desc {
-  color: var(--muted);
-  font-size: 13px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  min-height: 2.6em;
-}
-
-.policy h1 { margin-bottom: 8px; }
-.policy h2 { font-size: 18px; margin: 22px 0 8px; }
-.policy p, .policy li { color: var(--muted); line-height: 1.6; }
-.policy a { color: #93c5fd; text-decoration: underline; }
-.policy-links { display: flex; flex-wrap: wrap; gap: 14px; }
-.policy-links a { color: #93c5fd; }
-.gate-list { padding-left: 18px; color: var(--muted); display: grid; gap: 10px; font-size: 14px; }
-.gate-list strong { color: #fff; }
-
-.modal-bg.gate {
-  align-items: start;
-  overflow: auto;
-}
-.gate .modal,
-#gateModal .modal {
-  width: min(560px, 100%);
-  max-height: calc(100dvh - 24px);
-  overflow: auto;
-}
+syncCart();
+refreshBac();
+openGate();
